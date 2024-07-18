@@ -1,0 +1,20 @@
+--cpu=Cortex-M33
+".\objects\star_adc.o"
+".\objects\star_dma.o"
+".\objects\star_dualtimer.o"
+".\objects\star_gpio.o"
+".\objects\star_i2c.o"
+".\objects\star_mpu.o"
+".\objects\star_rcc.o"
+".\objects\star_retarget.o"
+".\objects\star_spi.o"
+".\objects\star_timer.o"
+".\objects\star_uart.o"
+".\objects\star_watchdog.o"
+".\objects\system_armcm33.o"
+".\objects\startup_armcm33.o"
+".\objects\main.o"
+--strict --scatter ".\Objects\CM33.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\CM33.map" -o .\Objects\CM33.axf

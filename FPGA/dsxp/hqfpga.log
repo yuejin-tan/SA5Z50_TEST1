@@ -1,0 +1,50 @@
+
+==========oOOOo===========================================oOOOo==========
+=  HqFpga(TM) V2.14.4 (Winter 2023) Build 021824
+=  SEALION series FPGA development tool
+=  Xian Intelligence Silicon Technology, Inc.(XiST)        _@)
+ _________________________________________________________/ (
+<_________________________________________________________  {}@8@@8@(*)
+                                                          \_(
+=  Copyright (c) 2020-2025 XiST                            @)
+=  All rights reserved.
+=========================================================================
+Info: Thu Jul 18 22:52:56 2024.
+Info: Launching program D:/fpga/AC208-SA5Z30-CM3/hq_xist_2.14.4_021824_win64/build/win_x64/bin/hqfpga.exe .
+Info: HqFpga is ready to work on host hp (Windows 10 64-bit).
+
+[> readOpt D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/FPGA.hqprj
+[> puts $hqui::FILE_SRC
+D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/fpga_cm33.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/led_wf.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ipcore_dir/PLL_FREQ/xsIP_PLL_FREQ.v
+[> puts $hqui::FAMILY
+SEAL
+[> puts $hqui::TOP_MODULE
+fpga_cm33
+[> puts $hqui::FILE_TC
+D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/hq_run/hq_temp/_auto_ce.sdc
+[> puts $hqui::FILE_PC
+D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/hq_run/hq_temp/_auto_ce.upc
+[> puts $hqui::IS_TC_AUTO_CONS
+true
+[> puts $hqui::IS_PC_AUTO_CONS
+true
+[> puts $hqui::RTL_9
+
+[> if [info exist hqui::RTL_11] {puts $hqui::RTL_11} else {puts ""}
+false
+[> source D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/run.tcl
+Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v.
+Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\led_wf.v.
+Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ipcore_dir\PLL_FREQ\xsIP_PLL_FREQ.v.
+Run PASS
+[> rtl.srcfiles.list
+D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/fpga_cm33.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/led_wf.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ipcore_dir/PLL_FREQ/xsIP_PLL_FREQ.v
+[> source D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/t.tcl
+Info: Loading device data for SEAL ....
+Info:   Loading functional data....
+Info: Device data loaded successfully.
+Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v.
+Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\led_wf.v.
+Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ipcore_dir\PLL_FREQ\xsIP_PLL_FREQ.v.
+JSON is generated
+[> exit

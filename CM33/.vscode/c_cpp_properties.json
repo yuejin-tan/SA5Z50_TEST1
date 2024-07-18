@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/",
+                "${workspaceFolder}/CM33_CMSIS",
+                "${workspaceFolder}/SA5Z50_DEVS",
+                "${workspaceFolder}/LIBS",
+                "${workspaceFolder}/USR",
+                "D:\\stm32\\GNU_ARM\\arm-none-eabi\\include"
+            ],
+            "defines": [
+                "ARMCM33_DSP_FP_TZ",
+                "DEBUG"
+            ],
+            "windowsSdkVersion": "10.0.17763.0",
+            "compilerPath": "D:\\stm32\\GNU_ARM\\bin\\arm-none-eabi-gcc.exe",
+            "cStandard": "gnu11",
+            "cppStandard": "c++11",
+            "forcedInclude": [
+            ],
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

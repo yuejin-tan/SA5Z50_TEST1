@@ -1,0 +1,131 @@
+#########################################################################
+#
+# 最大时钟频率(FMAX)报告
+#
+#########################################################################
+#
+# 注意: FMAX 的计算仅针对在同一时钟域内的寄存器到寄存器路径，
+# 多周期路径、跨时钟域路径(包括主时钟及其生成时钟之间的路径)都将
+# 被忽略。对于一个时钟及其反向时钟之间的路径， FMAX的计算通过按
+# 频宽比(duty cycle)等比例扩展路径延迟得到。例如，假设有一
+# 条路径的起点由时钟上升沿驱动而终点由同一时钟的下降沿驱动，
+# 如果该时钟的频宽比为50，则计算FMAX时，路径延迟将乘以2(即
+# 除以50%)。
+#
+# ***********************************************************************
+# 时钟         : PLL_inst1/PLLInst_0/CLKOS2
+# 最小时钟周期 : 4793 ps
+# ***********************************************************************
+********************
+* 路径 1
+********************
+起点     : led_wf_inst1/cnt_reg[1]/Q  [激发时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿1]
+终点     : led_wf_inst1/cnt_reg[25]/D [捕获时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿2] 
+数据产生路径
+=======================================================================================================================
+|                 节点                 |     单元     | 延迟 |      类型      | 位置 |          连线           | 扇出 |
+=======================================================================================================================
+| CLOCK'CLK_IN_25M_PIN                 |     N/A      |    0 |                |      | N/A                     |      |
+| CLK_IN_25M_PIN                       |  fpga_cm33   |    0 | clock_latency  |      | CLK_IN_25M_PIN          | 1    |
+| CLK_IN_25M_PIN_pad/I                 |    xsIOBI    |    0 |      net       |      | CLK_IN_25M_PIN          |      |
+| CLK_IN_25M_PIN_pad/O                 |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c        | 1    |
+| PLL_inst1/PLLInst_0/CLKI             |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c        |      |
+| --                                   |      --      |   -- |       --       | --   | --                      | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS2     |     N/A      |    0 | tcst_gen_clock |      | N/A                     |      |
+| PLL_inst1/PLLInst_0/CLKOS2           |   xsPLLSA    |  990 | clock_latency  |      | CLK_FPGA_SYS1           | 30   |
+| led_wf_inst1/cnt_reg[1]/C            | xsDFFSA_K1C1 |    0 |      net       |      | CLK_FPGA_SYS1           |      |
+| --                                   |      --      |   -- |       --       | --   | --                      | --   |
+| led_wf_inst1/cnt_reg[1]/Q            | xsDFFSA_K1C1 |  347 |  rising_edge   |      | led_wf_inst1/cnt[1]     | 4    |
+| led_wf_inst1/_i_6/bitAdd_1/muxcy/S   |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/cnt[1]     |      |
+| led_wf_inst1/_i_6/bitAdd_1/muxcy/O   |   xsMUXCY    |  261 |      cell      |      | led_wf_inst1/_i_6/_n_1  | 2    |
+| led_wf_inst1/_i_6/bitAdd_2/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_1  |      |
+| led_wf_inst1/_i_6/bitAdd_2/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_3  | 2    |
+| led_wf_inst1/_i_6/bitAdd_3/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_3  |      |
+| led_wf_inst1/_i_6/bitAdd_3/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_5  | 2    |
+| led_wf_inst1/_i_6/bitAdd_4/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_5  |      |
+| led_wf_inst1/_i_6/bitAdd_4/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_7  | 2    |
+| led_wf_inst1/_i_6/bitAdd_5/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_7  |      |
+| led_wf_inst1/_i_6/bitAdd_5/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_9  | 2    |
+| led_wf_inst1/_i_6/bitAdd_6/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_9  |      |
+| led_wf_inst1/_i_6/bitAdd_6/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_11 | 2    |
+| led_wf_inst1/_i_6/bitAdd_7/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_11 |      |
+| led_wf_inst1/_i_6/bitAdd_7/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_13 | 2    |
+| led_wf_inst1/_i_6/bitAdd_8/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_13 |      |
+| led_wf_inst1/_i_6/bitAdd_8/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_15 | 2    |
+| led_wf_inst1/_i_6/bitAdd_9/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_15 |      |
+| led_wf_inst1/_i_6/bitAdd_9/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_17 | 2    |
+| led_wf_inst1/_i_6/bitAdd_10/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_17 |      |
+| led_wf_inst1/_i_6/bitAdd_10/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_19 | 2    |
+| led_wf_inst1/_i_6/bitAdd_11/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_19 |      |
+| led_wf_inst1/_i_6/bitAdd_11/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_21 | 2    |
+| led_wf_inst1/_i_6/bitAdd_12/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_21 |      |
+| led_wf_inst1/_i_6/bitAdd_12/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_23 | 2    |
+| led_wf_inst1/_i_6/bitAdd_13/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_23 |      |
+| led_wf_inst1/_i_6/bitAdd_13/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_25 | 2    |
+| led_wf_inst1/_i_6/bitAdd_14/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_25 |      |
+| led_wf_inst1/_i_6/bitAdd_14/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_27 | 2    |
+| led_wf_inst1/_i_6/bitAdd_15/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_27 |      |
+| led_wf_inst1/_i_6/bitAdd_15/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_29 | 2    |
+| led_wf_inst1/_i_6/bitAdd_16/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_29 |      |
+| led_wf_inst1/_i_6/bitAdd_16/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_31 | 2    |
+| led_wf_inst1/_i_6/bitAdd_17/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_31 |      |
+| led_wf_inst1/_i_6/bitAdd_17/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_33 | 2    |
+| led_wf_inst1/_i_6/bitAdd_18/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_33 |      |
+| led_wf_inst1/_i_6/bitAdd_18/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_35 | 2    |
+| led_wf_inst1/_i_6/bitAdd_19/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_35 |      |
+| led_wf_inst1/_i_6/bitAdd_19/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_37 | 2    |
+| led_wf_inst1/_i_6/bitAdd_20/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_37 |      |
+| led_wf_inst1/_i_6/bitAdd_20/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_39 | 2    |
+| led_wf_inst1/_i_6/bitAdd_21/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_39 |      |
+| led_wf_inst1/_i_6/bitAdd_21/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_41 | 2    |
+| led_wf_inst1/_i_6/bitAdd_22/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_41 |      |
+| led_wf_inst1/_i_6/bitAdd_22/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_43 | 2    |
+| led_wf_inst1/_i_6/bitAdd_23/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_43 |      |
+| led_wf_inst1/_i_6/bitAdd_23/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_45 | 2    |
+| led_wf_inst1/_i_6/bitAdd_24/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_45 |      |
+| led_wf_inst1/_i_6/bitAdd_24/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_47 | 1    |
+| led_wf_inst1/_i_6/bitAdd_25/xorcy/CI |   xsXORCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_47 |      |
+| led_wf_inst1/_i_6/bitAdd_25/xorcy/O  |   xsXORCY    |  263 |      cell      |      | led_wf_inst1/n_69[25]   | 1    |
+| led_wf_inst1/_i_33/I1                |   xsLUTSA2   |    0 |      net       |      | led_wf_inst1/n_69[25]   |      |
+| led_wf_inst1/_i_33/O                 |   xsLUTSA2   |   81 |      cell      |      | led_wf_inst1/n_68       | 1    |
+| led_wf_inst1/cnt_reg[25]/D           | xsDFFSA_K1C1 |    0 |      net       |      | led_wf_inst1/n_68       |      |
+=======================================================================================================================
+时钟路径延迟         = 990       
+数据路径延迟         = 4816       (Tdatp)
+     clock-to-q 延迟 = 347 
+        总的单元延迟 = 4469 
+        总的连线延迟 = 0 
+        逻辑级数     = 26 
+[数据捕获路径]
+============================================================================================================
+|               节点               |     单元     | 延迟 |      类型      | 位置 |       连线       | 扇出 |
+============================================================================================================
+| CLOCK'CLK_IN_25M_PIN             |     N/A      |    0 |                |      | N/A              |      |
+| CLK_IN_25M_PIN                   |  fpga_cm33   |    0 | clock_latency  |      | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN_pad/I             |    xsIOBI    |    0 |      net       |      | CLK_IN_25M_PIN   |      |
+| CLK_IN_25M_PIN_pad/O             |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c | 1    |
+| PLL_inst1/PLLInst_0/CLKI         |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c |      |
+| --                               |      --      |   -- |       --       | --   | --               | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS2 |     N/A      |    0 | tcst_gen_clock |      | N/A              |      |
+| PLL_inst1/PLLInst_0/CLKOS2       |   xsPLLSA    |  990 | clock_latency  |      | CLK_FPGA_SYS1    | 30   |
+| led_wf_inst1/cnt_reg[25]/C       | xsDFFSA_K1C1 |    0 |      net       |      | CLK_FPGA_SYS1    |      |
+============================================================================================================
+时钟路径延迟         = 990       
+    时钟偏差         = 0 (Tcksw)
+[延迟计算]
+======================================================================
+总延迟 = Tdatap     + Tsu        - Tckpm      - Tcksw
+       = 4816       + -23        - 0          - 0          
+       = 4793
+======================================================================
+Tdatp -- 数据路径延迟 
+Tsu   -- 库单元建立时间 
+Tckpm -- 时钟悲观补偿 
+#########################################################################
+# 时钟频率总结
+#########################################################################
+最慢时钟     : PLL_inst1/PLLInst_0/CLKOS2
+最小时钟周期 : 4793 ps
+最大时钟频率 : 208.6 MHz
+#########################################################################
+PLL_inst1/PLLInst_0/CLKOS2 : 208.6 Mhz

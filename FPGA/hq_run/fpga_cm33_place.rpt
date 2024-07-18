@@ -1,0 +1,116 @@
+
+######################oOOOo###########oOOOo##########################
+#  HqFpga(TM) Release V2.14.4 (Winter 2023) Build 021824
+#  [网表报告]
+#####################################################################
+日期 : Fri Jul 19 00:16:26 2024
+
+Library U_ARCH
++-----------+------+
+| Cell 名称 | 数量 |
++-----------+------+
+| PIO       |   41 |
+| IOLOGIC   |    2 |
+| PLL_25K   |    1 |
+| CM33      |    1 |
+| SLICEL    |   14 |
++-----------+------+
+| Sum       |   59 |
++-----------+------+
+
+Library work
++-----------+------+
+| Cell 名称 | 数量 |
++-----------+------+
+| fpga_cm33 |    1 |
++-----------+------+
+| Sum       |    1 |
++-----------+------+
+
+######################oOOOo###########oOOOo##########################
+#  HqFpga(TM) Release V2.14.4 (Winter 2023) Build 021824
+#  [资源位置分配报告]
+#####################################################################
+日期 : Fri Jul 19 00:16:26 2024
+器件 : SA5Z-50-D0-7U324C
+
+** Bank Voltage Available **
++------+-------+
+| Bank | VCCIO |
++------+-------+
+| 0    |  2.5  |
+| 1    |  2.5  |
+| 2    |  3.3  |
+| 4    |  3.3  |
+| 5    |  3.3  |
+| 9    |  2.5  |
++------+-------+
+** IO端口位置 **
++----------------+--------+------+----------+------+-------+-------+----------+----------+
+| 端口名         |  方向  | 位置 |  IO标准  | Bank | VCCIO | DRIVE | SLEWRATE | PULLMODE |
++----------------+--------+------+----------+------+-------+-------+----------+----------+
+| RST_N_PIN      | INPUT  | H14  | LVCMOS33 |  2   |  3.3  |       |          |          |
+| CLK_IN_25M_PIN | INPUT  | K15  | LVCMOS33 |  2   |  3.3  |       |          |          |
+| SW_CLK_PIN     | INPUT  |  T9  | LVCMOS33 |  4   |  3.3  |       |          |          |
+| seg7_SH_CP     | OUTPUT | D14  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| seg7_ST_CP     | OUTPUT | A14  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| seg7_DS        | OUTPUT | A13  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| LED01_PIN[1]   | OUTPUT | D13  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| LED01_PIN[0]   | OUTPUT | D12  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[31]   | INOUT  | F16  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[30]   | INOUT  | F15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[29]   | INOUT  | G16  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[28]   | INOUT  | H16  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[27]   | INOUT  | B14  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[26]   | INOUT  | J15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[25]   | INOUT  | E16  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[24]   | INOUT  | E15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[23]   | INOUT  | B12  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[22]   | INOUT  | C12  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[21]   | INOUT  | F14  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[20]   | INOUT  | P17  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[19]   | INOUT  | R15  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[18]   | INOUT  | D17  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[17]   | INOUT  |  U6  | LVCMOS33 |  5   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[16]   | INOUT  | F13  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[15]   | INOUT  | H17  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[14]   | INOUT  | P15  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[13]   | INOUT  | N16  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[12]   | INOUT  | U18  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[11]   | INOUT  | N15  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[10]   | INOUT  | R17  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[9]    | INOUT  | T15  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[8]    | INOUT  | T13  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[7]    | INOUT  | T14  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[6]    | INOUT  | H15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[5]    | INOUT  | V12  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[4]    | INOUT  | T10  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[3]    | INOUT  | U13  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[2]    | INOUT  | U16  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[1]    | INOUT  |  N4  | LVCMOS33 |  5   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[0]    | INOUT  | C15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| SWD_IO_PIN     | INOUT  | M13  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
++----------------+--------+------+----------+------+-------+-------+----------+----------+
+** 单元位置 **
++-------------------------------+----------+----------+
+| 元件                          | 元件类型 |   位置   |
++-------------------------------+----------+----------+
+| LED01_PIN[1]_MGIOL            | IOLOGIC  | IOL_T61D |
+| LED01_PIN[0]_MGIOL            | IOLOGIC  | IOL_T61C |
+| PLL_inst1/PLLInst_0           | PLL_25K  |  TPLL2   |
+| CM33_inst                     |   CM33   |   CM3    |
+| led_wf_inst1/n_69[1]          |  SLICEL  | R4C138M  |
+| led_wf_inst1/n_69[5]          |  SLICEL  | R4C139M  |
+| led_wf_inst1/n_69[9]          |  SLICEL  | R4C140M  |
+| led_wf_inst1/n_69[13]         |  SLICEL  | R4C141M  |
+| led_wf_inst1/n_69[17]         |  SLICEL  | R4C142M  |
+| led_wf_inst1/n_69[21]         |  SLICEL  | R4C143M  |
+| led_wf_inst1/n_69[25]         |  SLICEL  | R4C144M  |
+| CM33SYS_RSTN_buff             |  SLICEL  |  R2C95L  |
+| led_wf_inst1/cnt[1]           |  SLICEL  | R5C139M  |
+| led_wf_inst1/cnt[2]           |  SLICEL  | R5C139L  |
+| led_wf_inst1/cnt[11]          |  SLICEL  | R4C140L  |
+| led_wf_inst1/cnt[20]          |  SLICEL  | R5C140M  |
+| led_wf_inst1/_i_2/_i_0_rkd_16 |  SLICEL  | R5C140L  |
+| led_wf_inst1/n_35             |  SLICEL  | R4C139L  |
++-------------------------------+----------+----------+
