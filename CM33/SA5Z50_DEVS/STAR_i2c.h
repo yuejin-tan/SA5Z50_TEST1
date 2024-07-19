@@ -59,7 +59,7 @@ typedef struct
 
 //usual:   standard 100K;   fast 400k:    high  3.4M  
 //most devices do not support high speeds 0x00e00190
-#define I2C_Speed_Standard          			((uint32_t)0x00e00190)
+#define I2C_Speed_Standard          ((uint32_t)0x00e00190)
 #define I2C_Speed_Fast 							((uint32_t)0x00708069)
 #define I2C_Speed_High 							((uint32_t)0x00220012)
 #define IS_I2C_ClockSpeed_STATE(STATE) (((STATE) == I2C_Speed_Standard) || \

@@ -1,0 +1,5871 @@
+{
+"modules": [
+{
+"module": {
+"name": "fpga_cm33",
+"file": "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/fpga_cm33.v",
+"level": "1",
+"first_line": "1",
+"last_line": "494",
+"inst_mod": [
+{
+"mod_name": "PLL_FREQ",
+"mod_property": "real_module",
+"inst_name": "PLL_inst1",
+"first_line": "29",
+"last_line": "36"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[0].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[1].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[2].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[3].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[4].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[5].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[6].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[7].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[8].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[9].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[10].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[11].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[12].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[13].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[14].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[15].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[16].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[17].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[18].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[19].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[20].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[21].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[22].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[23].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[24].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[25].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[26].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[27].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[28].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[29].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[30].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "setb[31].inst_xsIOBB_GPIO",
+"first_line": "56",
+"last_line": "61"
+},
+{
+"mod_name": "xsIOBB",
+"mod_property": "blackbox",
+"inst_name": "inst_xsIOBB_DBG",
+"first_line": "69",
+"last_line": "74"
+},
+{
+"mod_name": "led_wf",
+"mod_property": "real_module",
+"inst_name": "led_wf_inst1",
+"first_line": "77",
+"last_line": "81"
+},
+{
+"mod_name": "AHBlite_Interconnect",
+"mod_property": "real_module",
+"inst_name": "Interconncet",
+"first_line": "154",
+"last_line": "230"
+},
+{
+"mod_name": "ahb_seg7x8",
+"mod_property": "real_module",
+"inst_name": "seg_inst",
+"first_line": "233",
+"last_line": "252"
+},
+{
+"mod_name": "ahb_uart",
+"mod_property": "real_module",
+"inst_name": "ahb_uart1",
+"first_line": "257",
+"last_line": "275"
+},
+{
+"mod_name": "xsCM33",
+"mod_property": "blackbox",
+"inst_name": "CM33_inst",
+"first_line": "284",
+"last_line": "451"
+}
+]
+},
+"always": [
+{
+"start_line": "41",
+"end_line": "45"
+}
+],
+"params": [
+],
+"params_override": [
+{
+"name": "CM33_inst.CORECLK_SEL",
+"first_line": "454",
+"last_line": "454",
+"first_col": "12",
+"last_col": "32"
+},
+{
+"name": "CM33_inst.MTXCLK_SEL",
+"first_line": "455",
+"last_line": "455",
+"first_col": "12",
+"last_col": "31"
+},
+{
+"name": "CM33_inst.CORECLK_EN",
+"first_line": "456",
+"last_line": "456",
+"first_col": "12",
+"last_col": "31"
+},
+{
+"name": "CM33_inst.CORE_SET",
+"first_line": "457",
+"last_line": "457",
+"first_col": "12",
+"last_col": "29"
+},
+{
+"name": "CM33_inst.PCLK_DIV",
+"first_line": "458",
+"last_line": "458",
+"first_col": "12",
+"last_col": "29"
+},
+{
+"name": "CM33_inst.RSTN_ENABLE",
+"first_line": "459",
+"last_line": "459",
+"first_col": "12",
+"last_col": "32"
+},
+{
+"name": "CM33_inst.INITQSPIADDRSEL",
+"first_line": "462",
+"last_line": "462",
+"first_col": "12",
+"last_col": "36"
+},
+{
+"name": "CM33_inst.INITQSPISCKMODE",
+"first_line": "463",
+"last_line": "463",
+"first_col": "12",
+"last_col": "36"
+},
+{
+"name": "CM33_inst.INITQSPIXPRALBSIZE",
+"first_line": "464",
+"last_line": "464",
+"first_col": "12",
+"last_col": "39"
+},
+{
+"name": "CM33_inst.INITQSPIXPRALTBYTES",
+"first_line": "465",
+"last_line": "465",
+"first_col": "12",
+"last_col": "40"
+},
+{
+"name": "CM33_inst.INITQSPIXPRDDRMODE",
+"first_line": "466",
+"last_line": "466",
+"first_col": "12",
+"last_col": "39"
+},
+{
+"name": "CM33_inst.INITQSPIXPREN",
+"first_line": "467",
+"last_line": "467",
+"first_col": "12",
+"last_col": "34"
+},
+{
+"name": "CM33_inst.INITQSPIXPRNUMDC",
+"first_line": "468",
+"last_line": "468",
+"first_col": "12",
+"last_col": "37"
+},
+{
+"name": "CM33_inst.INITQSPIXPRXFERMODE",
+"first_line": "469",
+"last_line": "469",
+"first_col": "12",
+"last_col": "40"
+},
+{
+"name": "CM33_inst.CFGNOCDECP",
+"first_line": "472",
+"last_line": "472",
+"first_col": "12",
+"last_col": "31"
+},
+{
+"name": "CM33_inst.SSTCLKEN",
+"first_line": "473",
+"last_line": "473",
+"first_col": "12",
+"last_col": "29"
+},
+{
+"name": "CM33_inst.NSTCLKEN",
+"first_line": "474",
+"last_line": "474",
+"first_col": "12",
+"last_col": "29"
+},
+{
+"name": "CM33_inst.SSTCALIB",
+"first_line": "475",
+"last_line": "475",
+"first_col": "12",
+"last_col": "29"
+},
+{
+"name": "CM33_inst.NSSTCALIB",
+"first_line": "476",
+"last_line": "476",
+"first_col": "12",
+"last_col": "30"
+},
+{
+"name": "CM33_inst.MPUSDISABLE",
+"first_line": "477",
+"last_line": "477",
+"first_col": "12",
+"last_col": "32"
+},
+{
+"name": "CM33_inst.MPUNSDISABLE",
+"first_line": "478",
+"last_line": "478",
+"first_col": "12",
+"last_col": "33"
+},
+{
+"name": "CM33_inst.SAUDISABLE",
+"first_line": "479",
+"last_line": "479",
+"first_col": "12",
+"last_col": "31"
+},
+{
+"name": "CM33_inst.INITSVTOR",
+"first_line": "480",
+"last_line": "480",
+"first_col": "12",
+"last_col": "30"
+},
+{
+"name": "CM33_inst.INITNSVTOR",
+"first_line": "481",
+"last_line": "481",
+"first_col": "12",
+"last_col": "31"
+},
+{
+"name": "CM33_inst.INITTCMEN",
+"first_line": "482",
+"last_line": "482",
+"first_col": "12",
+"last_col": "30"
+},
+{
+"name": "CM33_inst.INITL1RSTDIS",
+"first_line": "483",
+"last_line": "483",
+"first_col": "12",
+"last_col": "33"
+},
+{
+"name": "CM33_inst.LOCKITGU",
+"first_line": "484",
+"last_line": "484",
+"first_col": "12",
+"last_col": "29"
+},
+{
+"name": "CM33_inst.LOCKDTGU",
+"first_line": "485",
+"last_line": "485",
+"first_col": "12",
+"last_col": "29"
+},
+{
+"name": "CM33_inst.LOCKTCM",
+"first_line": "486",
+"last_line": "486",
+"first_col": "12",
+"last_col": "28"
+},
+{
+"name": "CM33_inst.CFGITCMSZ",
+"first_line": "487",
+"last_line": "487",
+"first_col": "12",
+"last_col": "30"
+},
+{
+"name": "CM33_inst.CFGDTCMSZ",
+"first_line": "488",
+"last_line": "488",
+"first_col": "12",
+"last_col": "30"
+},
+{
+"name": "CM33_inst.CFGMEMALIAS",
+"first_line": "489",
+"last_line": "489",
+"first_col": "12",
+"last_col": "32"
+},
+{
+"name": "CM33_inst.CFGFMADDR",
+"first_line": "490",
+"last_line": "490",
+"first_col": "12",
+"last_col": "30"
+},
+{
+"name": "CM33_inst.CPU0ECOREVNUM",
+"first_line": "491",
+"last_line": "491",
+"first_col": "12",
+"last_col": "34"
+}
+],
+"signals": [
+{
+"type": "Port",
+"name": "RST_N_PIN",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "3",
+"col_num": "16"
+},
+{
+"row_num": "3",
+"col_num": "16"
+},
+{
+"row_num": "43",
+"col_num": "28"
+}
+]
+},
+{
+"type": "Port",
+"name": "CLK_IN_25M_PIN",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "6",
+"col_num": "16"
+},
+{
+"row_num": "6",
+"col_num": "16"
+},
+{
+"row_num": "30",
+"col_num": "20"
+}
+]
+},
+{
+"type": "Port",
+"name": "GPIO_PIN",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "9",
+"col_num": "23"
+},
+{
+"row_num": "9",
+"col_num": "23"
+},
+{
+"row_num": "278",
+"col_num": "10"
+}
+]
+},
+{
+"type": "Port",
+"name": "seg7_SH_CP",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "12",
+"col_num": "17"
+},
+{
+"row_num": "12",
+"col_num": "17"
+},
+{
+"row_num": "249",
+"col_num": "25"
+}
+]
+},
+{
+"type": "Port",
+"name": "seg7_ST_CP",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "13",
+"col_num": "17"
+},
+{
+"row_num": "13",
+"col_num": "17"
+},
+{
+"row_num": "250",
+"col_num": "25"
+}
+]
+},
+{
+"type": "Port",
+"name": "seg7_DS",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "14",
+"col_num": "17"
+},
+{
+"row_num": "14",
+"col_num": "17"
+},
+{
+"row_num": "251",
+"col_num": "25"
+}
+]
+},
+{
+"type": "Port",
+"name": "LED01_PIN",
+"range": [
+{
+"start": "1",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "17",
+"col_num": "23"
+},
+{
+"row_num": "17",
+"col_num": "23"
+},
+{
+"row_num": "80",
+"col_num": "21"
+}
+]
+},
+{
+"type": "Port",
+"name": "SW_CLK_PIN",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "20",
+"col_num": "16"
+},
+{
+"row_num": "20",
+"col_num": "16"
+},
+{
+"row_num": "330",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Port",
+"name": "SWD_IO_PIN",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "21",
+"col_num": "16"
+},
+{
+"row_num": "21",
+"col_num": "16"
+},
+{
+"row_num": "73",
+"col_num": "16"
+}
+]
+},
+{
+"type": "Net",
+"name": "PLL1_LOCK",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "25",
+"col_num": "8"
+},
+{
+"row_num": "35",
+"col_num": "20"
+},
+{
+"row_num": "43",
+"col_num": "40"
+}
+]
+},
+{
+"type": "Net",
+"name": "MTX_CLK",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "26",
+"col_num": "8"
+},
+{
+"row_num": "286",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "CLK_CM33",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "27",
+"col_num": "8"
+},
+{
+"row_num": "32",
+"col_num": "21"
+},
+{
+"row_num": "155",
+"col_num": "33"
+},
+{
+"row_num": "234",
+"col_num": "24"
+},
+{
+"row_num": "290",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "CLK_FPGA_SYS1",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "28",
+"col_num": "8"
+},
+{
+"row_num": "33",
+"col_num": "22"
+},
+{
+"row_num": "41",
+"col_num": "20"
+},
+{
+"row_num": "78",
+"col_num": "17"
+}
+]
+},
+{
+"type": "Reg",
+"name": "CM33SYS_RSTN_buff",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "39",
+"col_num": "7"
+},
+{
+"row_num": "43",
+"col_num": "7"
+},
+{
+"row_num": "44",
+"col_num": "23"
+}
+]
+},
+{
+"type": "Reg",
+"name": "CM33SYS_RSTN",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "40",
+"col_num": "7"
+},
+{
+"row_num": "44",
+"col_num": "7"
+},
+{
+"row_num": "79",
+"col_num": "17"
+},
+{
+"row_num": "156",
+"col_num": "36"
+},
+{
+"row_num": "235",
+"col_num": "27"
+},
+{
+"row_num": "303",
+"col_num": "33"
+},
+{
+"row_num": "304",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "GPIO_OUT",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "48",
+"col_num": "15"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "57",
+"col_num": "22"
+},
+{
+"row_num": "300",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "GPIO_OUT_EN",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "49",
+"col_num": "15"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "58",
+"col_num": "23"
+},
+{
+"row_num": "301",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "GPIO_IN",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "50",
+"col_num": "15"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "59",
+"col_num": "22"
+},
+{
+"row_num": "299",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "GPIO_TEMP",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "51",
+"col_num": "15"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "60",
+"col_num": "22"
+},
+{
+"row_num": "278",
+"col_num": "22"
+},
+{
+"row_num": "279",
+"col_num": "44"
+}
+]
+},
+{
+"type": "Net",
+"name": "SWD_IO_OUT_EN",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "66",
+"col_num": "8"
+},
+{
+"row_num": "71",
+"col_num": "16"
+},
+{
+"row_num": "343",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "SWD_IO_OUT",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "67",
+"col_num": "8"
+},
+{
+"row_num": "70",
+"col_num": "16"
+},
+{
+"row_num": "342",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "SWD_IO_IN",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "68",
+"col_num": "8"
+},
+{
+"row_num": "72",
+"col_num": "16"
+},
+{
+"row_num": "341",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HADDR",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "84",
+"col_num": "17"
+},
+{
+"row_num": "159",
+"col_num": "34"
+},
+{
+"row_num": "410",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HBURST",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "85",
+"col_num": "16"
+},
+{
+"row_num": "162",
+"col_num": "35"
+},
+{
+"row_num": "411",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HMASTLOCK",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "86",
+"col_num": "8"
+},
+{
+"row_num": "164",
+"col_num": "38"
+},
+{
+"row_num": "412",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HPROT",
+"range": [
+{
+"start": "3",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "87",
+"col_num": "16"
+},
+{
+"row_num": "163",
+"col_num": "34"
+},
+{
+"row_num": "413",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HRDATA",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "88",
+"col_num": "17"
+},
+{
+"row_num": "167",
+"col_num": "35"
+},
+{
+"row_num": "414",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HREADYMUX",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "89",
+"col_num": "8"
+},
+{
+"row_num": "168",
+"col_num": "35"
+},
+{
+"row_num": "415",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HREADYOUT",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "90",
+"col_num": "8"
+},
+{
+"row_num": "416",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HRESP",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "91",
+"col_num": "8"
+},
+{
+"row_num": "169",
+"col_num": "34"
+},
+{
+"row_num": "417",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HSEL",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "92",
+"col_num": "8"
+},
+{
+"row_num": "418",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HSIZE",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "93",
+"col_num": "16"
+},
+{
+"row_num": "161",
+"col_num": "34"
+},
+{
+"row_num": "419",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HTRANS",
+"range": [
+{
+"start": "1",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "94",
+"col_num": "16"
+},
+{
+"row_num": "160",
+"col_num": "35"
+},
+{
+"row_num": "420",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HWDATA",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "95",
+"col_num": "17"
+},
+{
+"row_num": "166",
+"col_num": "35"
+},
+{
+"row_num": "421",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "TARGEXP1HWRITE",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "96",
+"col_num": "8"
+},
+{
+"row_num": "165",
+"col_num": "35"
+},
+{
+"row_num": "422",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Net",
+"name": "HSEL_P0",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "98",
+"col_num": "8"
+},
+{
+"row_num": "172",
+"col_num": "36"
+}
+]
+},
+{
+"type": "Net",
+"name": "HADDR_P0",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "99",
+"col_num": "16"
+},
+{
+"row_num": "173",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HBURST_P0",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "100",
+"col_num": "15"
+},
+{
+"row_num": "174",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HMASTLOCK_P0",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "101",
+"col_num": "8"
+},
+{
+"row_num": "175",
+"col_num": "41"
+}
+]
+},
+{
+"type": "Net",
+"name": "HPROT_P0",
+"range": [
+{
+"start": "3",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "102",
+"col_num": "15"
+},
+{
+"row_num": "176",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HSIZE_P0",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "103",
+"col_num": "15"
+},
+{
+"row_num": "177",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HTRANS_P0",
+"range": [
+{
+"start": "1",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "104",
+"col_num": "15"
+},
+{
+"row_num": "178",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HWDATA_P0",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "105",
+"col_num": "16"
+},
+{
+"row_num": "179",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HWRITE_P0",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "106",
+"col_num": "8"
+},
+{
+"row_num": "180",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HREADY_P0",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "107",
+"col_num": "8"
+},
+{
+"row_num": "181",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HREADYOUT_P0",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "108",
+"col_num": "8"
+},
+{
+"row_num": "182",
+"col_num": "41"
+}
+]
+},
+{
+"type": "Net",
+"name": "HRDATA_P0",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "109",
+"col_num": "16"
+},
+{
+"row_num": "183",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HRESP_P0",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "110",
+"col_num": "8"
+},
+{
+"row_num": "184",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HSEL_P1",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "112",
+"col_num": "8"
+},
+{
+"row_num": "187",
+"col_num": "36"
+}
+]
+},
+{
+"type": "Net",
+"name": "HADDR_P1",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "113",
+"col_num": "16"
+},
+{
+"row_num": "188",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HBURST_P1",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "114",
+"col_num": "15"
+},
+{
+"row_num": "189",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HMASTLOCK_P1",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "115",
+"col_num": "8"
+},
+{
+"row_num": "190",
+"col_num": "41"
+}
+]
+},
+{
+"type": "Net",
+"name": "HPROT_P1",
+"range": [
+{
+"start": "3",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "116",
+"col_num": "15"
+},
+{
+"row_num": "191",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HSIZE_P1",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "117",
+"col_num": "15"
+},
+{
+"row_num": "192",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HTRANS_P1",
+"range": [
+{
+"start": "1",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "118",
+"col_num": "15"
+},
+{
+"row_num": "193",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HWDATA_P1",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "119",
+"col_num": "16"
+},
+{
+"row_num": "194",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HWRITE_P1",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "120",
+"col_num": "8"
+},
+{
+"row_num": "195",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HREADY_P1",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "121",
+"col_num": "8"
+},
+{
+"row_num": "196",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HREADYOUT_P1",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "122",
+"col_num": "8"
+},
+{
+"row_num": "197",
+"col_num": "41"
+}
+]
+},
+{
+"type": "Net",
+"name": "HRDATA_P1",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "123",
+"col_num": "16"
+},
+{
+"row_num": "198",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HRESP_P1",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "124",
+"col_num": "8"
+},
+{
+"row_num": "199",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HSEL_P2",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "126",
+"col_num": "8"
+},
+{
+"row_num": "202",
+"col_num": "36"
+},
+{
+"row_num": "261",
+"col_num": "22"
+}
+]
+},
+{
+"type": "Net",
+"name": "HADDR_P2",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "127",
+"col_num": "16"
+},
+{
+"row_num": "203",
+"col_num": "37"
+},
+{
+"row_num": "262",
+"col_num": "23"
+}
+]
+},
+{
+"type": "Net",
+"name": "HBURST_P2",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "128",
+"col_num": "15"
+},
+{
+"row_num": "204",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HMASTLOCK_P2",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "129",
+"col_num": "8"
+},
+{
+"row_num": "205",
+"col_num": "41"
+}
+]
+},
+{
+"type": "Net",
+"name": "HPROT_P2",
+"range": [
+{
+"start": "3",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "130",
+"col_num": "15"
+},
+{
+"row_num": "206",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HSIZE_P2",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "131",
+"col_num": "15"
+},
+{
+"row_num": "207",
+"col_num": "37"
+},
+{
+"row_num": "264",
+"col_num": "23"
+}
+]
+},
+{
+"type": "Net",
+"name": "HTRANS_P2",
+"range": [
+{
+"start": "1",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "132",
+"col_num": "15"
+},
+{
+"row_num": "208",
+"col_num": "38"
+},
+{
+"row_num": "263",
+"col_num": "24"
+}
+]
+},
+{
+"type": "Net",
+"name": "HWDATA_P2",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "133",
+"col_num": "16"
+},
+{
+"row_num": "209",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HWRITE_P2",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "134",
+"col_num": "8"
+},
+{
+"row_num": "210",
+"col_num": "38"
+},
+{
+"row_num": "265",
+"col_num": "24"
+}
+]
+},
+{
+"type": "Net",
+"name": "HREADY_P2",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "135",
+"col_num": "8"
+},
+{
+"row_num": "211",
+"col_num": "38"
+},
+{
+"row_num": "267",
+"col_num": "24"
+}
+]
+},
+{
+"type": "Net",
+"name": "HREADYOUT_P2",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "136",
+"col_num": "8"
+},
+{
+"row_num": "212",
+"col_num": "41"
+},
+{
+"row_num": "269",
+"col_num": "27"
+}
+]
+},
+{
+"type": "Net",
+"name": "HRDATA_P2",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "137",
+"col_num": "16"
+},
+{
+"row_num": "213",
+"col_num": "38"
+},
+{
+"row_num": "266",
+"col_num": "24"
+},
+{
+"row_num": "270",
+"col_num": "24"
+}
+]
+},
+{
+"type": "Net",
+"name": "HRESP_P2",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "138",
+"col_num": "8"
+},
+{
+"row_num": "214",
+"col_num": "37"
+},
+{
+"row_num": "271",
+"col_num": "23"
+}
+]
+},
+{
+"type": "Net",
+"name": "HSEL_P3",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "140",
+"col_num": "8"
+},
+{
+"row_num": "217",
+"col_num": "36"
+},
+{
+"row_num": "237",
+"col_num": "24"
+}
+]
+},
+{
+"type": "Net",
+"name": "HADDR_P3",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "141",
+"col_num": "16"
+},
+{
+"row_num": "218",
+"col_num": "37"
+},
+{
+"row_num": "238",
+"col_num": "25"
+}
+]
+},
+{
+"type": "Net",
+"name": "HBURST_P3",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "142",
+"col_num": "15"
+},
+{
+"row_num": "219",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HMASTLOCK_P3",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "143",
+"col_num": "8"
+},
+{
+"row_num": "220",
+"col_num": "41"
+}
+]
+},
+{
+"type": "Net",
+"name": "HPROT_P3",
+"range": [
+{
+"start": "3",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "144",
+"col_num": "15"
+},
+{
+"row_num": "221",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "HSIZE_P3",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "145",
+"col_num": "15"
+},
+{
+"row_num": "222",
+"col_num": "37"
+},
+{
+"row_num": "240",
+"col_num": "25"
+}
+]
+},
+{
+"type": "Net",
+"name": "HTRANS_P3",
+"range": [
+{
+"start": "1",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "146",
+"col_num": "15"
+},
+{
+"row_num": "223",
+"col_num": "38"
+},
+{
+"row_num": "239",
+"col_num": "26"
+}
+]
+},
+{
+"type": "Net",
+"name": "HWDATA_P3",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "147",
+"col_num": "16"
+},
+{
+"row_num": "224",
+"col_num": "38"
+}
+]
+},
+{
+"type": "Net",
+"name": "HWRITE_P3",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "148",
+"col_num": "8"
+},
+{
+"row_num": "225",
+"col_num": "38"
+},
+{
+"row_num": "241",
+"col_num": "26"
+}
+]
+},
+{
+"type": "Net",
+"name": "HREADY_P3",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "149",
+"col_num": "8"
+},
+{
+"row_num": "226",
+"col_num": "38"
+},
+{
+"row_num": "243",
+"col_num": "26"
+}
+]
+},
+{
+"type": "Net",
+"name": "HREADYOUT_P3",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "150",
+"col_num": "8"
+},
+{
+"row_num": "227",
+"col_num": "41"
+},
+{
+"row_num": "245",
+"col_num": "29"
+}
+]
+},
+{
+"type": "Net",
+"name": "HRDATA_P3",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "151",
+"col_num": "16"
+},
+{
+"row_num": "228",
+"col_num": "38"
+},
+{
+"row_num": "242",
+"col_num": "26"
+},
+{
+"row_num": "246",
+"col_num": "26"
+}
+]
+},
+{
+"type": "Net",
+"name": "HRESP_P3",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "152",
+"col_num": "8"
+},
+{
+"row_num": "229",
+"col_num": "37"
+},
+{
+"row_num": "247",
+"col_num": "25"
+}
+]
+},
+{
+"type": "Net",
+"name": "ahb_uart_tx",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "255",
+"col_num": "8"
+},
+{
+"row_num": "273",
+"col_num": "23"
+},
+{
+"row_num": "279",
+"col_num": "20"
+}
+]
+},
+{
+"type": "Net",
+"name": "ahb_uart_rx",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "256",
+"col_num": "8"
+},
+{
+"row_num": "274",
+"col_num": "22"
+},
+{
+"row_num": "279",
+"col_num": "32"
+}
+]
+},
+{
+"type": "Net",
+"name": "clk",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "258",
+"col_num": "22"
+},
+{
+"row_num": "258",
+"col_num": "22"
+}
+]
+},
+{
+"type": "Net",
+"name": "cpuresetn",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "259",
+"col_num": "25"
+},
+{
+"row_num": "259",
+"col_num": "25"
+}
+]
+},
+{
+"type": "Net",
+"name": "CM33_INT_TRIG",
+"range": [
+{
+"start": "15",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "282",
+"col_num": "16"
+},
+{
+"row_num": "282",
+"col_num": "16"
+},
+{
+"row_num": "297",
+"col_num": "33"
+}
+]
+}
+]
+},
+{
+"module": {
+"name": "PLL_FREQ",
+"file": "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ipcore_dir/PLL_FREQ/xsIP_PLL_FREQ.v",
+"level": "3",
+"first_line": "5",
+"last_line": "135",
+"inst_mod": [
+{
+"mod_name": "xsPLLSA",
+"mod_property": "blackbox",
+"inst_name": "PLLInst_0",
+"first_line": "90",
+"last_line": "103"
+}
+]
+},
+"always": [
+],
+"params": [
+],
+"params_override": [
+{
+"name": "PLLInst_0.CLKO5_SEL",
+"first_line": "34",
+"last_line": "34",
+"first_col": "14",
+"last_col": "32"
+},
+{
+"name": "PLLInst_0.CLKOPD_DLY",
+"first_line": "35",
+"last_line": "35",
+"first_col": "14",
+"last_col": "33"
+},
+{
+"name": "PLLInst_0.DDRST_ENA",
+"first_line": "36",
+"last_line": "36",
+"first_col": "14",
+"last_col": "32"
+},
+{
+"name": "PLLInst_0.DCRST_ENA",
+"first_line": "37",
+"last_line": "37",
+"first_col": "14",
+"last_col": "32"
+},
+{
+"name": "PLLInst_0.MRST_ENA",
+"first_line": "38",
+"last_line": "38",
+"first_col": "14",
+"last_col": "31"
+},
+{
+"name": "PLLInst_0.PLLRST_ENA",
+"first_line": "39",
+"last_line": "39",
+"first_col": "14",
+"last_col": "33"
+},
+{
+"name": "PLLInst_0.INTFB_WAKE",
+"first_line": "40",
+"last_line": "40",
+"first_col": "14",
+"last_col": "33"
+},
+{
+"name": "PLLInst_0.STDBY_ENABLE",
+"first_line": "41",
+"last_line": "41",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.DPHASE_SOURCE",
+"first_line": "42",
+"last_line": "42",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.PLL_USE_WB",
+"first_line": "43",
+"last_line": "43",
+"first_col": "14",
+"last_col": "33"
+},
+{
+"name": "PLLInst_0.PLL_LOCK_MODE",
+"first_line": "44",
+"last_line": "44",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKOS_TRIM_DELAY",
+"first_line": "45",
+"last_line": "45",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.CLKOS_TRIM_POL",
+"first_line": "46",
+"last_line": "46",
+"first_col": "14",
+"last_col": "37"
+},
+{
+"name": "PLLInst_0.CLKOP_TRIM_DELAY",
+"first_line": "47",
+"last_line": "47",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.CLKOP_TRIM_POL",
+"first_line": "48",
+"last_line": "48",
+"first_col": "14",
+"last_col": "37"
+},
+{
+"name": "PLLInst_0.FRACN_DIV",
+"first_line": "49",
+"last_line": "49",
+"first_col": "14",
+"last_col": "32"
+},
+{
+"name": "PLLInst_0.FRACN_ENABLE",
+"first_line": "50",
+"last_line": "50",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.CLKO5_FPHASE",
+"first_line": "51",
+"last_line": "51",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.CLKO5_CPHASE",
+"first_line": "52",
+"last_line": "52",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.OUTDIVIDER_MUXE2",
+"first_line": "53",
+"last_line": "53",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.VCO_BYPASS_E0",
+"first_line": "55",
+"last_line": "55",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKO5_ENABLE",
+"first_line": "56",
+"last_line": "56",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.CLKO5_DIV",
+"first_line": "57",
+"last_line": "57",
+"first_col": "14",
+"last_col": "32"
+},
+{
+"name": "PLLInst_0.CLKOS3_FPHASE",
+"first_line": "58",
+"last_line": "58",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKOS3_CPHASE",
+"first_line": "59",
+"last_line": "59",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKOS2_FPHASE",
+"first_line": "60",
+"last_line": "60",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKOS2_CPHASE",
+"first_line": "61",
+"last_line": "61",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKOS_FPHASE",
+"first_line": "62",
+"last_line": "62",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.CLKOS_CPHASE",
+"first_line": "63",
+"last_line": "63",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.CLKOP_FPHASE",
+"first_line": "64",
+"last_line": "64",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.CLKOP_CPHASE",
+"first_line": "65",
+"last_line": "65",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.OUTDIVIDER_MUXD2",
+"first_line": "66",
+"last_line": "66",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.PREDIVIDER_MUXD1",
+"first_line": "67",
+"last_line": "67",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.VCO_BYPASS_D0",
+"first_line": "68",
+"last_line": "68",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKOS3_ENABLE",
+"first_line": "69",
+"last_line": "69",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.OUTDIVIDER_MUXC2",
+"first_line": "70",
+"last_line": "70",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.PREDIVIDER_MUXC1",
+"first_line": "71",
+"last_line": "71",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.VCO_BYPASS_C0",
+"first_line": "72",
+"last_line": "72",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKOS2_ENABLE",
+"first_line": "73",
+"last_line": "73",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.OUTDIVIDER_MUXB2",
+"first_line": "74",
+"last_line": "74",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.PREDIVIDER_MUXB1",
+"first_line": "75",
+"last_line": "75",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.VCO_BYPASS_B0",
+"first_line": "76",
+"last_line": "76",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKOS_ENABLE",
+"first_line": "77",
+"last_line": "77",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.OUTDIVIDER_MUXA2",
+"first_line": "78",
+"last_line": "78",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.PREDIVIDER_MUXA1",
+"first_line": "79",
+"last_line": "79",
+"first_col": "14",
+"last_col": "39"
+},
+{
+"name": "PLLInst_0.VCO_BYPASS_A0",
+"first_line": "80",
+"last_line": "80",
+"first_col": "14",
+"last_col": "36"
+},
+{
+"name": "PLLInst_0.CLKOP_ENABLE",
+"first_line": "81",
+"last_line": "81",
+"first_col": "14",
+"last_col": "35"
+},
+{
+"name": "PLLInst_0.CLKOS3_DIV",
+"first_line": "82",
+"last_line": "82",
+"first_col": "14",
+"last_col": "33"
+},
+{
+"name": "PLLInst_0.CLKOS2_DIV",
+"first_line": "83",
+"last_line": "83",
+"first_col": "14",
+"last_col": "33"
+},
+{
+"name": "PLLInst_0.CLKOS_DIV",
+"first_line": "84",
+"last_line": "84",
+"first_col": "14",
+"last_col": "32"
+},
+{
+"name": "PLLInst_0.CLKOP_DIV",
+"first_line": "85",
+"last_line": "85",
+"first_col": "14",
+"last_col": "32"
+},
+{
+"name": "PLLInst_0.CLKFB_DIV",
+"first_line": "86",
+"last_line": "86",
+"first_col": "14",
+"last_col": "32"
+},
+{
+"name": "PLLInst_0.CLKI_DIV",
+"first_line": "87",
+"last_line": "87",
+"first_col": "14",
+"last_col": "31"
+},
+{
+"name": "PLLInst_0.FEEDBK_PATH",
+"first_line": "88",
+"last_line": "88",
+"first_col": "14",
+"last_col": "34"
+},
+{
+"name": "PLLInst_0.EN_PHI",
+"first_line": "89",
+"last_line": "89",
+"first_col": "14",
+"last_col": "29"
+}
+],
+"signals": [
+{
+"type": "Port",
+"name": "CLKI",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "5",
+"col_num": "18"
+},
+{
+"row_num": "6",
+"col_num": "16"
+},
+{
+"row_num": "32",
+"col_num": "21"
+}
+]
+},
+{
+"type": "Port",
+"name": "CLKOP",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "5",
+"col_num": "24"
+},
+{
+"row_num": "7",
+"col_num": "17"
+},
+{
+"row_num": "116",
+"col_num": "12"
+}
+]
+},
+{
+"type": "Port",
+"name": "CLKOS",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "5",
+"col_num": "31"
+},
+{
+"row_num": "8",
+"col_num": "17"
+},
+{
+"row_num": "115",
+"col_num": "12"
+}
+]
+},
+{
+"type": "Port",
+"name": "CLKOS2",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "5",
+"col_num": "38"
+},
+{
+"row_num": "9",
+"col_num": "17"
+},
+{
+"row_num": "114",
+"col_num": "12"
+}
+]
+},
+{
+"type": "Port",
+"name": "CLKOS3",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "5",
+"col_num": "46"
+},
+{
+"row_num": "10",
+"col_num": "17"
+},
+{
+"row_num": "113",
+"col_num": "12"
+}
+]
+},
+{
+"type": "Port",
+"name": "LOCK",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "5",
+"col_num": "54"
+},
+{
+"row_num": "11",
+"col_num": "17"
+},
+{
+"row_num": "101",
+"col_num": "34"
+}
+]
+},
+{
+"type": "Net",
+"name": "RST",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "13",
+"col_num": "13"
+},
+{
+"row_num": "93",
+"col_num": "14"
+}
+]
+},
+{
+"type": "Net",
+"name": "RESETM",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "14",
+"col_num": "13"
+},
+{
+"row_num": "93",
+"col_num": "28"
+}
+]
+},
+{
+"type": "Net",
+"name": "RESETC",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "15",
+"col_num": "13"
+},
+{
+"row_num": "93",
+"col_num": "45"
+}
+]
+},
+{
+"type": "Net",
+"name": "RESETD",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "16",
+"col_num": "13"
+},
+{
+"row_num": "93",
+"col_num": "62"
+}
+]
+},
+{
+"type": "Net",
+"name": "STDBY",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "17",
+"col_num": "13"
+},
+{
+"row_num": "92",
+"col_num": "37"
+}
+]
+},
+{
+"type": "Net",
+"name": "PHASESEL",
+"range": [
+{
+"start": "1",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "18",
+"col_num": "19"
+},
+{
+"row_num": "90",
+"col_num": "70"
+},
+{
+"row_num": "91",
+"col_num": "20"
+}
+]
+},
+{
+"type": "Net",
+"name": "PHASEDIR",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "19",
+"col_num": "13"
+},
+{
+"row_num": "91",
+"col_num": "44"
+}
+]
+},
+{
+"type": "Net",
+"name": "PHASESTEP",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "20",
+"col_num": "13"
+},
+{
+"row_num": "91",
+"col_num": "66"
+}
+]
+},
+{
+"type": "Net",
+"name": "DPHSRC",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "21",
+"col_num": "10"
+},
+{
+"row_num": "102",
+"col_num": "17"
+}
+]
+},
+{
+"type": "Net",
+"name": "CLKO5_t",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "22",
+"col_num": "10"
+},
+{
+"row_num": "103",
+"col_num": "68"
+}
+]
+},
+{
+"type": "Net",
+"name": "CLKOS3_t",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "23",
+"col_num": "10"
+},
+{
+"row_num": "101",
+"col_num": "17"
+},
+{
+"row_num": "113",
+"col_num": "21"
+}
+]
+},
+{
+"type": "Net",
+"name": "CLKOS2_t",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "24",
+"col_num": "10"
+},
+{
+"row_num": "100",
+"col_num": "73"
+},
+{
+"row_num": "114",
+"col_num": "21"
+}
+]
+},
+{
+"type": "Net",
+"name": "CLKOP_t",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "25",
+"col_num": "10"
+},
+{
+"row_num": "100",
+"col_num": "38"
+},
+{
+"row_num": "116",
+"col_num": "20"
+}
+]
+},
+{
+"type": "Net",
+"name": "CLKOS_t",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "26",
+"col_num": "10"
+},
+{
+"row_num": "100",
+"col_num": "55"
+},
+{
+"row_num": "115",
+"col_num": "20"
+}
+]
+},
+{
+"type": "Net",
+"name": "ipgen_GND",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "28",
+"col_num": "13"
+},
+{
+"row_num": "92",
+"col_num": "18"
+},
+{
+"row_num": "92",
+"col_num": "58"
+},
+{
+"row_num": "94",
+"col_num": "18"
+},
+{
+"row_num": "94",
+"col_num": "39"
+},
+{
+"row_num": "94",
+"col_num": "61"
+},
+{
+"row_num": "95",
+"col_num": "19"
+},
+{
+"row_num": "95",
+"col_num": "39"
+},
+{
+"row_num": "95",
+"col_num": "59"
+},
+{
+"row_num": "95",
+"col_num": "79"
+},
+{
+"row_num": "96",
+"col_num": "16"
+},
+{
+"row_num": "96",
+"col_num": "38"
+},
+{
+"row_num": "96",
+"col_num": "60"
+},
+{
+"row_num": "96",
+"col_num": "82"
+},
+{
+"row_num": "97",
+"col_num": "19"
+},
+{
+"row_num": "97",
+"col_num": "41"
+},
+{
+"row_num": "97",
+"col_num": "63"
+},
+{
+"row_num": "98",
+"col_num": "19"
+},
+{
+"row_num": "98",
+"col_num": "41"
+},
+{
+"row_num": "98",
+"col_num": "63"
+},
+{
+"row_num": "99",
+"col_num": "19"
+},
+{
+"row_num": "99",
+"col_num": "41"
+},
+{
+"row_num": "99",
+"col_num": "63"
+},
+{
+"row_num": "100",
+"col_num": "19"
+}
+]
+},
+{
+"type": "Net",
+"name": "CLKINTFB_t",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "30",
+"col_num": "10"
+},
+{
+"row_num": "90",
+"col_num": "46"
+},
+{
+"row_num": "101",
+"col_num": "74"
+}
+]
+},
+{
+"type": "Net",
+"name": "CLKI_t",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "31",
+"col_num": "10"
+},
+{
+"row_num": "32",
+"col_num": "12"
+},
+{
+"row_num": "90",
+"col_num": "30"
+}
+]
+}
+]
+},
+{
+"module": {
+"name": "led_wf",
+"file": "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/led_wf.v",
+"level": "5",
+"first_line": "1",
+"last_line": "37",
+"inst_mod": [
+]
+},
+"always": [
+{
+"start_line": "15",
+"end_line": "35"
+}
+],
+"params": [
+{
+"name": " CLK_DIV",
+"value": "32'Sb00000001001100010010110011111111"
+},
+{
+"name": " LED_NUM",
+"value": "32'Sb00000000000000000000000000000010"
+},
+{
+"name": " INIT_STA",
+"value": "32'Sb00000000000000000000000000000001"
+}
+],
+"params_override": [
+],
+"signals": [
+{
+"type": "Port",
+"name": "clk",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "8",
+"col_num": "12"
+},
+{
+"row_num": "8",
+"col_num": "12"
+},
+{
+"row_num": "15",
+"col_num": "21"
+}
+]
+},
+{
+"type": "Port",
+"name": "rst",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "9",
+"col_num": "12"
+},
+{
+"row_num": "9",
+"col_num": "12"
+},
+{
+"row_num": "15",
+"col_num": "36"
+},
+{
+"row_num": "17",
+"col_num": "13"
+}
+]
+},
+{
+"type": "Port",
+"name": "led_sig",
+"range": [
+{
+"start": "1",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "10",
+"col_num": "35"
+},
+{
+"row_num": "10",
+"col_num": "35"
+},
+{
+"row_num": "20",
+"col_num": "11"
+},
+{
+"row_num": "27",
+"col_num": "15"
+},
+{
+"row_num": "27",
+"col_num": "28"
+},
+{
+"row_num": "27",
+"col_num": "42"
+}
+]
+},
+{
+"type": "Reg",
+"name": "cnt",
+"range": [
+{
+"start": "25",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "13",
+"col_num": "29"
+},
+{
+"row_num": "19",
+"col_num": "11"
+},
+{
+"row_num": "24",
+"col_num": "16"
+},
+{
+"row_num": "26",
+"col_num": "15"
+},
+{
+"row_num": "31",
+"col_num": "15"
+},
+{
+"row_num": "31",
+"col_num": "22"
+}
+]
+}
+]
+},
+{
+"module": {
+"name": "ahb_seg7x8",
+"file": "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ahb_seg7x8.v",
+"level": "6",
+"first_line": "1",
+"last_line": "417",
+"inst_mod": [
+]
+},
+"always": [
+{
+"start_line": "49",
+"end_line": "69"
+},
+{
+"start_line": "72",
+"end_line": "78"
+},
+{
+"start_line": "82",
+"end_line": "88"
+},
+{
+"start_line": "91",
+"end_line": "99"
+},
+{
+"start_line": "101",
+"end_line": "130"
+},
+{
+"start_line": "132",
+"end_line": "161"
+},
+{
+"start_line": "166",
+"end_line": "185"
+},
+{
+"start_line": "198",
+"end_line": "215"
+},
+{
+"start_line": "233",
+"end_line": "253"
+},
+{
+"start_line": "255",
+"end_line": "323"
+},
+{
+"start_line": "325",
+"end_line": "345"
+},
+{
+"start_line": "347",
+"end_line": "415"
+}
+],
+"params": [
+{
+"name": " HC595_DRV_CLK_DIV",
+"value": "32'Sb00000000000000000000000001100011"
+},
+{
+"name": " HC595_CLK_CNT_MAX",
+"value": "32'Sb00000000000000000000000000010000"
+},
+{
+"name": " SEG_NUM_CNT_MAX",
+"value": "32'Sb00000000000000000000000000000111"
+}
+],
+"params_override": [
+],
+"signals": [
+{
+"type": "Port",
+"name": "HCLK",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "7",
+"col_num": "17"
+},
+{
+"row_num": "7",
+"col_num": "17"
+},
+{
+"row_num": "72",
+"col_num": "19"
+},
+{
+"row_num": "82",
+"col_num": "19"
+},
+{
+"row_num": "91",
+"col_num": "19"
+},
+{
+"row_num": "101",
+"col_num": "19"
+},
+{
+"row_num": "132",
+"col_num": "19"
+},
+{
+"row_num": "198",
+"col_num": "21"
+}
+]
+},
+{
+"type": "Port",
+"name": "HRESETn",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "8",
+"col_num": "17"
+},
+{
+"row_num": "8",
+"col_num": "17"
+},
+{
+"row_num": "72",
+"col_num": "35"
+},
+{
+"row_num": "74",
+"col_num": "12"
+},
+{
+"row_num": "82",
+"col_num": "35"
+},
+{
+"row_num": "84",
+"col_num": "12"
+},
+{
+"row_num": "91",
+"col_num": "35"
+},
+{
+"row_num": "93",
+"col_num": "12"
+},
+{
+"row_num": "101",
+"col_num": "35"
+},
+{
+"row_num": "103",
+"col_num": "12"
+},
+{
+"row_num": "132",
+"col_num": "35"
+},
+{
+"row_num": "134",
+"col_num": "12"
+},
+{
+"row_num": "198",
+"col_num": "37"
+},
+{
+"row_num": "200",
+"col_num": "13"
+},
+{
+"row_num": "347",
+"col_num": "40"
+},
+{
+"row_num": "349",
+"col_num": "13"
+}
+]
+},
+{
+"type": "Port",
+"name": "HSEL",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "9",
+"col_num": "17"
+},
+{
+"row_num": "9",
+"col_num": "17"
+},
+{
+"row_num": "40",
+"col_num": "21"
+}
+]
+},
+{
+"type": "Port",
+"name": "HADDR",
+"range": [
+{
+"start": "15",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "10",
+"col_num": "26"
+},
+{
+"row_num": "10",
+"col_num": "26"
+},
+{
+"row_num": "51",
+"col_num": "14"
+},
+{
+"row_num": "87",
+"col_num": "22"
+}
+]
+},
+{
+"type": "Port",
+"name": "HTRANS",
+"range": [
+{
+"start": "1",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "11",
+"col_num": "25"
+},
+{
+"row_num": "11",
+"col_num": "25"
+},
+{
+"row_num": "40",
+"col_num": "28"
+}
+]
+},
+{
+"type": "Port",
+"name": "HSIZE",
+"range": [
+{
+"start": "2",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "12",
+"col_num": "25"
+},
+{
+"row_num": "12",
+"col_num": "25"
+},
+{
+"row_num": "51",
+"col_num": "27"
+}
+]
+},
+{
+"type": "Port",
+"name": "HWRITE",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "13",
+"col_num": "17"
+},
+{
+"row_num": "13",
+"col_num": "17"
+},
+{
+"row_num": "43",
+"col_num": "32"
+},
+{
+"row_num": "46",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Port",
+"name": "HWDATA",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "14",
+"col_num": "26"
+},
+{
+"row_num": "14",
+"col_num": "26"
+},
+{
+"row_num": "115",
+"col_num": "33"
+},
+{
+"row_num": "119",
+"col_num": "33"
+},
+{
+"row_num": "123",
+"col_num": "33"
+},
+{
+"row_num": "127",
+"col_num": "33"
+},
+{
+"row_num": "146",
+"col_num": "33"
+},
+{
+"row_num": "150",
+"col_num": "33"
+},
+{
+"row_num": "154",
+"col_num": "33"
+},
+{
+"row_num": "158",
+"col_num": "33"
+}
+]
+},
+{
+"type": "Port",
+"name": "HREADY",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "15",
+"col_num": "17"
+},
+{
+"row_num": "15",
+"col_num": "17"
+},
+{
+"row_num": "76",
+"col_num": "27"
+},
+{
+"row_num": "86",
+"col_num": "27"
+},
+{
+"row_num": "95",
+"col_num": "16"
+}
+]
+},
+{
+"type": "Port",
+"name": "HREADYOUT",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "17",
+"col_num": "18"
+},
+{
+"row_num": "17",
+"col_num": "18"
+},
+{
+"row_num": "37",
+"col_num": "10"
+}
+]
+},
+{
+"type": "Port",
+"name": "HRDATA",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "18",
+"col_num": "27"
+},
+{
+"row_num": "18",
+"col_num": "27"
+},
+{
+"row_num": "187",
+"col_num": "10"
+}
+]
+},
+{
+"type": "Port",
+"name": "HRESP",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "19",
+"col_num": "18"
+},
+{
+"row_num": "19",
+"col_num": "18"
+},
+{
+"row_num": "35",
+"col_num": "10"
+}
+]
+},
+{
+"type": "Port",
+"name": "SH_CLK",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "22",
+"col_num": "17"
+},
+{
+"row_num": "22",
+"col_num": "17"
+},
+{
+"row_num": "352",
+"col_num": "11"
+},
+{
+"row_num": "364",
+"col_num": "15"
+},
+{
+"row_num": "374",
+"col_num": "15"
+},
+{
+"row_num": "396",
+"col_num": "17"
+},
+{
+"row_num": "406",
+"col_num": "17"
+}
+]
+},
+{
+"type": "Port",
+"name": "LD_CLK",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "23",
+"col_num": "17"
+},
+{
+"row_num": "23",
+"col_num": "17"
+},
+{
+"row_num": "353",
+"col_num": "11"
+},
+{
+"row_num": "365",
+"col_num": "15"
+},
+{
+"row_num": "375",
+"col_num": "15"
+},
+{
+"row_num": "397",
+"col_num": "17"
+},
+{
+"row_num": "407",
+"col_num": "17"
+}
+]
+},
+{
+"type": "Port",
+"name": "HC_DAT",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "24",
+"col_num": "17"
+},
+{
+"row_num": "24",
+"col_num": "17"
+},
+{
+"row_num": "354",
+"col_num": "11"
+},
+{
+"row_num": "367",
+"col_num": "15"
+},
+{
+"row_num": "377",
+"col_num": "15"
+},
+{
+"row_num": "399",
+"col_num": "17"
+},
+{
+"row_num": "399",
+"col_num": "27"
+},
+{
+"row_num": "409",
+"col_num": "17"
+}
+]
+},
+{
+"type": "Reg",
+"name": "segx_reg",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "28",
+"col_num": "15"
+},
+{
+"row_num": "105",
+"col_num": "11"
+},
+{
+"row_num": "106",
+"col_num": "11"
+},
+{
+"row_num": "107",
+"col_num": "11"
+},
+{
+"row_num": "108",
+"col_num": "11"
+},
+{
+"row_num": "115",
+"col_num": "17"
+},
+{
+"row_num": "119",
+"col_num": "17"
+},
+{
+"row_num": "123",
+"col_num": "17"
+},
+{
+"row_num": "127",
+"col_num": "17"
+},
+{
+"row_num": "136",
+"col_num": "11"
+},
+{
+"row_num": "137",
+"col_num": "11"
+},
+{
+"row_num": "138",
+"col_num": "11"
+},
+{
+"row_num": "139",
+"col_num": "11"
+},
+{
+"row_num": "146",
+"col_num": "17"
+},
+{
+"row_num": "150",
+"col_num": "17"
+},
+{
+"row_num": "154",
+"col_num": "17"
+},
+{
+"row_num": "158",
+"col_num": "17"
+},
+{
+"row_num": "239",
+"col_num": "23"
+},
+{
+"row_num": "241",
+"col_num": "23"
+},
+{
+"row_num": "243",
+"col_num": "23"
+},
+{
+"row_num": "245",
+"col_num": "23"
+},
+{
+"row_num": "247",
+"col_num": "23"
+},
+{
+"row_num": "249",
+"col_num": "23"
+},
+{
+"row_num": "251",
+"col_num": "23"
+},
+{
+"row_num": "237",
+"col_num": "23"
+}
+]
+},
+{
+"type": "Net",
+"name": "trans_en",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "39",
+"col_num": "8"
+},
+{
+"row_num": "40",
+"col_num": "10"
+},
+{
+"row_num": "43",
+"col_num": "21"
+},
+{
+"row_num": "46",
+"col_num": "20"
+},
+{
+"row_num": "86",
+"col_num": "16"
+}
+]
+},
+{
+"type": "Net",
+"name": "write_en",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "42",
+"col_num": "8"
+},
+{
+"row_num": "43",
+"col_num": "10"
+},
+{
+"row_num": "76",
+"col_num": "16"
+},
+{
+"row_num": "96",
+"col_num": "22"
+}
+]
+},
+{
+"type": "Net",
+"name": "read_en",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "45",
+"col_num": "8"
+},
+{
+"row_num": "46",
+"col_num": "10"
+},
+{
+"row_num": "168",
+"col_num": "12"
+}
+]
+},
+{
+"type": "Reg",
+"name": "size_dec",
+"range": [
+{
+"start": "3",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "48",
+"col_num": "14"
+},
+{
+"row_num": "53",
+"col_num": "11"
+},
+{
+"row_num": "55",
+"col_num": "11"
+},
+{
+"row_num": "57",
+"col_num": "11"
+},
+{
+"row_num": "59",
+"col_num": "11"
+},
+{
+"row_num": "61",
+"col_num": "11"
+},
+{
+"row_num": "63",
+"col_num": "11"
+},
+{
+"row_num": "65",
+"col_num": "11"
+},
+{
+"row_num": "67",
+"col_num": "11"
+},
+{
+"row_num": "77",
+"col_num": "21"
+}
+]
+},
+{
+"type": "Reg",
+"name": "size_reg",
+"range": [
+{
+"start": "3",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "71",
+"col_num": "13"
+},
+{
+"row_num": "75",
+"col_num": "9"
+},
+{
+"row_num": "77",
+"col_num": "9"
+},
+{
+"row_num": "113",
+"col_num": "17"
+},
+{
+"row_num": "117",
+"col_num": "17"
+},
+{
+"row_num": "121",
+"col_num": "17"
+},
+{
+"row_num": "125",
+"col_num": "17"
+},
+{
+"row_num": "144",
+"col_num": "17"
+},
+{
+"row_num": "148",
+"col_num": "17"
+},
+{
+"row_num": "152",
+"col_num": "17"
+},
+{
+"row_num": "156",
+"col_num": "17"
+}
+]
+},
+{
+"type": "Reg",
+"name": "addr_reg",
+"range": [
+{
+"start": "15",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "81",
+"col_num": "15"
+},
+{
+"row_num": "85",
+"col_num": "9"
+},
+{
+"row_num": "87",
+"col_num": "9"
+},
+{
+"row_num": "111",
+"col_num": "14"
+},
+{
+"row_num": "142",
+"col_num": "14"
+},
+{
+"row_num": "170",
+"col_num": "18"
+}
+]
+},
+{
+"type": "Reg",
+"name": "wr_en_reg",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "90",
+"col_num": "7"
+},
+{
+"row_num": "94",
+"col_num": "9"
+},
+{
+"row_num": "96",
+"col_num": "9"
+},
+{
+"row_num": "98",
+"col_num": "9"
+},
+{
+"row_num": "111",
+"col_num": "45"
+},
+{
+"row_num": "142",
+"col_num": "45"
+}
+]
+},
+{
+"type": "Reg",
+"name": "HRDATA_reg",
+"range": [
+{
+"start": "31",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "163",
+"col_num": "16"
+},
+{
+"row_num": "173",
+"col_num": "15"
+},
+{
+"row_num": "176",
+"col_num": "15"
+},
+{
+"row_num": "178",
+"col_num": "15"
+},
+{
+"row_num": "183",
+"col_num": "11"
+},
+{
+"row_num": "187",
+"col_num": "19"
+}
+]
+},
+{
+"type": "Reg",
+"name": "clk_1M_cnt",
+"range": [
+{
+"start": "7",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "195",
+"col_num": "16"
+},
+{
+"row_num": "202",
+"col_num": "11"
+},
+{
+"row_num": "205",
+"col_num": "17"
+},
+{
+"row_num": "207",
+"col_num": "11"
+},
+{
+"row_num": "212",
+"col_num": "11"
+},
+{
+"row_num": "212",
+"col_num": "25"
+}
+]
+},
+{
+"type": "Reg",
+"name": "clk_DRV",
+"range": [
+{
+"start": "",
+"end": ""
+}
+],
+"positions": [
+{
+"row_num": "196",
+"col_num": "7"
+},
+{
+"row_num": "203",
+"col_num": "11"
+},
+{
+"row_num": "208",
+"col_num": "11"
+},
+{
+"row_num": "208",
+"col_num": "23"
+},
+{
+"row_num": "213",
+"col_num": "11"
+},
+{
+"row_num": "213",
+"col_num": "22"
+},
+{
+"row_num": "347",
+"col_num": "21"
+}
+]
+},
+{
+"type": "Reg",
+"name": "refresh_segnum_reg",
+"range": [
+{
+"start": "3",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "217",
+"col_num": "15"
+},
+{
+"row_num": "218",
+"col_num": "38"
+},
+{
+"row_num": "235",
+"col_num": "14"
+},
+{
+"row_num": "327",
+"col_num": "14"
+},
+{
+"row_num": "355",
+"col_num": "11"
+},
+{
+"row_num": "368",
+"col_num": "15"
+},
+{
+"row_num": "368",
+"col_num": "37"
+},
+{
+"row_num": "378",
+"col_num": "20"
+},
+{
+"row_num": "380",
+"col_num": "19"
+},
+{
+"row_num": "384",
+"col_num": "19"
+},
+{
+"row_num": "400",
+"col_num": "17"
+},
+{
+"row_num": "400",
+"col_num": "39"
+},
+{
+"row_num": "410",
+"col_num": "17"
+},
+{
+"row_num": "410",
+"col_num": "39"
+}
+]
+},
+{
+"type": "Net",
+"name": "refresh_segnum_add1",
+"range": [
+{
+"start": "3",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "218",
+"col_num": "16"
+},
+{
+"row_num": "218",
+"col_num": "16"
+},
+{
+"row_num": "384",
+"col_num": "41"
+}
+]
+},
+{
+"type": "Reg",
+"name": "HC595_CLK_CNT",
+"range": [
+{
+"start": "7",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "220",
+"col_num": "15"
+},
+{
+"row_num": "221",
+"col_num": "36"
+},
+{
+"row_num": "351",
+"col_num": "11"
+},
+{
+"row_num": "358",
+"col_num": "19"
+},
+{
+"row_num": "361",
+"col_num": "16"
+},
+{
+"row_num": "363",
+"col_num": "15"
+},
+{
+"row_num": "373",
+"col_num": "15"
+},
+{
+"row_num": "393",
+"col_num": "18"
+},
+{
+"row_num": "395",
+"col_num": "17"
+},
+{
+"row_num": "405",
+"col_num": "17"
+}
+]
+},
+{
+"type": "Net",
+"name": "HC595_CLK_CNT_add1",
+"range": [
+{
+"start": "7",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "221",
+"col_num": "15"
+},
+{
+"row_num": "221",
+"col_num": "15"
+},
+{
+"row_num": "373",
+"col_num": "32"
+},
+{
+"row_num": "395",
+"col_num": "34"
+},
+{
+"row_num": "405",
+"col_num": "34"
+}
+]
+},
+{
+"type": "Reg",
+"name": "seg_data_shifer_reg",
+"range": [
+{
+"start": "15",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "223",
+"col_num": "16"
+},
+{
+"row_num": "356",
+"col_num": "11"
+},
+{
+"row_num": "369",
+"col_num": "15"
+},
+{
+"row_num": "386",
+"col_num": "15"
+},
+{
+"row_num": "386",
+"col_num": "38"
+},
+{
+"row_num": "401",
+"col_num": "17"
+},
+{
+"row_num": "401",
+"col_num": "42"
+},
+{
+"row_num": "409",
+"col_num": "27"
+},
+{
+"row_num": "411",
+"col_num": "17"
+},
+{
+"row_num": "411",
+"col_num": "40"
+}
+]
+},
+{
+"type": "Reg",
+"name": "seg_2_dec",
+"range": [
+{
+"start": "7",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "228",
+"col_num": "16"
+},
+{
+"row_num": "239",
+"col_num": "11"
+},
+{
+"row_num": "241",
+"col_num": "11"
+},
+{
+"row_num": "243",
+"col_num": "11"
+},
+{
+"row_num": "245",
+"col_num": "11"
+},
+{
+"row_num": "247",
+"col_num": "11"
+},
+{
+"row_num": "249",
+"col_num": "11"
+},
+{
+"row_num": "251",
+"col_num": "11"
+},
+{
+"row_num": "237",
+"col_num": "11"
+},
+{
+"row_num": "257",
+"col_num": "14"
+}
+]
+},
+{
+"type": "Reg",
+"name": "seg_dec8bit",
+"range": [
+{
+"start": "7",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "229",
+"col_num": "16"
+},
+{
+"row_num": "261",
+"col_num": "11"
+},
+{
+"row_num": "263",
+"col_num": "11"
+},
+{
+"row_num": "265",
+"col_num": "11"
+},
+{
+"row_num": "267",
+"col_num": "11"
+},
+{
+"row_num": "269",
+"col_num": "11"
+},
+{
+"row_num": "271",
+"col_num": "11"
+},
+{
+"row_num": "273",
+"col_num": "11"
+},
+{
+"row_num": "275",
+"col_num": "11"
+},
+{
+"row_num": "277",
+"col_num": "11"
+},
+{
+"row_num": "279",
+"col_num": "11"
+},
+{
+"row_num": "281",
+"col_num": "11"
+},
+{
+"row_num": "283",
+"col_num": "11"
+},
+{
+"row_num": "285",
+"col_num": "11"
+},
+{
+"row_num": "287",
+"col_num": "11"
+},
+{
+"row_num": "289",
+"col_num": "11"
+},
+{
+"row_num": "291",
+"col_num": "11"
+},
+{
+"row_num": "293",
+"col_num": "11"
+},
+{
+"row_num": "295",
+"col_num": "11"
+},
+{
+"row_num": "297",
+"col_num": "11"
+},
+{
+"row_num": "299",
+"col_num": "11"
+},
+{
+"row_num": "301",
+"col_num": "11"
+},
+{
+"row_num": "303",
+"col_num": "11"
+},
+{
+"row_num": "305",
+"col_num": "11"
+},
+{
+"row_num": "307",
+"col_num": "11"
+},
+{
+"row_num": "309",
+"col_num": "11"
+},
+{
+"row_num": "311",
+"col_num": "11"
+},
+{
+"row_num": "313",
+"col_num": "11"
+},
+{
+"row_num": "315",
+"col_num": "11"
+},
+{
+"row_num": "317",
+"col_num": "11"
+},
+{
+"row_num": "319",
+"col_num": "11"
+},
+{
+"row_num": "321",
+"col_num": "11"
+},
+{
+"row_num": "259",
+"col_num": "11"
+},
+{
+"row_num": "369",
+"col_num": "40"
+}
+]
+},
+{
+"type": "Reg",
+"name": "seg_pos8bit",
+"range": [
+{
+"start": "7",
+"end": "0"
+}
+],
+"positions": [
+{
+"row_num": "230",
+"col_num": "16"
+},
+{
+"row_num": "331",
+"col_num": "11"
+},
+{
+"row_num": "333",
+"col_num": "11"
+},
+{
+"row_num": "335",
+"col_num": "11"
+},
+{
+"row_num": "337",
+"col_num": "11"
+},
+{
+"row_num": "339",
+"col_num": "11"
+},
+{
+"row_num": "341",
+"col_num": "11"
+},
+{
+"row_num": "343",
+"col_num": "11"
+},
+{
+"row_num": "329",
+"col_num": "11"
+},
+{
+"row_num": "369",
+"col_num": "53"
+}
+]
+}
+]
+}
+]
+}

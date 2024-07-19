@@ -9,13 +9,13 @@
 =  Copyright (c) 2020-2025 XiST                            @)
 =  All rights reserved.
 =========================================================================
-Info: Thu Jul 18 22:52:56 2024.
+Info: Fri Jul 19 19:06:50 2024.
 Info: Launching program D:/fpga/AC208-SA5Z30-CM3/hq_xist_2.14.4_021824_win64/build/win_x64/bin/hqfpga.exe .
 Info: HqFpga is ready to work on host hp (Windows 10 64-bit).
 
 [> readOpt D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/FPGA.hqprj
 [> puts $hqui::FILE_SRC
-D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/fpga_cm33.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/led_wf.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ipcore_dir/PLL_FREQ/xsIP_PLL_FREQ.v
+D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/fpga_cm33.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/led_wf.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ipcore_dir/PLL_FREQ/xsIP_PLL_FREQ.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ahb_seg7x8.v
 [> puts $hqui::FAMILY
 SEAL
 [> puts $hqui::TOP_MODULE
@@ -34,17 +34,27 @@ true
 false
 [> source D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/run.tcl
 Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v.
+WARN(SFE-W-41): D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v(258), Implicit net, "clk", is declared.
+WARN(SFE-W-41): D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v(259), Implicit net, "cpuresetn", is declared.
 Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\led_wf.v.
 Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ipcore_dir\PLL_FREQ\xsIP_PLL_FREQ.v.
+Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ahb_seg7x8.v.
 Run PASS
 [> rtl.srcfiles.list
-D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/fpga_cm33.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/led_wf.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ipcore_dir/PLL_FREQ/xsIP_PLL_FREQ.v
+D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/fpga_cm33.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/led_wf.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ipcore_dir/PLL_FREQ/xsIP_PLL_FREQ.v D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ahb_seg7x8.v
 [> source D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/t.tcl
 Info: Loading device data for SEAL ....
 Info:   Loading functional data....
 Info: Device data loaded successfully.
 Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v.
+WARN(SFE-W-41): D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v(258), Implicit net, "clk", is declared.
+WARN(SFE-W-41): D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v(259), Implicit net, "cpuresetn", is declared.
 Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\led_wf.v.
 Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ipcore_dir\PLL_FREQ\xsIP_PLL_FREQ.v.
-JSON is generated
+Info: Analyzing Verilog file D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ahb_seg7x8.v.
+ERROR(SFE-E-50): D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v(154), Module "AHBlite_Interconnect" is not found for instance "Interconncet".
+ERROR(SFE-E-50): D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v(257), Module "ahb_uart" is not found for instance "ahb_uart1".
+    rtl.elaborate -top fpga_cm33 -json {D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA\dsxp/}
+ERROR(DSGN005): Problem encountered somewhere in the above process, please search ERROR-like messages and check.
+Generating JSON FAILED
 [> exit

@@ -9,6 +9,971 @@
 =  版权所有 (c) 2020-2025 XiST 智多晶                      @)
 =  保留一切权利.
 =========================================================================
+Info: 加载器件信息(SA5Z-50-D0-7U324C)....
+Info:   加载功能信息....
+Info:   加载时序信息....
+Info:   加载物理信息....
+Info: 器件加载成功.
+
+#=============oOOOo================oOOOo=============
+# 设计分析
+#====================================================
+Info: 分析verilog文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\fpga_cm33.v.
+Info: 分析verilog文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\led_wf.v.
+Info: 分析verilog文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ipcore_dir\PLL_FREQ\xsIP_PLL_FREQ.v.
+Info: 分析verilog文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ahb_seg7x8.v.
+Info: 分析verilog文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ahb_uart.v.
+Info: 分析verilog文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ahb_null.v.
+Info: 分析verilog文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\AHBlite_Decoder.v.
+Info: 分析verilog文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\AHBlite_Interconnect.v.
+Info: 分析verilog文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\AHBlite_SlaveMUX.v.
+####
+Info: 设计分析执行时间 : 0 秒.
+####
+
+#=============oOOOo================oOOOo=============
+# 寄存器传输级综合(RTL Synthesis)
+#====================================================
+Info: D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\ahb_seg7x8.v(229), 识别一个ROM mem, 深度=32, 宽度=8.
+Info: 开始MUX优化.
+Info: 完成MUX优化.
+Info: 设计顶层模块设置为 "fpga_cm33".
+Info: 开始逻辑优化.
+Info:     Total number of literals before LO: 6514.
+Info:   正在优化 view : ahb_null.
+Info:     逻辑优化前literals数 : 0.
+Info:     LO 循环 1 : literal数 从 0 到 0.
+Info:     逻辑优化后literals数 : 0.
+Info:   正在优化 view : fpga_cm33.
+Info:     逻辑优化前literals数 : 4713.
+Info:     LO 循环 1 : literal数 从 4713 到 2738.
+Info:     逻辑优化后literals数 : 2738.
+Info: 将 FF seg_inst/segx_reg_0_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_0_reg[1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_0_reg[2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_1_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_2_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_2_reg[1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_3_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_3_reg[2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_4_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_4_reg[1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_4_reg[2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_5_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_6_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_6_reg[1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_7_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF seg_inst/segx_reg_7_reg[2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/TX_shift_reg_reg[10] 变换为 ONE ，原因：constant data input.
+Info: 将 FF seg_inst/refresh_segnum_reg_reg[3] 变换为 ZERO ，原因：it having AND feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[0] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[1] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[2] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[3] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[4] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[5] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[6] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[7] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[8] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[9] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[10] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[11] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[12] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[13] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[14] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/baud_div_reg[15] 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/uart_en_reg 变换为 ZERO ，原因：it having direct feedback.
+Info: 将 FF ahb_uart1/TX_shift_reg_reg[0] 变换为 ONE ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_rd_ptr_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_rd_ptr_reg[1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_rd_ptr_reg[2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_rd_ptr_reg[3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_rd_ptr_reg[4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/TX_fifo_rd_ptr_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/TX_fifo_rd_ptr_reg[1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/TX_fifo_rd_ptr_reg[2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/TX_fifo_rd_ptr_reg[3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/TX_fifo_rd_ptr_reg[4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_wr_ptr_reg[0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_wr_ptr_reg[1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_wr_ptr_reg[2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_wr_ptr_reg[3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_wr_ptr_reg[4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[0][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[0][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[0][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[0][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[0][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[0][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[0][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[0][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[1][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[1][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[1][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[1][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[1][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[1][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[1][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[1][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[2][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[2][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[2][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[2][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[2][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[2][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[2][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[2][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[3][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[3][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[3][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[3][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[3][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[3][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[3][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[3][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[4][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[4][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[4][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[4][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[4][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[4][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[4][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[4][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[5][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[5][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[5][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[5][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[5][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[5][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[5][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[5][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[6][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[6][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[6][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[6][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[6][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[6][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[6][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[6][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[7][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[7][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[7][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[7][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[7][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[7][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[7][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[7][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[8][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[8][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[8][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[8][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[8][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[8][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[8][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[8][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[9][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[9][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[9][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[9][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[9][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[9][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[9][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[9][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[10][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[10][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[10][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[10][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[10][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[10][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[10][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[10][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[11][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[11][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[11][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[11][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[11][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[11][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[11][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[11][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[12][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[12][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[12][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[12][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[12][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[12][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[12][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[12][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[13][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[13][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[13][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[13][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[13][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[13][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[13][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[13][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[14][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[14][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[14][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[14][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[14][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[14][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[14][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[14][7] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[15][0] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[15][1] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[15][2] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[15][3] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[15][4] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[15][5] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[15][6] 变换为 ZERO ，原因：constant data input.
+Info: 将 FF ahb_uart1/RX_fifo_buff_reg[15][7] 变换为 ZERO ，原因：constant data input.
+Info: Degraded fragmented CE control logic for 11 DFFs.
+Info: Degraded fragmented SET/RESET control logic for 1 DFFs.
+Info: Degraded fragmented control logic for 12 DFFs, totally
+Info: 完成逻辑优化.
+####
+Info: RTL综合执行时间 : 1 秒.
+####
+
+#=============oOOOo================oOOOo=============
+# 时序驱动优化与映射
+#====================================================
+Info: 开始时序驱动优化.
+Info:   未发现时序约束，跳过本优化.
+Info: 完成时序驱动优化.
+Info: 插入了 9 个输入/输出单元.
+Info: 开始工艺映射.
+Info:   网表预处理....
+Info:   计算锥(Cone)....
+Info:   计算覆盖(Cover)....
+Info:   生成LUT网表..
+Info:   网表后处理....
+Info: Decomposed 2 wide-input NOR gate(s)
+Info: 完成工艺映射.
+Info: 开始网表校正.
+Info: 完成网表校正.
+####
+Info: 时序驱动优化及映射执行时间 : 0 秒.
+####
+Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOS} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 40 -divide_by 5.
+Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOS2} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 40 -divide_by 10.
+Info: 输出网表报告到文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\hq_run\fpga_cm33_import.rpt中.
+
+#########################################################################
+#
+# 最大时钟频率(FMAX)报告
+#
+#########################################################################
+#
+# 注意: FMAX 的计算仅针对在同一时钟域内的寄存器到寄存器路径，
+# 多周期路径、跨时钟域路径(包括主时钟及其生成时钟之间的路径)都将
+# 被忽略。对于一个时钟及其反向时钟之间的路径， FMAX的计算通过按
+# 频宽比(duty cycle)等比例扩展路径延迟得到。例如，假设有一
+# 条路径的起点由时钟上升沿驱动而终点由同一时钟的下降沿驱动，
+# 如果该时钟的频宽比为50，则计算FMAX时，路径延迟将乘以2(即
+# 除以50%)。
+#
+
+
+# ***********************************************************************
+# 时钟         : seg_inst/clk_DRV_reg/Q
+# 最小时钟周期 : 1769 ps
+# ***********************************************************************
+
+********************
+* 路径 1
+********************
+起点     : seg_inst/HC595_CLK_CNT_reg[1]/Q [激发时钟: seg_inst/clk_DRV_reg/Q, 上升沿1]
+终点     : seg_inst/HC595_CLK_CNT_reg[7]/D [捕获时钟: seg_inst/clk_DRV_reg/Q, 上升沿2] 
+
+数据产生路径
+====================================================================================================================
+|               节点               |     单元     | 延迟 |     类型      | 位置 |           连线            | 扇出 |
+====================================================================================================================
+| CLOCK'seg_inst/clk_DRV_reg/Q     |     N/A      |    0 |               |      | N/A                       |      |
+| seg_inst/clk_DRV_reg/Q           | xsDFFSA_K1C1 |    0 | clock_latency |      | seg_inst/clk_DRV          | 31   |
+| seg_inst/HC595_CLK_CNT_reg[1]/C  | xsDFFSA_K1C1 |    0 |      net      |      | seg_inst/clk_DRV          |      |
+| --                               |      --      |   -- |      --       | --   | --                        | --   |
+| seg_inst/HC595_CLK_CNT_reg[1]/Q  | xsDFFSA_K1C1 |  347 |  rising_edge  |      | seg_inst/HC595_CLK_CNT[1] | 3    |
+| seg_inst/_i_46/bitAdd_1/muxcy/S  |   xsMUXCY    |    0 |      net      |      | seg_inst/HC595_CLK_CNT[1] |      |
+| seg_inst/_i_46/bitAdd_1/muxcy/O  |   xsMUXCY    |  261 |     cell      |      | seg_inst/_i_46/_n_1       | 2    |
+| seg_inst/_i_46/bitAdd_2/muxcy/CI |   xsMUXCY    |    0 |      net      |      | seg_inst/_i_46/_n_1       |      |
+| seg_inst/_i_46/bitAdd_2/muxcy/O  |   xsMUXCY    |  168 |     cell      |      | seg_inst/_i_46/_n_3       | 2    |
+| seg_inst/_i_46/bitAdd_3/muxcy/CI |   xsMUXCY    |    0 |      net      |      | seg_inst/_i_46/_n_3       |      |
+| seg_inst/_i_46/bitAdd_3/muxcy/O  |   xsMUXCY    |  168 |     cell      |      | seg_inst/_i_46/_n_5       | 2    |
+| seg_inst/_i_46/bitAdd_4/muxcy/CI |   xsMUXCY    |    0 |      net      |      | seg_inst/_i_46/_n_5       |      |
+| seg_inst/_i_46/bitAdd_4/muxcy/O  |   xsMUXCY    |  168 |     cell      |      | seg_inst/_i_46/_n_7       | 2    |
+| seg_inst/_i_46/bitAdd_5/muxcy/CI |   xsMUXCY    |    0 |      net      |      | seg_inst/_i_46/_n_7       |      |
+| seg_inst/_i_46/bitAdd_5/muxcy/O  |   xsMUXCY    |  168 |     cell      |      | seg_inst/_i_46/_n_9       | 2    |
+| seg_inst/_i_46/bitAdd_6/muxcy/CI |   xsMUXCY    |    0 |      net      |      | seg_inst/_i_46/_n_9       |      |
+| seg_inst/_i_46/bitAdd_6/muxcy/O  |   xsMUXCY    |  168 |     cell      |      | seg_inst/_i_46/_n_11      | 1    |
+| seg_inst/_i_46/bitAdd_7/xorcy/CI |   xsXORCY    |    0 |      net      |      | seg_inst/_i_46/_n_11      |      |
+| seg_inst/_i_46/bitAdd_7/xorcy/O  |   xsXORCY    |  263 |     cell      |      | seg_inst/n_430[7]         | 1    |
+| seg_inst/_i_186/I2               |   xsLUTSA3   |    0 |      net      |      | seg_inst/n_430[7]         |      |
+| seg_inst/_i_186/O                |   xsLUTSA3   |   81 |     cell      |      | seg_inst/n_382            | 1    |
+| seg_inst/HC595_CLK_CNT_reg[7]/D  | xsDFFSA_K1C1 |    0 |      net      |      | seg_inst/n_382            |      |
+====================================================================================================================
+时钟路径延迟         = 0         
+数据路径延迟         = 1792       (Tdatp)
+     clock-to-q 延迟 = 347 
+        总的单元延迟 = 1445 
+        总的连线延迟 = 0 
+        逻辑级数     = 8 
+
+[数据捕获路径]
+==========================================================================================================
+|              节点               |     单元     | 延迟 |     类型      | 位置 |       连线       | 扇出 |
+==========================================================================================================
+| CLOCK'seg_inst/clk_DRV_reg/Q    |     N/A      |    0 |               |      | N/A              |      |
+| seg_inst/clk_DRV_reg/Q          | xsDFFSA_K1C1 |    0 | clock_latency |      | seg_inst/clk_DRV | 31   |
+| seg_inst/HC595_CLK_CNT_reg[7]/C | xsDFFSA_K1C1 |    0 |      net      |      | seg_inst/clk_DRV |      |
+==========================================================================================================
+
+时钟路径延迟         = 0         
+    时钟偏差         = 0 (Tcksw)
+
+[延迟计算]
+======================================================================
+总延迟 = Tdatap     + Tsu        - Tckpm      - Tcksw
+       = 1792       + -23        - 0          - 0          
+       = 1769
+======================================================================
+Tdatp -- 数据路径延迟 
+Tsu   -- 库单元建立时间 
+Tckpm -- 时钟悲观补偿 
+
+
+# ***********************************************************************
+# 时钟         : PLL_inst1/PLLInst_0/CLKOS
+# 最小时钟周期 : 1769 ps
+# ***********************************************************************
+
+********************
+* 路径 1
+********************
+起点     : seg_inst/clk_1M_cnt_reg[1]/Q [激发时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿1]
+终点     : seg_inst/clk_1M_cnt_reg[7]/D [捕获时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿2] 
+
+数据产生路径
+==================================================================================================================
+|               节点               |     单元     | 延迟 |      类型      | 位置 |          连线          | 扇出 |
+==================================================================================================================
+| CLOCK'CLK_IN_25M_PIN             |     N/A      |    0 |                |      | N/A                    |      |
+| CLK_IN_25M_PIN                   |  fpga_cm33   |    0 | clock_latency  |      | CLK_IN_25M_PIN         | 1    |
+| CLK_IN_25M_PIN_pad/I             |    xsIOBI    |    0 |      net       |      | CLK_IN_25M_PIN         |      |
+| CLK_IN_25M_PIN_pad/O             |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c       | 1    |
+| PLL_inst1/PLLInst_0/CLKI         |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c       |      |
+| --                               |      --      |   -- |       --       | --   | --                     | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS  |     N/A      |    0 | tcst_gen_clock |      | N/A                    |      |
+| PLL_inst1/PLLInst_0/CLKOS        |   xsPLLSA    |  990 | clock_latency  |      | CLK_CM33               | 79   |
+| seg_inst/clk_1M_cnt_reg[1]/C     | xsDFFSA_K1C1 |    0 |      net       |      | CLK_CM33               |      |
+| --                               |      --      |   -- |       --       | --   | --                     | --   |
+| seg_inst/clk_1M_cnt_reg[1]/Q     | xsDFFSA_K1C1 |  347 |  rising_edge   |      | seg_inst/clk_1M_cnt[1] | 10   |
+| seg_inst/_i_40/bitAdd_1/muxcy/S  |   xsMUXCY    |    0 |      net       |      | seg_inst/clk_1M_cnt[1] |      |
+| seg_inst/_i_40/bitAdd_1/muxcy/O  |   xsMUXCY    |  261 |      cell      |      | seg_inst/_i_40/_n_1    | 2    |
+| seg_inst/_i_40/bitAdd_2/muxcy/CI |   xsMUXCY    |    0 |      net       |      | seg_inst/_i_40/_n_1    |      |
+| seg_inst/_i_40/bitAdd_2/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | seg_inst/_i_40/_n_3    | 2    |
+| seg_inst/_i_40/bitAdd_3/muxcy/CI |   xsMUXCY    |    0 |      net       |      | seg_inst/_i_40/_n_3    |      |
+| seg_inst/_i_40/bitAdd_3/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | seg_inst/_i_40/_n_5    | 2    |
+| seg_inst/_i_40/bitAdd_4/muxcy/CI |   xsMUXCY    |    0 |      net       |      | seg_inst/_i_40/_n_5    |      |
+| seg_inst/_i_40/bitAdd_4/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | seg_inst/_i_40/_n_7    | 2    |
+| seg_inst/_i_40/bitAdd_5/muxcy/CI |   xsMUXCY    |    0 |      net       |      | seg_inst/_i_40/_n_7    |      |
+| seg_inst/_i_40/bitAdd_5/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | seg_inst/_i_40/_n_9    | 2    |
+| seg_inst/_i_40/bitAdd_6/muxcy/CI |   xsMUXCY    |    0 |      net       |      | seg_inst/_i_40/_n_9    |      |
+| seg_inst/_i_40/bitAdd_6/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | seg_inst/_i_40/_n_11   | 1    |
+| seg_inst/_i_40/bitAdd_7/xorcy/CI |   xsXORCY    |    0 |      net       |      | seg_inst/_i_40/_n_11   |      |
+| seg_inst/_i_40/bitAdd_7/xorcy/O  |   xsXORCY    |  263 |      cell      |      | seg_inst/n_424[7]      | 1    |
+| seg_inst/_i_131/I0               |   xsLUTSA6   |    0 |      net       |      | seg_inst/n_424[7]      |      |
+| seg_inst/_i_131/O                |   xsLUTSA6   |   81 |      cell      |      | seg_inst/n_412         | 1    |
+| seg_inst/clk_1M_cnt_reg[7]/D     | xsDFFSA_K1C1 |    0 |      net       |      | seg_inst/n_412         |      |
+==================================================================================================================
+时钟路径延迟         = 990       
+数据路径延迟         = 1792       (Tdatp)
+     clock-to-q 延迟 = 347 
+        总的单元延迟 = 1445 
+        总的连线延迟 = 0 
+        逻辑级数     = 8 
+
+[数据捕获路径]
+===========================================================================================================
+|              节点               |     单元     | 延迟 |      类型      | 位置 |       连线       | 扇出 |
+===========================================================================================================
+| CLOCK'CLK_IN_25M_PIN            |     N/A      |    0 |                |      | N/A              |      |
+| CLK_IN_25M_PIN                  |  fpga_cm33   |    0 | clock_latency  |      | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN_pad/I            |    xsIOBI    |    0 |      net       |      | CLK_IN_25M_PIN   |      |
+| CLK_IN_25M_PIN_pad/O            |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c | 1    |
+| PLL_inst1/PLLInst_0/CLKI        |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c |      |
+| --                              |      --      |   -- |       --       | --   | --               | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS |     N/A      |    0 | tcst_gen_clock |      | N/A              |      |
+| PLL_inst1/PLLInst_0/CLKOS       |   xsPLLSA    |  990 | clock_latency  |      | CLK_CM33         | 79   |
+| seg_inst/clk_1M_cnt_reg[7]/C    | xsDFFSA_K1C1 |    0 |      net       |      | CLK_CM33         |      |
+===========================================================================================================
+
+时钟路径延迟         = 990       
+    时钟偏差         = 0 (Tcksw)
+
+[延迟计算]
+======================================================================
+总延迟 = Tdatap     + Tsu        - Tckpm      - Tcksw
+       = 1792       + -23        - 0          - 0          
+       = 1769
+======================================================================
+Tdatp -- 数据路径延迟 
+Tsu   -- 库单元建立时间 
+Tckpm -- 时钟悲观补偿 
+
+
+# ***********************************************************************
+# 时钟         : PLL_inst1/PLLInst_0/CLKOS2
+# 最小时钟周期 : 4793 ps
+# ***********************************************************************
+
+********************
+* 路径 1
+********************
+起点     : led_wf_inst1/cnt_reg[1]/Q  [激发时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿1]
+终点     : led_wf_inst1/cnt_reg[25]/D [捕获时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿2] 
+
+数据产生路径
+=======================================================================================================================
+|                 节点                 |     单元     | 延迟 |      类型      | 位置 |          连线           | 扇出 |
+=======================================================================================================================
+| CLOCK'CLK_IN_25M_PIN                 |     N/A      |    0 |                |      | N/A                     |      |
+| CLK_IN_25M_PIN                       |  fpga_cm33   |    0 | clock_latency  |      | CLK_IN_25M_PIN          | 1    |
+| CLK_IN_25M_PIN_pad/I                 |    xsIOBI    |    0 |      net       |      | CLK_IN_25M_PIN          |      |
+| CLK_IN_25M_PIN_pad/O                 |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c        | 1    |
+| PLL_inst1/PLLInst_0/CLKI             |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c        |      |
+| --                                   |      --      |   -- |       --       | --   | --                      | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS2     |     N/A      |    0 | tcst_gen_clock |      | N/A                     |      |
+| PLL_inst1/PLLInst_0/CLKOS2           |   xsPLLSA    |  990 | clock_latency  |      | CLK_FPGA_SYS1           | 30   |
+| led_wf_inst1/cnt_reg[1]/C            | xsDFFSA_K1C1 |    0 |      net       |      | CLK_FPGA_SYS1           |      |
+| --                                   |      --      |   -- |       --       | --   | --                      | --   |
+| led_wf_inst1/cnt_reg[1]/Q            | xsDFFSA_K1C1 |  347 |  rising_edge   |      | led_wf_inst1/cnt[1]     | 4    |
+| led_wf_inst1/_i_6/bitAdd_1/muxcy/S   |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/cnt[1]     |      |
+| led_wf_inst1/_i_6/bitAdd_1/muxcy/O   |   xsMUXCY    |  261 |      cell      |      | led_wf_inst1/_i_6/_n_1  | 2    |
+| led_wf_inst1/_i_6/bitAdd_2/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_1  |      |
+| led_wf_inst1/_i_6/bitAdd_2/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_3  | 2    |
+| led_wf_inst1/_i_6/bitAdd_3/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_3  |      |
+| led_wf_inst1/_i_6/bitAdd_3/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_5  | 2    |
+| led_wf_inst1/_i_6/bitAdd_4/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_5  |      |
+| led_wf_inst1/_i_6/bitAdd_4/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_7  | 2    |
+| led_wf_inst1/_i_6/bitAdd_5/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_7  |      |
+| led_wf_inst1/_i_6/bitAdd_5/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_9  | 2    |
+| led_wf_inst1/_i_6/bitAdd_6/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_9  |      |
+| led_wf_inst1/_i_6/bitAdd_6/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_11 | 2    |
+| led_wf_inst1/_i_6/bitAdd_7/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_11 |      |
+| led_wf_inst1/_i_6/bitAdd_7/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_13 | 2    |
+| led_wf_inst1/_i_6/bitAdd_8/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_13 |      |
+| led_wf_inst1/_i_6/bitAdd_8/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_15 | 2    |
+| led_wf_inst1/_i_6/bitAdd_9/muxcy/CI  |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_15 |      |
+| led_wf_inst1/_i_6/bitAdd_9/muxcy/O   |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_17 | 2    |
+| led_wf_inst1/_i_6/bitAdd_10/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_17 |      |
+| led_wf_inst1/_i_6/bitAdd_10/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_19 | 2    |
+| led_wf_inst1/_i_6/bitAdd_11/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_19 |      |
+| led_wf_inst1/_i_6/bitAdd_11/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_21 | 2    |
+| led_wf_inst1/_i_6/bitAdd_12/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_21 |      |
+| led_wf_inst1/_i_6/bitAdd_12/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_23 | 2    |
+| led_wf_inst1/_i_6/bitAdd_13/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_23 |      |
+| led_wf_inst1/_i_6/bitAdd_13/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_25 | 2    |
+| led_wf_inst1/_i_6/bitAdd_14/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_25 |      |
+| led_wf_inst1/_i_6/bitAdd_14/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_27 | 2    |
+| led_wf_inst1/_i_6/bitAdd_15/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_27 |      |
+| led_wf_inst1/_i_6/bitAdd_15/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_29 | 2    |
+| led_wf_inst1/_i_6/bitAdd_16/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_29 |      |
+| led_wf_inst1/_i_6/bitAdd_16/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_31 | 2    |
+| led_wf_inst1/_i_6/bitAdd_17/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_31 |      |
+| led_wf_inst1/_i_6/bitAdd_17/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_33 | 2    |
+| led_wf_inst1/_i_6/bitAdd_18/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_33 |      |
+| led_wf_inst1/_i_6/bitAdd_18/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_35 | 2    |
+| led_wf_inst1/_i_6/bitAdd_19/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_35 |      |
+| led_wf_inst1/_i_6/bitAdd_19/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_37 | 2    |
+| led_wf_inst1/_i_6/bitAdd_20/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_37 |      |
+| led_wf_inst1/_i_6/bitAdd_20/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_39 | 2    |
+| led_wf_inst1/_i_6/bitAdd_21/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_39 |      |
+| led_wf_inst1/_i_6/bitAdd_21/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_41 | 2    |
+| led_wf_inst1/_i_6/bitAdd_22/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_41 |      |
+| led_wf_inst1/_i_6/bitAdd_22/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_43 | 2    |
+| led_wf_inst1/_i_6/bitAdd_23/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_43 |      |
+| led_wf_inst1/_i_6/bitAdd_23/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_45 | 2    |
+| led_wf_inst1/_i_6/bitAdd_24/muxcy/CI |   xsMUXCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_45 |      |
+| led_wf_inst1/_i_6/bitAdd_24/muxcy/O  |   xsMUXCY    |  168 |      cell      |      | led_wf_inst1/_i_6/_n_47 | 1    |
+| led_wf_inst1/_i_6/bitAdd_25/xorcy/CI |   xsXORCY    |    0 |      net       |      | led_wf_inst1/_i_6/_n_47 |      |
+| led_wf_inst1/_i_6/bitAdd_25/xorcy/O  |   xsXORCY    |  263 |      cell      |      | led_wf_inst1/n_69[25]   | 1    |
+| led_wf_inst1/_i_33/I1                |   xsLUTSA2   |    0 |      net       |      | led_wf_inst1/n_69[25]   |      |
+| led_wf_inst1/_i_33/O                 |   xsLUTSA2   |   81 |      cell      |      | led_wf_inst1/n_68       | 1    |
+| led_wf_inst1/cnt_reg[25]/D           | xsDFFSA_K1C1 |    0 |      net       |      | led_wf_inst1/n_68       |      |
+=======================================================================================================================
+时钟路径延迟         = 990       
+数据路径延迟         = 4816       (Tdatp)
+     clock-to-q 延迟 = 347 
+        总的单元延迟 = 4469 
+        总的连线延迟 = 0 
+        逻辑级数     = 26 
+
+[数据捕获路径]
+============================================================================================================
+|               节点               |     单元     | 延迟 |      类型      | 位置 |       连线       | 扇出 |
+============================================================================================================
+| CLOCK'CLK_IN_25M_PIN             |     N/A      |    0 |                |      | N/A              |      |
+| CLK_IN_25M_PIN                   |  fpga_cm33   |    0 | clock_latency  |      | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN_pad/I             |    xsIOBI    |    0 |      net       |      | CLK_IN_25M_PIN   |      |
+| CLK_IN_25M_PIN_pad/O             |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c | 1    |
+| PLL_inst1/PLLInst_0/CLKI         |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c |      |
+| --                               |      --      |   -- |       --       | --   | --               | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS2 |     N/A      |    0 | tcst_gen_clock |      | N/A              |      |
+| PLL_inst1/PLLInst_0/CLKOS2       |   xsPLLSA    |  990 | clock_latency  |      | CLK_FPGA_SYS1    | 30   |
+| led_wf_inst1/cnt_reg[25]/C       | xsDFFSA_K1C1 |    0 |      net       |      | CLK_FPGA_SYS1    |      |
+============================================================================================================
+
+时钟路径延迟         = 990       
+    时钟偏差         = 0 (Tcksw)
+
+[延迟计算]
+======================================================================
+总延迟 = Tdatap     + Tsu        - Tckpm      - Tcksw
+       = 4816       + -23        - 0          - 0          
+       = 4793
+======================================================================
+Tdatp -- 数据路径延迟 
+Tsu   -- 库单元建立时间 
+Tckpm -- 时钟悲观补偿 
+
+
+#########################################################################
+# 时钟频率总结
+#########################################################################
+最慢时钟     : PLL_inst1/PLLInst_0/CLKOS2
+最小时钟周期 : 4793 ps
+最大时钟频率 : 208.6 MHz
+#########################################################################
+seg_inst/clk_DRV_reg/Q     : 565.3 Mhz
+PLL_inst1/PLLInst_0/CLKOS  : 565.3 Mhz
+PLL_inst1/PLLInst_0/CLKOS2 : 208.6 Mhz
+
+
+Info: 检查时序约束 ....
+Info: 已完成.
+Info: 检查物理约束 ....
+Info: 已完成.
+Info: 网表整理(nl.sweep) 开始 ....
+Info: 共有 0 个节点被 nl.sweep 删除.
+Info: 网表整理(nl.sweep) 结束.
+
+WARN(NCHK-CLK001): 连线 seg_inst/clk_DRV 混合了时钟和数据连接.
+-- 非时钟引脚 --
+   seg_inst/clk_DRV_reg_ctrlmux.I0
+[说明]上述情况通常源自生成时钟，例如通过计数进行分频的逻辑。
+如果确实是这种情况而且是必须的(例如不能用PLL/DCM分频替代)，
+请别忘为相关连线显式地指定时钟约束。否则，这种时钟和数据混
+合的描述方式是不推荐使用的，请复查并修改。
+
+#=============oOOOo================oOOOo=============
+# 组装(Packing)
+#====================================================
+Info: 开始组装(packing).
+Info: 将 seg_inst/SH_CLK_reg 吸收到 OREG.
+Info: 将 seg_inst/LD_CLK_reg 吸收到 OREG.
+Info: 将 seg_inst/HC_DAT_reg_dup1 吸收到 OREG.
+Info: 将 led_wf_inst1/led_sig_reg[1]_dup1 吸收到 OREG.
+Info: 将 led_wf_inst1/led_sig_reg[0]_dup1 吸收到 OREG.
+Info: 开始组装预处理.
+Info: 完成组装预处理.
+Info: CM33                        1.
+Info: IOLOGIC                     5.
+Info:     IREG_OREG               5.
+Info: PIO                        42.
+Info: PLL_25K                     1.
+Info: SLICEL                     26.
+Info:     CARRY                  13.
+Info:     MUXF7                   5.
+Info:     MUXF8                   8.
+Info: SLICEL(LE)                181.
+Info:     LUT                    46.
+Info:     LUT REG                88.
+Info:     REG                    47.
+Info: 完成组装.
+
+Info: Start gpack.
+Info: Done gpack.
+Info: 开始建立物理网表.
+Info:   为 42   个 PIO        建立了物理网表 .
+Info:   为 5    个 IOLOGIC    建立了物理网表 .
+Info:   为 1    个 PLL_25K    建立了物理网表 .
+Info:   为 1    个 CM33       建立了物理网表 .
+Info:   为 71   个 SLICEL     建立了物理网表 .
+Info: 完成建立物理网表.
+Info: CM33                        1.
+Info: IOLOGIC                     5.
+Info:     IREG_OREG               5.
+Info: PIO                        42.
+Info: PLL_25K                     1.
+Info: SLICEL                     71.
+Info:     CARRY                  13.
+Info:     LOGIC                  45.
+Info:     MUXF7                   5.
+Info:     MUXF8                   8.
+####
+Info: 组装执行时间 : 5 秒.
+Info: 输出网表报告到文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\hq_run\fpga_cm33_map.rpt中.
+Info: 检查时序约束 ....
+Info: 已完成.
+
+#=============oOOOo================oOOOo=============
+# 布局(Placement)
+#====================================================
+Info: 开始布局(placement).
+Info: 布局模式: 时序优化.
+Info: 时序优化强度: 标准.
+Info: CE/SR NET max fanout = 2000.
+Info: Best achievable WNS = 3456.9
+[V]PL-STAT-SLICE:  0.837264 = 71 / 8480
+[V]: Identify CE/SR net...
+Info: 元件实例 GPIO_PIN[0] 已固定于 C15.
+Info: 元件实例 GPIO_PIN[1] 已固定于 N4.
+Info: 元件实例 GPIO_PIN[2] 已固定于 T18.
+Info: 元件实例 GPIO_PIN[3] 已固定于 U17.
+Info: 元件实例 GPIO_PIN[4] 已固定于 T10.
+Info: 元件实例 GPIO_PIN[5] 已固定于 V12.
+Info: 元件实例 GPIO_PIN[6] 已固定于 H15.
+Info: 元件实例 GPIO_PIN[7] 已固定于 T14.
+Info: 元件实例 GPIO_PIN[8] 已固定于 T13.
+Info: 元件实例 GPIO_PIN[9] 已固定于 T15.
+Info: 元件实例 GPIO_PIN[10] 已固定于 R17.
+Info: 元件实例 GPIO_PIN[11] 已固定于 N15.
+Info: 元件实例 GPIO_PIN[12] 已固定于 U18.
+Info: 元件实例 GPIO_PIN[13] 已固定于 N16.
+Info: 元件实例 GPIO_PIN[14] 已固定于 P15.
+Info: 元件实例 GPIO_PIN[15] 已固定于 H17.
+Info: 元件实例 GPIO_PIN[16] 已固定于 F13.
+Info: 元件实例 GPIO_PIN[17] 已固定于 U6.
+Info: 元件实例 GPIO_PIN[18] 已固定于 D17.
+Info: 元件实例 GPIO_PIN[19] 已固定于 R15.
+Info: 元件实例 GPIO_PIN[20] 已固定于 P17.
+Info: 元件实例 GPIO_PIN[21] 已固定于 F14.
+Info: 元件实例 GPIO_PIN[22] 已固定于 C12.
+Info: 元件实例 GPIO_PIN[23] 已固定于 B12.
+Info: 元件实例 GPIO_PIN[24] 已固定于 E15.
+Info: 元件实例 GPIO_PIN[25] 已固定于 E16.
+Info: 元件实例 GPIO_PIN[26] 已固定于 J15.
+Info: 元件实例 GPIO_PIN[27] 已固定于 B14.
+Info: 元件实例 GPIO_PIN[28] 已固定于 H16.
+Info: 元件实例 GPIO_PIN[29] 已固定于 G16.
+Info: 元件实例 GPIO_PIN[30] 已固定于 F15.
+Info: 元件实例 GPIO_PIN[31] 已固定于 F16.
+Info: 元件实例 SWD_IO_PIN 已固定于 M13.
+Info: 元件实例 RST_N_PIN 已固定于 H14.
+Info: 元件实例 CLK_IN_25M_PIN 已固定于 K15.
+Info: 元件实例 SW_CLK_PIN 已固定于 T9.
+Info: 元件实例 seg7_SH_CP 已固定于 D14.
+Info: 元件实例 seg7_ST_CP 已固定于 A14.
+Info: 元件实例 seg7_DS 已固定于 A13.
+Info: 元件实例 LED01_PIN[1] 已固定于 D13.
+Info: 元件实例 LED01_PIN[0] 已固定于 D12.
+Info: 元件实例 ahb_uart_tx 已固定于 U13.
+----
+Info: 布局第1阶段(总共3阶段) (签名=796,60,1).
+----
+Info: 进度   3%, WNS = -16638.
+Info: 进度   7%, WNS = -12915.
+Info: 进度  10%, WNS = -10135.
+Info: 进度  13%, WNS = -10382.
+Info: 进度  17%, WNS =  -5114.
+Info: 进度  20%, WNS =  -7755.
+Info: 进度  23%, WNS =  -3565.
+Info: 进度  27%, WNS =  -3745.
+Info: 进度  30%, WNS =  -1085.
+Info: 进度  33%, WNS =  -5330.
+Info: 进度  37%, WNS =  -2409.
+Info: 进度  40%, WNS =  -1455.
+Info: 进度  43%, WNS =  -2069.
+Info: 进度  45%, WNS =   -295.
+Info: 进度  47%, WNS =    -38.
+Info: 进度  50%, WNS =    301.
+Info: 进度  53%, WNS =   -542.
+Info: 进度  57%, WNS =  -2585.
+Info: 进度  60%, WNS =    192.
+Info: 进度  63%, WNS =   -425.
+Info: 进度  65%, WNS =   1255.
+Info: 进度  67%, WNS =     15.
+Info: 进度  70%, WNS =   -155.
+Info: 进度  73%, WNS =    811.
+Info: 进度  77%, WNS =    621.
+Info: 进度  80%, WNS =   1101.
+Info: 进度  83%, WNS =    761.
+Info: 进度  87%, WNS =    -29.
+Info: 进度  90%, WNS =   1015.
+Info: 进度  93%, WNS =    605.
+Info: 进度  97%, WNS =   1001.
+Info: 进度  99%, WNS =    951.
+Info: 进度 100%, WNS =   1255.
+----
+Info: 布局第2阶段(总共3阶段) (签名=4,10,1).
+----
+Info: 进度  10%, WNS =   1285.
+Info: 进度  20%, WNS =   1461.
+Info: 进度  30%, WNS =   1461.
+Info: 进度  40%, WNS =   1461.
+Info: 进度  50%, WNS =   1591.
+Info: 进度  60%, WNS =   1591.
+Info: 进度  70%, WNS =   1271.
+Info: 进度  90%, WNS =   1461.
+Info: 进度 100%, WNS =   1591.
+----
+Info: 布局第3阶段(总共3阶段) (签名=1,10,1).
+----
+Info: 进度  10%, WNS =   1461.
+Info: 进度  30%, WNS =   1461.
+Info: 进度  50%, WNS =   1461.
+Info: 进度  70%, WNS =   1461.
+Info: 进度  90%, WNS =   1461.
+Info: 进度 100%, WNS =   1591.
+----
+Info: 布局结果最终WNS = 1591.
+----
+Info: 完成布局.
+
+Info: 开始网表校正.
+Info: 完成网表校正.
+####
+Info: 布局执行时间 : 1 秒.
+####
+Info: 输出网表报告到文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\hq_run\fpga_cm33_place.rpt中.
+Info: 检查时序约束 ....
+Info: 已完成.
+
+#=============oOOOo================oOOOo=============
+# 布线(Routing)
+#====================================================
+Info: 布线模式 : timing.
+Info: 优化强度 : std.
+Info: 读入布线资源并检查网表 ....
+Info: 当前网表中有 122 个元件例示(instance).
+Info: 总共需要对 400 条连线 (1392 连接点) 进行布线.
+Info: 连线 CLK_CM33 指定为 PCLK (由 placer).
+Info: 连线 CLK_FPGA_SYS1 指定为 PCLK (由 placer).
+Info: 连线 seg_inst/clk_DRV 指定为 PCLK (由 placer).
+Info: 开始布线(routing).
+
+Info: set customeized options 
+
+| X1/X2 | X2H | X12D | X4/X6 |  XL |  LH |  LV | LVB | BNC | GFAN | X120 | X0-X0 | X1-X2 | X4-X6 
+|   5   |   5 |   5  |   2   |   3 |   6 |   6 |   6 |   6 |   6  |  50  |   3   |   8   |   7   
+
+| MALL | MLONG | MX0  | X12RAM | X46RAM | X12VIQ | X46VIQ | X12CLKV | PLO | CLO | X-LOCAL | CLKV+ | GFANn | GNDfo | GNDlut 
+|   1  |   1   |   1  |    2   |    2   |    3   |    2   |     5   |  10 |   5 |    0    |   1   |   2   |    0  |    0   
+
+Info: 第  0 轮 : 还需要对 288   条连线 (1073  连接点)进行布线.
+Info: 第  1 轮 : 还需要对 18    条连线 (12    连接点)进行布线.
+Info: 第  2 轮 : 还需要对 0     条连线 (0     连接点)进行布线.
+
+Info: 完成布线.
+
+Info: 开始更新物理网表.
+Info:   为 46   个 SLICEL     建立了物理网表 .
+Info:   为 39   个 TIEOFF     建立了物理网表 .
+Info: 完成更新物理网表.
+####
+Info: 布线执行时间 : 4 秒.
+####
+ 
+Info: 生成最差时序余量(WNS)报告 ...
+=============================================================
+Clock Name                   Req Period  Setup WNS   Hold WNS
+-------------------------------------------------------------
+CLK_IN_25M_PIN                    40000         --         --
+PLL_inst1/PLLInst_0/CLKOS          5000       1218        323
+PLL_inst1/PLLInst_0/CLKOS2        10000       4707        367
+=============================================================
+【汇总】
+Info(wns-ok): Setup WNS = 1218, 满足时序目标.
+Info(wns-ok): Hold  WNS = 323, 满足时序目标.
+====
+Info: 完成WNS报告.
+Info:   (可在文件 "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/hq_run/fpga_cm33_slack.rpt" 中检查更详细信息).
+====
+Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOS} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 40 -divide_by 5.
+Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOS2} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 40 -divide_by 10.
+Info: 输出网表报告到文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\hq_run\fpga_cm33_route.rpt中.
+
+#########################################################################
+#
+# 最大时钟频率(FMAX)报告
+#
+#########################################################################
+#
+# 注意: FMAX 的计算仅针对在同一时钟域内的寄存器到寄存器路径，
+# 多周期路径、跨时钟域路径(包括主时钟及其生成时钟之间的路径)都将
+# 被忽略。对于一个时钟及其反向时钟之间的路径， FMAX的计算通过按
+# 频宽比(duty cycle)等比例扩展路径延迟得到。例如，假设有一
+# 条路径的起点由时钟上升沿驱动而终点由同一时钟的下降沿驱动，
+# 如果该时钟的频宽比为50，则计算FMAX时，路径延迟将乘以2(即
+# 除以50%)。
+#
+
+
+# ***********************************************************************
+# 时钟         : PLL_inst1/PLLInst_0/CLKOS
+# 最小时钟周期 : 3782.5 ps
+# ***********************************************************************
+
+********************
+* 路径 1
+********************
+起点     : CM33_inst/TARGEXP1HADDR_21 [激发时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿1]
+终点     : ahb_uart1/addr[14]/CE      [捕获时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿2] 
+
+数据产生路径
+===========================================================================================================================
+|                 节点                 |   单元    |  延迟  |         类型         |  位置   |        连线         | 扇出 |
+===========================================================================================================================
+| CLOCK'CLK_IN_25M_PIN                 |    N/A    |      0 |                      |         | N/A                 |      |
+| CLK_IN_25M_PIN                       | fpga_cm33 |      0 |    clock_latency     |         | CLK_IN_25M_PIN      | 1    |
+| CLK_IN_25M_PIN/PAD#bidir_in          |    PIO    |      0 |         net          | PT88A   | CLK_IN_25M_PIN      | 1    |
+| CLK_IN_25M_PIN/PADDI                 |    PIO    |   1091 |       PADI_DEL       |         | CLK_IN_25M_PIN_c    | 1    |
+| PLL_inst1/PLLInst_0/CLKI             |  PLL_25K  |    507 |         net          | TPLL2   | CLK_IN_25M_PIN_c    |      |
+| --                                   |    --     |     -- |          --          | --      | --                  | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS      |    N/A    |      0 |     CLKI2OS_DEL      |         | N/A                 |      |
+| PLL_inst1/PLLInst_0/CLKOS            |  PLL_25K  |   1598 |    clock_latency     |         | CLK_CM33            | 35   |
+| CM33_inst/CIB_CLK                    |   CM33    | 2362.4 |         net          | CM3     | CLK_CM33            |      |
+| --                                   |    --     |     -- |          --          | --      | --                  | --   |
+| CM33_inst/TARGEXP1HADDR_21           |   CM33    |   1057 | Tcq_TARGEXP1HADDR_21 |         | TARGEXP1HADDR[21]   | 1    |
+| inst_extracted_iHQX5_rkd_9/D3        |  SLICEL   | 1273.8 |         net          | R14C13M | TARGEXP1HADDR[21]   |      |
+| inst_extracted_iHQX5_rkd_9/D         |  SLICEL   |   75.1 |         Tilo         |         | net_extracted_nHQX5 | 6    |
+| Interconncet/SlaveMUX/hsel_reg[0]/C3 |  SLICEL   |  229.5 |         net          | R14C13L | net_extracted_nHQX5 |      |
+| Interconncet/SlaveMUX/hsel_reg[0]/C  |  SLICEL   |   75.1 |         Tilo         |         | ahb_uart1/trans_req | 8    |
+| ahb_uart1/addr[14]/CE                |  SLICEL   | 1022.4 |         net          | R10C13M | ahb_uart1/trans_req |      |
+===========================================================================================================================
+时钟路径延迟         = 3960.4    
+数据路径延迟         = 3733       (Tdatp)
+     clock-to-q 延迟 = 1057 
+        总的单元延迟 = 150.2 
+        总的连线延迟 = 2525.8 
+        逻辑级数     = 2 
+
+[数据捕获路径]
+============================================================================================================
+|              节点               |   单元    |  延迟  |     类型      |  位置   |       连线       | 扇出 |
+============================================================================================================
+| CLOCK'CLK_IN_25M_PIN            |    N/A    |      0 |               |         | N/A              |      |
+| CLK_IN_25M_PIN                  | fpga_cm33 |      0 | clock_latency |         | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN/PAD#bidir_in     |    PIO    |      0 |      net      | PT88A   | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN/PADDI            |    PIO    |   1091 |   PADI_DEL    |         | CLK_IN_25M_PIN_c | 1    |
+| PLL_inst1/PLLInst_0/CLKI        |  PLL_25K  |    491 |      net      | TPLL2   | CLK_IN_25M_PIN_c |      |
+| --                              |    --     |     -- |      --       | --      | --               | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS |    N/A    |      0 |  CLKI2OS_DEL  |         | N/A              |      |
+| PLL_inst1/PLLInst_0/CLKOS       |  PLL_25K  |   1582 | clock_latency |         | CLK_CM33         | 35   |
+| ahb_uart1/addr[14]/CLK          |  SLICEL   | 2360.4 |      net      | R10C13M | CLK_CM33         |      |
+============================================================================================================
+
+时钟路径延迟         = 3942.4    
+    时钟偏差         = -18 (Tcksw)
+
+[延迟计算]
+======================================================================
+总延迟 = Tdatap     + Tsu        - Tckpm      - Tcksw
+       = 3733       + 47.5       - 16         - -18        
+       = 3782.5
+======================================================================
+Tdatp -- 数据路径延迟 
+Tsu   -- 库单元建立时间 
+Tckpm -- 时钟悲观补偿 
+
+
+# ***********************************************************************
+# 时钟         : PLL_inst1/PLLInst_0/CLKOS2
+# 最小时钟周期 : 5292.8 ps
+# ***********************************************************************
+
+********************
+* 路径 1
+********************
+起点     : led_wf_inst1/cnt[10]/CMUX  [激发时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿1]
+终点     : LED01_PIN[0]_MGIOL/TXDATA0 [捕获时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿2] 
+
+数据产生路径
+==================================================================================================================================
+|               节点               |   单元    |  延迟  |     类型      |   位置   |                 连线                 | 扇出 |
+==================================================================================================================================
+| CLOCK'CLK_IN_25M_PIN             |    N/A    |      0 |               |          | N/A                                  |      |
+| CLK_IN_25M_PIN                   | fpga_cm33 |      0 | clock_latency |          | CLK_IN_25M_PIN                       | 1    |
+| CLK_IN_25M_PIN/PAD#bidir_in      |    PIO    |      0 |      net      | PT88A    | CLK_IN_25M_PIN                       | 1    |
+| CLK_IN_25M_PIN/PADDI             |    PIO    |   1091 |   PADI_DEL    |          | CLK_IN_25M_PIN_c                     | 1    |
+| PLL_inst1/PLLInst_0/CLKI         |  PLL_25K  |    507 |      net      | TPLL2    | CLK_IN_25M_PIN_c                     |      |
+| --                               |    --     |     -- |      --       | --       | --                                   | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS2 |    N/A    |      0 | CLKI2OS2_DEL  |          | N/A                                  |      |
+| PLL_inst1/PLLInst_0/CLKOS2       |  PLL_25K  |   1598 | clock_latency |          | CLK_FPGA_SYS1                        | 8    |
+| led_wf_inst1/cnt[10]/CLK         |  SLICEL   | 2362.4 |      net      | R7C107L  | CLK_FPGA_SYS1                        |      |
+| --                               |    --     |     -- |      --       | --       | --                                   | --   |
+| led_wf_inst1/cnt[10]/CMUX        |  SLICEL   |   47.7 |    Tshcko     |          | led_wf_inst1/cnt[15]                 | 2    |
+| led_wf_inst1/cnt[12]/C2          |  SLICEL   |  675.9 |      net      | R7C109L  | led_wf_inst1/cnt[15]                 |      |
+| led_wf_inst1/cnt[12]/C           |  SLICEL   |   75.1 |     Tilo      |          | led_wf_inst1/_i_2/_i_0_rkd_16        | 1    |
+| led_wf_inst1/cnt[12]/D4          |  SLICEL   |  209.9 |      net      | R7C109L  | led_wf_inst1/_i_2/_i_0_rkd_16        |      |
+| led_wf_inst1/cnt[12]/D           |  SLICEL   |   75.1 |     Tilo      |          | led_wf_inst1/_i_2/_i_0_rkd_21        | 1    |
+| led_wf_inst1/_i_2/_i_0_rkd_14/B1 |  SLICEL   |  486.4 |      net      | R7C108L  | led_wf_inst1/_i_2/_i_0_rkd_21        |      |
+| led_wf_inst1/_i_2/_i_0_rkd_14/B  |  SLICEL   |   75.1 |     Tilo      |          | _n_1073                              | 1    |
+| led_wf_inst1/_i_2/_i_0_rkd_14/D6 |  SLICEL   |  176.4 |      net      | R7C108L  | _n_1073                              |      |
+| led_wf_inst1/_i_2/_i_0_rkd_14/D  |  SLICEL   |   75.1 |     Tilo      |          | led_wf_inst1/n_38                    | 16   |
+| led_wf_inst1/cnt[0]/C2           |  SLICEL   |  490.7 |      net      | R8C108L  | led_wf_inst1/n_38                    |      |
+| led_wf_inst1/cnt[0]/C            |  SLICEL   |   75.1 |     Tilo      |          | led_wf_inst1/led_sig_reg[0]_ctrl_din | 1    |
+| LED01_PIN[0]_MGIOL/TXDATA0       |  IOLOGIC  | 2544.2 |      net      | IOL_T61C | led_wf_inst1/led_sig_reg[0]_ctrl_din |      |
+==================================================================================================================================
+时钟路径延迟         = 3960.4    
+数据路径延迟         = 5006.8     (Tdatp)
+     clock-to-q 延迟 = 47.7 
+        总的单元延迟 = 375.5 
+        总的连线延迟 = 4583.6 
+        逻辑级数     = 5 
+
+[数据捕获路径]
+==============================================================================================================
+|               节点               |   单元    |  延迟  |     类型      |   位置   |       连线       | 扇出 |
+==============================================================================================================
+| CLOCK'CLK_IN_25M_PIN             |    N/A    |      0 |               |          | N/A              |      |
+| CLK_IN_25M_PIN                   | fpga_cm33 |      0 | clock_latency |          | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN/PAD#bidir_in      |    PIO    |      0 |      net      | PT88A    | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN/PADDI             |    PIO    |   1091 |   PADI_DEL    |          | CLK_IN_25M_PIN_c | 1    |
+| PLL_inst1/PLLInst_0/CLKI         |  PLL_25K  |    491 |      net      | TPLL2    | CLK_IN_25M_PIN_c |      |
+| --                               |    --     |     -- |      --       | --       | --               | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS2 |    N/A    |      0 | CLKI2OS2_DEL  |          | N/A              |      |
+| PLL_inst1/PLLInst_0/CLKOS2       |  PLL_25K  |   1582 | clock_latency |          | CLK_FPGA_SYS1    | 8    |
+| LED01_PIN[0]_MGIOL/CLK           |  IOLOGIC  | 2360.4 |      net      | IOL_T61C | CLK_FPGA_SYS1    |      |
+==============================================================================================================
+
+时钟路径延迟         = 3942.4    
+    时钟偏差         = -18 (Tcksw)
+
+[延迟计算]
+======================================================================
+总延迟 = Tdatap     + Tsu        - Tckpm      - Tcksw
+       = 5006.8     + 284        - 16         - -18        
+       = 5292.8
+======================================================================
+Tdatp -- 数据路径延迟 
+Tsu   -- 库单元建立时间 
+Tckpm -- 时钟悲观补偿 
+
+
+#########################################################################
+# 时钟频率总结
+#########################################################################
+最慢时钟     : PLL_inst1/PLLInst_0/CLKOS2
+最小时钟周期 : 5292.8 ps
+最大时钟频率 : 188.9 MHz
+#########################################################################
+PLL_inst1/PLLInst_0/CLKOS  : 264.4 Mhz
+PLL_inst1/PLLInst_0/CLKOS2 : 188.9 Mhz
+
+
+
+#=============oOOOo================oOOOo=============
+# 位流生成
+#====================================================
+Info: 载入器件信息 ....
+Info: 载入设计 ....
+Info: 输出位流文件 fpga_cm33.bit ....
+Info: 完成.
+####
+Info: 位流生成执行时间 : 2 秒.
+####
 Info: 启动比特流下载器 ....
 D:/fpga/AC208-SA5Z30-CM3/hq_xist_2.14.4_021824_win64/build/hqdnload/hqdnload.exe -f fpga_cm33.bit -family seal50k -lang chs
-----

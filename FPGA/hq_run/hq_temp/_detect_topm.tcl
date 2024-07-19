@@ -2,6 +2,12 @@
 lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/fpga_cm33.v" 
 lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/led_wf.v" 
 lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ipcore_dir/PLL_FREQ/xsIP_PLL_FREQ.v" 
+lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ahb_seg7x8.v" 
+lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ahb_uart.v" 
+lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ahb_null.v" 
+lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/AHBlite_Decoder.v" 
+lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/AHBlite_Interconnect.v" 
+lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/AHBlite_SlaveMUX.v" 
 #################################################################################
 #
 # Copyright (c) uptops, Inc.

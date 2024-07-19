@@ -150,15 +150,78 @@ Section Cross References
     startup_armcm33.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_armcm33.o(RESET) refers to startup_armcm33.o(STACK) for __initial_sp
     startup_armcm33.o(RESET) refers to startup_armcm33.o(.text) for Reset_Handler
+    startup_armcm33.o(RESET) refers to nvic_it.o(.text.SysTick_Handler) for SysTick_Handler
     startup_armcm33.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_armcm33.o(.text) refers to startup_armcm33.o(STACK) for __stack_limit
     startup_armcm33.o(.text) refers to system_armcm33.o(.text.SystemInit) for SystemInit
     startup_armcm33.o(.text) refers to __main.o(!!!main) for __main
+    delay.o(.ARM.exidx.text.delay_ms) refers to delay.o(.text.delay_ms) for [Anonymous Symbol]
+    scd.o(.text.SCD_Rev1Byte) refers to scd.o(.rodata.cz_ctype) for cz_ctype
+    scd.o(.text.SCD_Rev1Byte) refers to scd.o(.rodata.str1.1) for [Anonymous Symbol]
+    scd.o(.text.SCD_Rev1Byte) refers to scd.o(.text.SCD_CMD_SET) for SCD_CMD_SET
+    scd.o(.text.SCD_Rev1Byte) refers to scd.o(.text.SCD_CMD_CONF) for SCD_CMD_CONF
+    scd.o(.text.SCD_Rev1Byte) refers to scd.o(.text.SCD_CMD_CHG) for SCD_CMD_CHG
+    scd.o(.text.SCD_Rev1Byte) refers to scd.o(.text.SCD_CMD_DUMP) for SCD_CMD_DUMP
+    scd.o(.text.SCD_Rev1Byte) refers to scd.o(.text.SCD_CMD_CALL) for SCD_CMD_CALL
+    scd.o(.ARM.exidx.text.SCD_Rev1Byte) refers to scd.o(.text.SCD_Rev1Byte) for [Anonymous Symbol]
+    scd.o(.text.scd_send1Byte) refers to scd.o(.rodata.SCD_PROTOCOL_FCNS) for SCD_PROTOCOL_FCNS
+    scd.o(.ARM.exidx.text.scd_send1Byte) refers to scd.o(.text.scd_send1Byte) for [Anonymous Symbol]
+    scd.o(.ARM.exidx.text.scd_print) refers to scd.o(.text.scd_print) for [Anonymous Symbol]
+    scd.o(.text.SCD_CMD_SET) refers to scd.o(.rodata.cz_ctype) for cz_ctype
+    scd.o(.text.SCD_CMD_SET) refers to scd.o(.text._cz_strtoxl) for _cz_strtoxl
+    scd.o(.ARM.exidx.text.SCD_CMD_SET) refers to scd.o(.text.SCD_CMD_SET) for [Anonymous Symbol]
+    scd.o(.text.SCD_CMD_CONF) refers to scd.o(.text._cz_strtoxl) for _cz_strtoxl
+    scd.o(.ARM.exidx.text.SCD_CMD_CONF) refers to scd.o(.text.SCD_CMD_CONF) for [Anonymous Symbol]
+    scd.o(.text.SCD_CMD_CHG) refers to scd.o(.text._cz_strtoxl) for _cz_strtoxl
+    scd.o(.ARM.exidx.text.SCD_CMD_CHG) refers to scd.o(.text.SCD_CMD_CHG) for [Anonymous Symbol]
+    scd.o(.text.SCD_CMD_DUMP) refers to scd.o(.text._cz_strtoxl) for _cz_strtoxl
+    scd.o(.ARM.exidx.text.SCD_CMD_DUMP) refers to scd.o(.text.SCD_CMD_DUMP) for [Anonymous Symbol]
+    scd.o(.text.SCD_CMD_CALL) refers to scd.o(.text._cz_strtoxl) for _cz_strtoxl
+    scd.o(.ARM.exidx.text.SCD_CMD_CALL) refers to scd.o(.text.SCD_CMD_CALL) for [Anonymous Symbol]
+    scd.o(.text._cz_strtoxl) refers to scd.o(.rodata.cz_ctype) for cz_ctype
+    scd.o(.ARM.exidx.text._cz_strtoxl) refers to scd.o(.text._cz_strtoxl) for [Anonymous Symbol]
+    scd.o(.ARM.exidx.text.SCO_get) refers to scd.o(.text.SCO_get) for [Anonymous Symbol]
+    scd.o(.text.SCO_VAR) refers to scd.o(.bss.SCO_VAR.checkUint16Sum) for SCO_VAR.checkUint16Sum
+    scd.o(.ARM.exidx.text.SCO_VAR) refers to scd.o(.text.SCO_VAR) for [Anonymous Symbol]
+    scd.o(.ARM.exidx.text.SCO_DEBUG) refers to scd.o(.text.SCO_DEBUG) for [Anonymous Symbol]
+    scd.o(.text.SCO_DUMP) refers to scd.o(.bss.SCO_DUMP.checkUint16Sum) for SCO_DUMP.checkUint16Sum
+    scd.o(.ARM.exidx.text.SCO_DUMP) refers to scd.o(.text.SCO_DUMP) for [Anonymous Symbol]
+    scd.o(.ARM.exidx.text.SCO_PRINT) refers to scd.o(.text.SCO_PRINT) for [Anonymous Symbol]
+    scd.o(.rodata.SCD_PROTOCOL_FCNS) refers to scd.o(.text.SCO_get) for SCO_get
+    scd.o(.rodata.SCD_PROTOCOL_FCNS) refers to scd.o(.text.SCO_VAR) for SCO_VAR
+    scd.o(.rodata.SCD_PROTOCOL_FCNS) refers to scd.o(.text.SCO_DEBUG) for SCO_DEBUG
+    scd.o(.rodata.SCD_PROTOCOL_FCNS) refers to scd.o(.text.SCO_DUMP) for SCO_DUMP
+    scd.o(.rodata.SCD_PROTOCOL_FCNS) refers to scd.o(.text.SCO_PRINT) for SCO_PRINT
+    main.o(.text.main) refers to system_armcm33.o(.data.SystemCoreClock) for SystemCoreClock
     main.o(.text.main) refers to star_uart.o(.text.UART_DeInit) for UART_DeInit
     main.o(.text.main) refers to star_gpio.o(.text.GPIO_PinRemapConfig) for GPIO_PinRemapConfig
     main.o(.text.main) refers to star_uart.o(.text.UART_Init) for UART_Init
+    main.o(.text.main) refers to scd_reg.o(.text.scd_init_1) for scd_init_1
+    main.o(.text.main) refers to main.o(.bss.millisCnt) for millisCnt
+    main.o(.text.main) refers to scd_reg.o(.bss.scd_1) for scd_1
     main.o(.text.main) refers to puts.o(.text) for puts
+    main.o(.text.main) refers to scd.o(.text.scd_send1Byte) for scd_send1Byte
+    main.o(.text.main) refers to scd.o(.text.SCD_Rev1Byte) for SCD_Rev1Byte
     main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    nvic_it.o(.text.SysTick_Handler) refers to main.o(.bss.millisCnt) for millisCnt
+    nvic_it.o(.ARM.exidx.text.SysTick_Handler) refers to nvic_it.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    scd_reg.o(.text.scd_init_1) refers to scd_reg.o(.bss.scd_1) for scd_1
+    scd_reg.o(.text.scd_init_1) refers to scd_reg.o(.bss.recBuff_1) for recBuff_1
+    scd_reg.o(.text.scd_init_1) refers to scd_reg.o(.bss.printBuff_1) for printBuff_1
+    scd_reg.o(.text.scd_init_1) refers to scd_reg.o(.data.endBuff1_1) for endBuff1_1
+    scd_reg.o(.text.scd_init_1) refers to scd_reg.o(.data.endBuff2_1) for endBuff2_1
+    scd_reg.o(.text.scd_init_1) refers to scd_reg.o(.data.endBuff3_1) for endBuff3_1
+    scd_reg.o(.text.scd_init_1) refers to scd_reg.o(.rodata.tyj_unit_struct_1) for tyj_unit_struct_1
+    scd_reg.o(.ARM.exidx.text.scd_init_1) refers to scd_reg.o(.text.scd_init_1) for [Anonymous Symbol]
+    scd_reg.o(.rodata.tyj_unit_struct_1) refers to main.o(.bss.millisCnt) for millisCnt
+    scd_reg.o(.rodata.tyj_unit_struct_1) refers to main.o(.bss.test1) for test1
+    scd_reg.o(.rodata.tyj_unit_struct_1) refers to main.o(.bss.test2) for test2
+    scd_reg.o(.rodata.tyj_unit_struct_1) refers to main.o(.bss.test3) for test3
+    scd_reg.o(.rodata.tyj_unit_struct_1) refers to main.o(.bss.test4) for test4
+    scd_reg.o(.rodata.tyj_unit_struct_1) refers to main.o(.bss.test1r) for test1r
+    scd_reg.o(.rodata.tyj_unit_struct_1) refers to main.o(.bss.test2r) for test2r
+    scd_reg.o(.rodata.tyj_unit_struct_1) refers to main.o(.bss.test3r) for test3r
+    scd_reg.o(.rodata.tyj_unit_struct_1) refers to main.o(.bss.test4r) for test4r
     puts.o(.text) refers to star_retarget.o(.text.fputc) for fputc
     puts.o(.text) refers to star_retarget.o(.bss.__stdout) for __stdout
     __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
@@ -458,11 +521,11 @@ Removing Unused input sections from the image.
     Removing star_rcc.o(.ARM.exidx.text.RCC_APB1PeriphResetCmd), (8 bytes).
     Removing star_retarget.o(.text), (0 bytes).
     Removing star_retarget.o(.ARM.exidx.text.fputc), (8 bytes).
-    Removing star_retarget.o(.text.UartPutc), (22 bytes).
+    Removing star_retarget.o(.text.UartPutc), (18 bytes).
     Removing star_retarget.o(.ARM.exidx.text.UartPutc), (8 bytes).
-    Removing star_retarget.o(.text.fgetc), (36 bytes).
+    Removing star_retarget.o(.text.fgetc), (28 bytes).
     Removing star_retarget.o(.ARM.exidx.text.fgetc), (8 bytes).
-    Removing star_retarget.o(.text.UartGetc), (24 bytes).
+    Removing star_retarget.o(.text.UartGetc), (20 bytes).
     Removing star_retarget.o(.ARM.exidx.text.UartGetc), (8 bytes).
     Removing star_retarget.o(.bss.__stdin), (84 bytes).
     Removing star_spi.o(.text), (0 bytes).
@@ -558,11 +621,34 @@ Removing Unused input sections from the image.
     Removing system_armcm33.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
     Removing system_armcm33.o(.ARM.exidx.text.SystemInit), (8 bytes).
     Removing startup_armcm33.o(HEAP), (4096 bytes).
+    Removing delay.o(.text), (0 bytes).
+    Removing delay.o(.text.delay_ms), (26 bytes).
+    Removing delay.o(.ARM.exidx.text.delay_ms), (8 bytes).
+    Removing scd.o(.text), (0 bytes).
+    Removing scd.o(.ARM.exidx.text.SCD_Rev1Byte), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.scd_send1Byte), (8 bytes).
+    Removing scd.o(.text.scd_print), (44 bytes).
+    Removing scd.o(.ARM.exidx.text.scd_print), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCD_CMD_SET), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCD_CMD_CONF), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCD_CMD_CHG), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCD_CMD_DUMP), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCD_CMD_CALL), (8 bytes).
+    Removing scd.o(.ARM.exidx.text._cz_strtoxl), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCO_get), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCO_VAR), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCO_DEBUG), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCO_DUMP), (8 bytes).
+    Removing scd.o(.ARM.exidx.text.SCO_PRINT), (8 bytes).
     Removing main.o(.text), (0 bytes).
     Removing main.o(.ARM.exidx.text.main), (8 bytes).
     Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing nvic_it.o(.text), (0 bytes).
+    Removing nvic_it.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing scd_reg.o(.text), (0 bytes).
+    Removing scd_reg.o(.ARM.exidx.text.scd_init_1), (8 bytes).
 
-274 unused section(s) (total 7766 bytes) removed from the image.
+297 unused section(s) (total 7956 bytes) removed from the image.
 
 ==============================================================================
 
@@ -628,6 +714,7 @@ Image Symbol Table
     ../clib/stdio.c                          0x00000000   Number         0  puts.o ABSOLUTE
     ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
     ../fplib/fpinit.s                        0x00000000   Number         0  fpinit.o ABSOLUTE
+    NVIC_it.c                                0x00000000   Number         0  nvic_it.o ABSOLUTE
     SA5Z50_DEVS/startup_ARMCM33.s            0x00000000   Number         0  startup_armcm33.o ABSOLUTE
     STAR_adc.c                               0x00000000   Number         0  star_adc.o ABSOLUTE
     STAR_dma.c                               0x00000000   Number         0  star_dma.o ABSOLUTE
@@ -642,7 +729,10 @@ Image Symbol Table
     STAR_uart.c                              0x00000000   Number         0  star_uart.o ABSOLUTE
     STAR_watchdog.c                          0x00000000   Number         0  star_watchdog.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    delay.c                                  0x00000000   Number         0  delay.o ABSOLUTE
     main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    scd.c                                    0x00000000   Number         0  scd.o ABSOLUTE
+    scd_reg.c                                0x00000000   Number         0  scd_reg.o ABSOLUTE
     system_ARMCM33.c                         0x00000000   Number         0  system_armcm33.o ABSOLUTE
     RESET                                    0x00000000   Section     2204  startup_armcm33.o(RESET)
     !!!main                                  0x0000089c   Section        8  __main.o(!!!main)
@@ -702,14 +792,49 @@ Image Symbol Table
     .text                                    0x00000a54   Section        0  sys_exit.o(.text)
     [Anonymous Symbol]                       0x00000a60   Section        0  star_gpio.o(.text.GPIO_PinRemapConfig)
     [Anonymous Symbol]                       0x00000a6a   Section        0  star_rcc.o(.text.RCC_APB1PeriphResetCmd)
-    [Anonymous Symbol]                       0x00000a82   Section        0  system_armcm33.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x00000ab4   Section        0  star_uart.o(.text.UART_DeInit)
-    [Anonymous Symbol]                       0x00000af6   Section        0  star_uart.o(.text.UART_Init)
-    [Anonymous Symbol]                       0x00000b10   Section        0  star_retarget.o(.text.fputc)
-    [Anonymous Symbol]                       0x00000b28   Section        0  main.o(.text.main)
-    $v0                                      0x00000bb4   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$fpinit                             0x00000bb4   Section       26  fpinit.o(x$fpl$fpinit)
-    STACK                                    0x20000060   Section     4096  startup_armcm33.o(STACK)
+    SCD_CMD_CALL                             0x00000a83   Thumb Code    40  scd.o(.text.SCD_CMD_CALL)
+    [Anonymous Symbol]                       0x00000a82   Section        0  scd.o(.text.SCD_CMD_CALL)
+    SCD_CMD_CHG                              0x00000aab   Thumb Code    22  scd.o(.text.SCD_CMD_CHG)
+    [Anonymous Symbol]                       0x00000aaa   Section        0  scd.o(.text.SCD_CMD_CHG)
+    SCD_CMD_CONF                             0x00000ac1   Thumb Code    26  scd.o(.text.SCD_CMD_CONF)
+    [Anonymous Symbol]                       0x00000ac0   Section        0  scd.o(.text.SCD_CMD_CONF)
+    SCD_CMD_DUMP                             0x00000adb   Thumb Code    38  scd.o(.text.SCD_CMD_DUMP)
+    [Anonymous Symbol]                       0x00000ada   Section        0  scd.o(.text.SCD_CMD_DUMP)
+    SCD_CMD_SET                              0x00000b01   Thumb Code   384  scd.o(.text.SCD_CMD_SET)
+    [Anonymous Symbol]                       0x00000b00   Section        0  scd.o(.text.SCD_CMD_SET)
+    [Anonymous Symbol]                       0x00000c80   Section        0  scd.o(.text.SCD_Rev1Byte)
+    SCD_CMD_TAB                              0x00000e08   Number         0  scd.o(.text.SCD_Rev1Byte)
+    SCD_CMD_FCNS                             0x00000e1c   Number         0  scd.o(.text.SCD_Rev1Byte)
+    SCO_DEBUG                                0x00000e31   Thumb Code    14  scd.o(.text.SCO_DEBUG)
+    [Anonymous Symbol]                       0x00000e30   Section        0  scd.o(.text.SCO_DEBUG)
+    SCO_DUMP                                 0x00000e41   Thumb Code   460  scd.o(.text.SCO_DUMP)
+    [Anonymous Symbol]                       0x00000e40   Section        0  scd.o(.text.SCO_DUMP)
+    SCO_PRINT                                0x0000100d   Thumb Code   116  scd.o(.text.SCO_PRINT)
+    [Anonymous Symbol]                       0x0000100c   Section        0  scd.o(.text.SCO_PRINT)
+    SCO_VAR                                  0x00001081   Thumb Code   320  scd.o(.text.SCO_VAR)
+    [Anonymous Symbol]                       0x00001080   Section        0  scd.o(.text.SCO_VAR)
+    SCO_get                                  0x000011c1   Thumb Code   268  scd.o(.text.SCO_get)
+    [Anonymous Symbol]                       0x000011c0   Section        0  scd.o(.text.SCO_get)
+    [Anonymous Symbol]                       0x000012d4   Section        0  nvic_it.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x000012e4   Section        0  system_armcm33.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x00001316   Section        0  star_uart.o(.text.UART_DeInit)
+    [Anonymous Symbol]                       0x00001358   Section        0  star_uart.o(.text.UART_Init)
+    _cz_strtoxl                              0x00001371   Thumb Code   250  scd.o(.text._cz_strtoxl)
+    [Anonymous Symbol]                       0x00001370   Section        0  scd.o(.text._cz_strtoxl)
+    [Anonymous Symbol]                       0x0000146c   Section        0  star_retarget.o(.text.fputc)
+    [Anonymous Symbol]                       0x00001480   Section        0  main.o(.text.main)
+    [Anonymous Symbol]                       0x00001600   Section        0  scd_reg.o(.text.scd_init_1)
+    [Anonymous Symbol]                       0x0000169c   Section        0  scd.o(.text.scd_send1Byte)
+    $v0                                      0x000016dc   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$fpinit                             0x000016dc   Section       26  fpinit.o(x$fpl$fpinit)
+    SCD_PROTOCOL_FCNS                        0x000016f8   Data          20  scd.o(.rodata.SCD_PROTOCOL_FCNS)
+    [Anonymous Symbol]                       0x000016f8   Section        0  scd.o(.rodata.SCD_PROTOCOL_FCNS)
+    [Anonymous Symbol]                       0x00001b0c   Section        0  scd.o(.rodata.str1.1)
+    SCO_DUMP.checkUint16Sum                  0x20000018   Data           2  scd.o(.bss.SCO_DUMP.checkUint16Sum)
+    [Anonymous Symbol]                       0x20000018   Section        0  scd.o(.bss.SCO_DUMP.checkUint16Sum)
+    SCO_VAR.checkUint16Sum                   0x2000001a   Data           2  scd.o(.bss.SCO_VAR.checkUint16Sum)
+    [Anonymous Symbol]                       0x2000001a   Section        0  scd.o(.bss.SCO_VAR.checkUint16Sum)
+    STACK                                    0x20000168   Section     4096  startup_armcm33.o(STACK)
 
     Global Symbols
 
@@ -806,7 +931,6 @@ Image Symbol Table
     SVC_Handler                              0x00000957   Thumb Code     2  startup_armcm33.o(.text)
     DebugMon_Handler                         0x00000959   Thumb Code     2  startup_armcm33.o(.text)
     PendSV_Handler                           0x0000095b   Thumb Code     2  startup_armcm33.o(.text)
-    SysTick_Handler                          0x0000095d   Thumb Code     2  startup_armcm33.o(.text)
     UART0_Handler                            0x0000095f   Thumb Code     2  startup_armcm33.o(.text)
     ADC_Handler                              0x00000961   Thumb Code     2  startup_armcm33.o(.text)
     UART1_Handler                            0x00000963   Thumb Code     2  startup_armcm33.o(.text)
@@ -899,20 +1023,41 @@ Image Symbol Table
     _sys_exit                                0x00000a55   Thumb Code     8  sys_exit.o(.text)
     GPIO_PinRemapConfig                      0x00000a61   Thumb Code    10  star_gpio.o(.text.GPIO_PinRemapConfig)
     RCC_APB1PeriphResetCmd                   0x00000a6b   Thumb Code    24  star_rcc.o(.text.RCC_APB1PeriphResetCmd)
-    SystemInit                               0x00000a83   Thumb Code    50  system_armcm33.o(.text.SystemInit)
-    UART_DeInit                              0x00000ab5   Thumb Code    66  star_uart.o(.text.UART_DeInit)
-    UART_Init                                0x00000af7   Thumb Code    24  star_uart.o(.text.UART_Init)
-    fputc                                    0x00000b11   Thumb Code    24  star_retarget.o(.text.fputc)
-    main                                     0x00000b29   Thumb Code   120  main.o(.text.main)
-    _fp_init                                 0x00000bb5   Thumb Code    26  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x00000bcd   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x00000bcd   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    Region$$Table$$Base                      0x00000bd0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00000bf0   Number         0  anon$$obj.o(Region$$Table)
+    SCD_Rev1Byte                             0x00000c81   Thumb Code   392  scd.o(.text.SCD_Rev1Byte)
+    SysTick_Handler                          0x000012d5   Thumb Code    16  nvic_it.o(.text.SysTick_Handler)
+    SystemInit                               0x000012e5   Thumb Code    50  system_armcm33.o(.text.SystemInit)
+    UART_DeInit                              0x00001317   Thumb Code    66  star_uart.o(.text.UART_DeInit)
+    UART_Init                                0x00001359   Thumb Code    24  star_uart.o(.text.UART_Init)
+    fputc                                    0x0000146d   Thumb Code    20  star_retarget.o(.text.fputc)
+    main                                     0x00001481   Thumb Code   364  main.o(.text.main)
+    scd_init_1                               0x00001601   Thumb Code   156  scd_reg.o(.text.scd_init_1)
+    scd_send1Byte                            0x0000169d   Thumb Code    64  scd.o(.text.scd_send1Byte)
+    _fp_init                                 0x000016dd   Thumb Code    26  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x000016f5   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x000016f5   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    cz_ctype                                 0x0000170c   Data        1024  scd.o(.rodata.cz_ctype)
+    tyj_unit_struct_1                        0x00001b24   Data          72  scd_reg.o(.rodata.tyj_unit_struct_1)
+    Region$$Table$$Base                      0x00001b6c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001b8c   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_armcm33.o(.data.SystemCoreClock)
-    __stdout                                 0x20000008   Data          84  star_retarget.o(.bss.__stdout)
-    __stack_limit                            0x20000060   Data           0  startup_armcm33.o(STACK)
-    __initial_sp                             0x20001060   Data           0  startup_armcm33.o(STACK)
+    endBuff1_1                               0x20000004   Data           4  scd_reg.o(.data.endBuff1_1)
+    endBuff2_1                               0x20000008   Data           8  scd_reg.o(.data.endBuff2_1)
+    endBuff3_1                               0x20000010   Data           4  scd_reg.o(.data.endBuff3_1)
+    __stdout                                 0x2000001c   Data          84  star_retarget.o(.bss.__stdout)
+    millisCnt                                0x20000070   Data           4  main.o(.bss.millisCnt)
+    printBuff_1                              0x20000074   Data          40  scd_reg.o(.bss.printBuff_1)
+    recBuff_1                                0x2000009c   Data          80  scd_reg.o(.bss.recBuff_1)
+    scd_1                                    0x200000ec   Data         104  scd_reg.o(.bss.scd_1)
+    test1                                    0x20000154   Data           2  main.o(.bss.test1)
+    test1r                                   0x20000156   Data           2  main.o(.bss.test1r)
+    test2                                    0x20000158   Data           2  main.o(.bss.test2)
+    test2r                                   0x2000015a   Data           2  main.o(.bss.test2r)
+    test3                                    0x2000015c   Data           2  main.o(.bss.test3)
+    test3r                                   0x2000015e   Data           2  main.o(.bss.test3r)
+    test4                                    0x20000160   Data           2  main.o(.bss.test4)
+    test4r                                   0x20000162   Data           2  main.o(.bss.test4r)
+    __stack_limit                            0x20000168   Data           0  startup_armcm33.o(STACK)
+    __initial_sp                             0x20001168   Data           0  startup_armcm33.o(STACK)
 
 
 
@@ -922,90 +1067,128 @@ Memory Map of the image
 
   Image Entry point : 0x0000089d
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000bf8, Max: 0x00040000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00001ba8, Max: 0x00040000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000bf0, Max: 0x00040000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00001b8c, Max: 0x00040000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x00000000   0x00000000   0x0000089c   Data   RO          370    RESET               startup_armcm33.o
-    0x0000089c   0x0000089c   0x00000008   Code   RO          393  * !!!main             c_w.l(__main.o)
-    0x000008a4   0x000008a4   0x00000034   Code   RO          569    !!!scatter          c_w.l(__scatter.o)
-    0x000008d8   0x000008d8   0x0000001a   Code   RO          571    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x0000089c   0x0000089c   0x00000008   Code   RO          475  * !!!main             c_w.l(__main.o)
+    0x000008a4   0x000008a4   0x00000034   Code   RO          651    !!!scatter          c_w.l(__scatter.o)
+    0x000008d8   0x000008d8   0x0000001a   Code   RO          653    !!handler_copy      c_w.l(__scatter_copy.o)
     0x000008f2   0x000008f2   0x00000002   PAD
-    0x000008f4   0x000008f4   0x0000001c   Code   RO          573    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x00000910   0x00000910   0x00000002   Code   RO          425    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x00000912   0x00000912   0x00000004   Code   RO          435    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          438    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          441    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          443    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          445    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          448    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          450    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          452    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          454    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          456    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          458    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          460    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          462    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          464    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          466    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          468    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          472    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          474    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          476    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000000   Code   RO          478    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x00000916   0x00000916   0x00000002   Code   RO          479    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
-    0x00000918   0x00000918   0x00000002   Code   RO          508    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x0000091a   0x0000091a   0x00000000   Code   RO          520    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x0000091a   0x0000091a   0x00000000   Code   RO          522    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x0000091a   0x0000091a   0x00000000   Code   RO          525    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x0000091a   0x0000091a   0x00000000   Code   RO          528    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x0000091a   0x0000091a   0x00000000   Code   RO          530    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x0000091a   0x0000091a   0x00000000   Code   RO          533    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x0000091a   0x0000091a   0x00000002   Code   RO          534    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x0000091c   0x0000091c   0x00000000   Code   RO          395    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x0000091c   0x0000091c   0x00000000   Code   RO          397    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x0000091c   0x0000091c   0x00000004   Code   RO          411    .ARM.Collect$$rtentry$$00000005  c_w.l(__rtentry5.o)
-    0x00000920   0x00000920   0x00000000   Code   RO          399    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x00000920   0x00000920   0x00000004   Code   RO          400    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x00000924   0x00000924   0x00000000   Code   RO          402    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x00000924   0x00000924   0x00000008   Code   RO          403    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x0000092c   0x0000092c   0x00000004   Code   RO          412    .ARM.Collect$$rtentry$$00002716  c_w.l(__rtentry5.o)
-    0x00000930   0x00000930   0x00000002   Code   RO          433    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x00000932   0x00000932   0x00000000   Code   RO          488    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x00000932   0x00000932   0x00000004   Code   RO          489    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x00000936   0x00000936   0x00000006   Code   RO          490    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x000008f4   0x000008f4   0x0000001c   Code   RO          655    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x00000910   0x00000910   0x00000002   Code   RO          507    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x00000912   0x00000912   0x00000004   Code   RO          517    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          520    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          523    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          525    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          527    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          530    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          532    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          534    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          536    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          538    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          540    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          542    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          544    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          546    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          548    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          550    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          554    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          556    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          558    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000000   Code   RO          560    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x00000916   0x00000916   0x00000002   Code   RO          561    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x00000918   0x00000918   0x00000002   Code   RO          590    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x0000091a   0x0000091a   0x00000000   Code   RO          602    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x0000091a   0x0000091a   0x00000000   Code   RO          604    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x0000091a   0x0000091a   0x00000000   Code   RO          607    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x0000091a   0x0000091a   0x00000000   Code   RO          610    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x0000091a   0x0000091a   0x00000000   Code   RO          612    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x0000091a   0x0000091a   0x00000000   Code   RO          615    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x0000091a   0x0000091a   0x00000002   Code   RO          616    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x0000091c   0x0000091c   0x00000000   Code   RO          477    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x0000091c   0x0000091c   0x00000000   Code   RO          479    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x0000091c   0x0000091c   0x00000004   Code   RO          493    .ARM.Collect$$rtentry$$00000005  c_w.l(__rtentry5.o)
+    0x00000920   0x00000920   0x00000000   Code   RO          481    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x00000920   0x00000920   0x00000004   Code   RO          482    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x00000924   0x00000924   0x00000000   Code   RO          484    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x00000924   0x00000924   0x00000008   Code   RO          485    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x0000092c   0x0000092c   0x00000004   Code   RO          494    .ARM.Collect$$rtentry$$00002716  c_w.l(__rtentry5.o)
+    0x00000930   0x00000930   0x00000002   Code   RO          515    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x00000932   0x00000932   0x00000000   Code   RO          570    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x00000932   0x00000932   0x00000004   Code   RO          571    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x00000936   0x00000936   0x00000006   Code   RO          572    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x0000093c   0x0000093c   0x000000d0   Code   RO          371    .text               startup_armcm33.o
-    0x00000a0c   0x00000a0c   0x0000002c   Code   RO          389    .text               c_w.l(puts.o)
-    0x00000a38   0x00000a38   0x00000006   Code   RO          391    .text               c_w.l(heapauxi.o)
-    0x00000a3e   0x00000a3e   0x00000012   Code   RO          418    .text               c_w.l(exit.o)
-    0x00000a50   0x00000a50   0x00000002   Code   RO          484    .text               c_w.l(use_no_semi.o)
-    0x00000a52   0x00000a52   0x00000000   Code   RO          486    .text               c_w.l(indicate_semi.o)
+    0x00000a0c   0x00000a0c   0x0000002c   Code   RO          471    .text               c_w.l(puts.o)
+    0x00000a38   0x00000a38   0x00000006   Code   RO          473    .text               c_w.l(heapauxi.o)
+    0x00000a3e   0x00000a3e   0x00000012   Code   RO          500    .text               c_w.l(exit.o)
+    0x00000a50   0x00000a50   0x00000002   Code   RO          566    .text               c_w.l(use_no_semi.o)
+    0x00000a52   0x00000a52   0x00000000   Code   RO          568    .text               c_w.l(indicate_semi.o)
     0x00000a52   0x00000a52   0x00000002   PAD
-    0x00000a54   0x00000a54   0x0000000c   Code   RO          498    .text               c_w.l(sys_exit.o)
+    0x00000a54   0x00000a54   0x0000000c   Code   RO          580    .text               c_w.l(sys_exit.o)
     0x00000a60   0x00000a60   0x0000000a   Code   RO          128    .text.GPIO_PinRemapConfig  star_gpio.o
     0x00000a6a   0x00000a6a   0x00000018   Code   RO          212    .text.RCC_APB1PeriphResetCmd  star_rcc.o
-    0x00000a82   0x00000a82   0x00000032   Code   RO          359    .text.SystemInit    system_armcm33.o
-    0x00000ab4   0x00000ab4   0x00000042   Code   RO          309    .text.UART_DeInit   star_uart.o
-    0x00000af6   0x00000af6   0x00000018   Code   RO          311    .text.UART_Init     star_uart.o
-    0x00000b0e   0x00000b0e   0x00000002   PAD
-    0x00000b10   0x00000b10   0x00000018   Code   RO          221    .text.fputc         star_retarget.o
-    0x00000b28   0x00000b28   0x0000008c   Code   RO          378    .text.main          main.o
-    0x00000bb4   0x00000bb4   0x0000001a   Code   RO          496    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x00000bce   0x00000bce   0x00000002   PAD
-    0x00000bd0   0x00000bd0   0x00000020   Data   RO          568    Region$$Table       anon$$obj.o
+    0x00000a82   0x00000a82   0x00000028   Code   RO          401    .text.SCD_CMD_CALL  scd.o
+    0x00000aaa   0x00000aaa   0x00000016   Code   RO          397    .text.SCD_CMD_CHG   scd.o
+    0x00000ac0   0x00000ac0   0x0000001a   Code   RO          395    .text.SCD_CMD_CONF  scd.o
+    0x00000ada   0x00000ada   0x00000026   Code   RO          399    .text.SCD_CMD_DUMP  scd.o
+    0x00000b00   0x00000b00   0x00000180   Code   RO          393    .text.SCD_CMD_SET   scd.o
+    0x00000c80   0x00000c80   0x000001b0   Code   RO          387    .text.SCD_Rev1Byte  scd.o
+    0x00000e30   0x00000e30   0x0000000e   Code   RO          409    .text.SCO_DEBUG     scd.o
+    0x00000e3e   0x00000e3e   0x00000002   PAD
+    0x00000e40   0x00000e40   0x000001cc   Code   RO          411    .text.SCO_DUMP      scd.o
+    0x0000100c   0x0000100c   0x00000074   Code   RO          413    .text.SCO_PRINT     scd.o
+    0x00001080   0x00001080   0x00000140   Code   RO          407    .text.SCO_VAR       scd.o
+    0x000011c0   0x000011c0   0x00000114   Code   RO          405    .text.SCO_get       scd.o
+    0x000012d4   0x000012d4   0x00000010   Code   RO          447    .text.SysTick_Handler  nvic_it.o
+    0x000012e4   0x000012e4   0x00000032   Code   RO          359    .text.SystemInit    system_armcm33.o
+    0x00001316   0x00001316   0x00000042   Code   RO          309    .text.UART_DeInit   star_uart.o
+    0x00001358   0x00001358   0x00000018   Code   RO          311    .text.UART_Init     star_uart.o
+    0x00001370   0x00001370   0x000000fa   Code   RO          403    .text._cz_strtoxl   scd.o
+    0x0000146a   0x0000146a   0x00000002   PAD
+    0x0000146c   0x0000146c   0x00000014   Code   RO          221    .text.fputc         star_retarget.o
+    0x00001480   0x00001480   0x00000180   Code   RO          428    .text.main          main.o
+    0x00001600   0x00001600   0x0000009c   Code   RO          455    .text.scd_init_1    scd_reg.o
+    0x0000169c   0x0000169c   0x00000040   Code   RO          389    .text.scd_send1Byte  scd.o
+    0x000016dc   0x000016dc   0x0000001a   Code   RO          578    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x000016f6   0x000016f6   0x00000002   PAD
+    0x000016f8   0x000016f8   0x00000014   Data   RO          416    .rodata.SCD_PROTOCOL_FCNS  scd.o
+    0x0000170c   0x0000170c   0x00000400   Data   RO          415    .rodata.cz_ctype    scd.o
+    0x00001b0c   0x00001b0c   0x00000017   Data   RO          417    .rodata.str1.1      scd.o
+    0x00001b23   0x00001b23   0x00000001   PAD
+    0x00001b24   0x00001b24   0x00000048   Data   RO          460    .rodata.tyj_unit_struct_1  scd_reg.o
+    0x00001b6c   0x00001b6c   0x00000020   Data   RO          650    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00000bf0, Size: 0x00001060, Max: 0x00030000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00001b90, Size: 0x00001168, Max: 0x00030000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00000bf0   0x00000004   Data   RW          361    .data.SystemCoreClock  system_armcm33.o
-    0x20000004   0x00000bf4   0x00000004   PAD
-    0x20000008        -       0x00000054   Zero   RW          229    .bss.__stdout       star_retarget.o
-    0x2000005c   0x00000bf4   0x00000004   PAD
-    0x20000060        -       0x00001000   Zero   RW          368    STACK               startup_armcm33.o
+    0x20000000   0x00001b90   0x00000004   Data   RW          361    .data.SystemCoreClock  system_armcm33.o
+    0x20000004   0x00001b94   0x00000004   Data   RW          457    .data.endBuff1_1    scd_reg.o
+    0x20000008   0x00001b98   0x00000008   Data   RW          458    .data.endBuff2_1    scd_reg.o
+    0x20000010   0x00001ba0   0x00000004   Data   RW          459    .data.endBuff3_1    scd_reg.o
+    0x20000014   0x00001ba4   0x00000004   PAD
+    0x20000018        -       0x00000002   Zero   RW          419    .bss.SCO_DUMP.checkUint16Sum  scd.o
+    0x2000001a        -       0x00000002   Zero   RW          418    .bss.SCO_VAR.checkUint16Sum  scd.o
+    0x2000001c        -       0x00000054   Zero   RW          229    .bss.__stdout       star_retarget.o
+    0x20000070        -       0x00000004   Zero   RW          438    .bss.millisCnt      main.o
+    0x20000074        -       0x00000028   Zero   RW          463    .bss.printBuff_1    scd_reg.o
+    0x2000009c        -       0x00000050   Zero   RW          462    .bss.recBuff_1      scd_reg.o
+    0x200000ec        -       0x00000068   Zero   RW          461    .bss.scd_1          scd_reg.o
+    0x20000154        -       0x00000002   Zero   RW          430    .bss.test1          main.o
+    0x20000156        -       0x00000002   Zero   RW          434    .bss.test1r         main.o
+    0x20000158        -       0x00000002   Zero   RW          431    .bss.test2          main.o
+    0x2000015a        -       0x00000002   Zero   RW          435    .bss.test2r         main.o
+    0x2000015c        -       0x00000002   Zero   RW          432    .bss.test3          main.o
+    0x2000015e        -       0x00000002   Zero   RW          436    .bss.test3r         main.o
+    0x20000160        -       0x00000002   Zero   RW          433    .bss.test4          main.o
+    0x20000162        -       0x00000002   Zero   RW          437    .bss.test4r         main.o
+    0x20000164   0x00001ba4   0x00000004   PAD
+    0x20000168        -       0x00001000   Zero   RW          368    STACK               startup_armcm33.o
 
 
 ==============================================================================
@@ -1015,18 +1198,21 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       140         20          0          0          0       2019   main.o
+       384         20          0          0         20       6640   main.o
+        16          0          0          0          0        325   nvic_it.o
+      2442         56       1067          0          4      12228   scd.o
+       156          0         72         16        224       1711   scd_reg.o
         10          0          0          0          0       3583   star_gpio.o
         24          0          0          0          0        905   star_rcc.o
-        24          0          0          0         84       1922   star_retarget.o
+        20          0          0          0         84       1889   star_retarget.o
         90          0          0          0          0       2753   star_uart.o
        208         12       2204          0       4096       4108   startup_armcm33.o
         50          0          0          4          0       1894   system_armcm33.o
 
     ----------------------------------------------------------------------
-       548         32       2236          4       4188      17184   Object Totals
+      3404         88       3376         20       4436      36036   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         2          0          0          0          8          0   (incl. Padding)
+         4          0          1          0          8          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1074,15 +1260,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-       820         52       2236          4       4188      17616   Grand Totals
-       820         52       2236          4       4188      17616   ELF Image Totals
-       820         52       2236          4          0          0   ROM Totals
+      3676        108       3376         20       4436      36408   Grand Totals
+      3676        108       3376         20       4436      36408   ELF Image Totals
+      3676        108       3376         20          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 3056 (   2.98kB)
-    Total RW  Size (RW Data + ZI Data)              4192 (   4.09kB)
-    Total ROM Size (Code + RO Data + RW Data)       3060 (   2.99kB)
+    Total RO  Size (Code + RO Data)                 7052 (   6.89kB)
+    Total RW  Size (RW Data + ZI Data)              4456 (   4.35kB)
+    Total ROM Size (Code + RO Data + RW Data)       7072 (   6.91kB)
 
 ==============================================================================
 

@@ -460,6 +460,18 @@
         </Group>
         <Group>
           <GroupName>LIBS</GroupName>
+          <Files>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\LIBS\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>scd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\LIBS\scd.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>USR</GroupName>
@@ -468,6 +480,16 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\USR\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>NVIC_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USR\NVIC_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>scd_reg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USR\scd_reg.c</FilePath>
             </File>
           </Files>
         </Group>

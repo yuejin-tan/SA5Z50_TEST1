@@ -1,5 +1,11 @@
 -module fpga_cm33
 -module led_wf
 -module PLL_FREQ
+-module ahb_seg7x8
+-module ahb_uart
+-module ahb_null
+-module AHBlite_Decoder
+-module AHBlite_Interconnect
+-module AHBlite_SlaveMUX
 -topmoduleNum 1
 topmodule fpga_cm33

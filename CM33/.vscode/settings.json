@@ -49,7 +49,8 @@
         "star_conf.h": "c",
         "arm_cmse.h": "c",
         "star_rcc.h": "c",
-        "star_gpio.h": "c"
+        "star_gpio.h": "c",
+        "ahb_ledseg.h": "c"
     },
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#1073cf2d",

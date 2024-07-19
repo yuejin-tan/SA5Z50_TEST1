@@ -24,14 +24,14 @@ int fgetc(FILE* f) {
 
 unsigned char UartPutc(unsigned char my_ch)
 {
-	while ((STAR_UART0->STATE & STAR_UART_STATE_TXBF_Msk));
-	STAR_UART0->DATA = (my_ch & (uint8_t)0xff);
+	while ((STAR_UART1->STATE & STAR_UART_STATE_TXBF_Msk));
+	STAR_UART1->DATA = (my_ch & (uint8_t)0xff);
 	return (my_ch);
 }
 
 // Get a character
 unsigned char UartGetc(void)
 {
-	while ((STAR_UART0->STATE & STAR_UART_STATE_RXBF_Msk) == 0);
-	return (STAR_UART0->DATA & (uint8_t)0xff);
+	while ((STAR_UART1->STATE & STAR_UART_STATE_RXBF_Msk) == 0);
+	return (STAR_UART1->DATA & (uint8_t)0xff);
 }
