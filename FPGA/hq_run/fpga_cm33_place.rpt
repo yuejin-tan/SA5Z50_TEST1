@@ -1,0 +1,354 @@
+
+######################oOOOo###########oOOOo##########################
+#  HqFpga(TM) Release V2.14.4 (Winter 2023) Build 021824
+#  [网表报告]
+#####################################################################
+日期 : Sat Jul 20 08:40:13 2024
+
+Library U_ARCH
++-----------+------+
+| Cell 名称 | 数量 |
++-----------+------+
+| PIO       |   43 |
+| IOLOGIC   |    7 |
+| PLL_25K   |    1 |
+| CM33      |    1 |
+| SLICEL    |  245 |
++-----------+------+
+| Sum       |  297 |
++-----------+------+
+
+Library work
++-----------+------+
+| Cell 名称 | 数量 |
++-----------+------+
+| fpga_cm33 |    1 |
++-----------+------+
+| Sum       |    1 |
++-----------+------+
+
+######################oOOOo###########oOOOo##########################
+#  HqFpga(TM) Release V2.14.4 (Winter 2023) Build 021824
+#  [资源位置分配报告]
+#####################################################################
+日期 : Sat Jul 20 08:40:13 2024
+器件 : SA5Z-50-D0-7U324C
+
+** Bank Voltage Available **
++------+-------+
+| Bank | VCCIO |
++------+-------+
+| 0    |  2.5  |
+| 1    |  2.5  |
+| 2    |  3.3  |
+| 4    |  3.3  |
+| 5    |  3.3  |
+| 9    |  2.5  |
++------+-------+
+** IO端口位置 **
++----------------+--------+------+----------+------+-------+-------+----------+----------+
+| 端口名         |  方向  | 位置 |  IO标准  | Bank | VCCIO | DRIVE | SLEWRATE | PULLMODE |
++----------------+--------+------+----------+------+-------+-------+----------+----------+
+| RST_N_PIN      | INPUT  | H14  | LVCMOS33 |  2   |  3.3  |       |          |          |
+| CLK_IN_25M_PIN | INPUT  | K15  | LVCMOS33 |  2   |  3.3  |       |          |          |
+| ahb_uart_rx    | INPUT  | U16  | LVCMOS33 |  4   |  3.3  |       |          |          |
+| SW_CLK_PIN     | INPUT  |  T9  | LVCMOS33 |  4   |  3.3  |       |   FAST   |          |
+| seg7_SH_CP     | OUTPUT | D14  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| seg7_ST_CP     | OUTPUT | A14  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| seg7_DS        | OUTPUT | A13  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| LED01_PIN[1]   | OUTPUT | D13  | LVCMOS33 |  2   |  3.3  |   8   |   SLOW   |          |
+| LED01_PIN[0]   | OUTPUT | D12  | LVCMOS33 |  2   |  3.3  |   8   |   SLOW   |          |
+| ahb_uart_tx    | OUTPUT | U13  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[31]   | INOUT  | F16  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[30]   | INOUT  | F15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[29]   | INOUT  | G16  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[28]   | INOUT  | H16  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[27]   | INOUT  | B14  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[26]   | INOUT  | J15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[25]   | INOUT  | E16  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[24]   | INOUT  | E15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[23]   | INOUT  | B12  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[22]   | INOUT  | C12  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[21]   | INOUT  | F14  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[20]   | INOUT  | P17  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[19]   | INOUT  | R15  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[18]   | INOUT  | D17  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[17]   | INOUT  |  U6  | LVCMOS33 |  5   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[16]   | INOUT  | F13  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[15]   | INOUT  | H17  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[14]   | INOUT  | P15  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[13]   | INOUT  | N16  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[12]   | INOUT  | U18  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[11]   | INOUT  | N15  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[10]   | INOUT  | R17  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[9]    | INOUT  | T15  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[8]    | INOUT  | T13  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[7]    | INOUT  | T14  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[6]    | INOUT  | H15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[5]    | INOUT  | V12  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[4]    | INOUT  | T10  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[3]    | INOUT  | U17  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[2]    | INOUT  | T18  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[1]    | INOUT  |  N4  | LVCMOS33 |  5   |  3.3  |   8   |   FAST   |          |
+| GPIO_PIN[0]    | INOUT  | C15  | LVCMOS33 |  2   |  3.3  |   8   |   FAST   |          |
+| SWD_IO_PIN     | INOUT  | M13  | LVCMOS33 |  4   |  3.3  |   8   |   FAST   |          |
++----------------+--------+------+----------+------+-------+-------+----------+----------+
+** 单元位置 **
++----------------------------------+----------+-----------+
+| 元件                             | 元件类型 |   位置    |
++----------------------------------+----------+-----------+
+| ahb_uart_rx_MGIOL                | IOLOGIC  | IOL_T127A |
+| seg7_SH_CP_MGIOL                 | IOLOGIC  | IOL_T58C  |
+| seg7_ST_CP_MGIOL                 | IOLOGIC  | IOL_T67B  |
+| seg7_DS_MGIOL                    | IOLOGIC  | IOL_T67A  |
+| LED01_PIN[1]_MGIOL               | IOLOGIC  | IOL_T61D  |
+| LED01_PIN[0]_MGIOL               | IOLOGIC  | IOL_T61C  |
+| ahb_uart_tx_MGIOL                | IOLOGIC  | IOL_T130D |
+| PLL_inst1/PLLInst_0              | PLL_25K  |   TPLL2   |
+| CM33_inst                        |   CM33   |    CM3    |
+| led_wf_inst1/n_69[1]             |  SLICEL  | R20C124M  |
+| led_wf_inst1/n_69[5]             |  SLICEL  | R20C125M  |
+| led_wf_inst1/n_69[9]             |  SLICEL  | R20C126M  |
+| led_wf_inst1/n_69[13]            |  SLICEL  | R20C127M  |
+| led_wf_inst1/n_69[17]            |  SLICEL  | R20C128M  |
+| led_wf_inst1/n_69[21]            |  SLICEL  | R20C129M  |
+| led_wf_inst1/n_69[25]            |  SLICEL  | R20C130M  |
+| seg_inst/n_424[1]                |  SLICEL  |  R12C70L  |
+| seg_inst/n_424[5]                |  SLICEL  |  R12C71L  |
+| seg_inst/n_430[1]                |  SLICEL  |  R13C31L  |
+| seg_inst/n_430[5]                |  SLICEL  |  R13C32L  |
+| ahb_uart1/n_1284[1]              |  SLICEL  |  R14C26L  |
+| ahb_uart1/n_1284[5]              |  SLICEL  |  R14C27L  |
+| ahb_uart1/n_1284[9]              |  SLICEL  |  R14C28L  |
+| ahb_uart1/n_1284[13]             |  SLICEL  |  R14C29L  |
+| ahb_uart1/n_1291[1]              |  SLICEL  |  R12C28M  |
+| ahb_uart1/n_1291[5]              |  SLICEL  |  R12C29M  |
+| ahb_uart1/n_1291[9]              |  SLICEL  |  R12C30M  |
+| ahb_uart1/n_1291[13]             |  SLICEL  |  R12C31M  |
+| net_extracted_nHQX6              |  SLICEL  |  R12C20M  |
+| net_extracted_nHQX11             |  SLICEL  |  R13C24M  |
+| _n_2256                          |  SLICEL  |  R13C27L  |
+| ahb_uart1/n_556                  |  SLICEL  |  R13C28L  |
+| _n_2267                          |  SLICEL  |  R12C27L  |
+| ahb_uart1/n_577                  |  SLICEL  |  R12C28L  |
+| HRDATA_P2[8]                     |  SLICEL  |  R12C48L  |
+| HRDATA_P2[9]                     |  SLICEL  |  R13C48L  |
+| HRDATA_P2[10]                    |  SLICEL  |  R12C48M  |
+| HRDATA_P2[11]                    |  SLICEL  |  R13C48M  |
+| HRDATA_P2[12]                    |  SLICEL  |  R12C50M  |
+| HRDATA_P2[13]                    |  SLICEL  |  R12C51M  |
+| HRDATA_P2[14]                    |  SLICEL  |  R12C50L  |
+| HRDATA_P2[15]                    |  SLICEL  |  R13C50L  |
+| ahb_uart1/n_730[0]               |  SLICEL  |  R12C35M  |
+| ahb_uart1/n_730[1]               |  SLICEL  |  R14C37M  |
+| ahb_uart1/n_730[2]               |  SLICEL  |  R12C37M  |
+| ahb_uart1/n_730[3]               |  SLICEL  |  R14C38L  |
+| ahb_uart1/n_730[4]               |  SLICEL  |  R13C38M  |
+| ahb_uart1/n_730[5]               |  SLICEL  |  R12C38L  |
+| ahb_uart1/n_730[6]               |  SLICEL  |  R13C35M  |
+| ahb_uart1/n_730[7]               |  SLICEL  |  R14C35M  |
+| seg_inst/seg_2_dec[0]            |  SLICEL  |  R14C23M  |
+| seg_inst/seg_2_dec[1]            |  SLICEL  |  R14C19L  |
+| seg_inst/seg_2_dec[2]            |  SLICEL  |  R14C22M  |
+| seg_inst/seg_2_dec[3]            |  SLICEL  |  R14C19M  |
+| seg_inst/seg_2_dec[4]            |  SLICEL  |  R14C20L  |
+| ahb_uart1/CLK_TX_pulse           |  SLICEL  |  R9C37M   |
+| ahb_uart1/n_1047                 |  SLICEL  |  R13C49M  |
+| ahb_uart1/n_832                  |  SLICEL  |  R13C33L  |
+| ahb_uart1/n_821                  |  SLICEL  |  R14C36M  |
+| ahb_uart1/n_788                  |  SLICEL  |  R12C36M  |
+| ahb_uart1/TX_fifo_buff[0][6]     |  SLICEL  |  R14C36L  |
+| ahb_uart1/TX_fifo_buff[0][4]     |  SLICEL  |  R13C36M  |
+| ahb_uart1/n_777                  |  SLICEL  |  R13C35L  |
+| ahb_uart1/RX_recving             |  SLICEL  |  R12C43M  |
+| ahb_uart1/_i_403_rkd_5           |  SLICEL  |  R17C52L  |
+| ahb_uart1/RX_shift_reg[7]        |  SLICEL  |  R18C51M  |
+| ahb_uart1/RX_fifo_buff[0][7]     |  SLICEL  |  R14C49M  |
+| ahb_uart1/RX_fifo_buff[0][1]     |  SLICEL  |  R13C50M  |
+| net_extracted_nHQX16             |  SLICEL  |  R18C52L  |
+| ahb_uart1/n_679                  |  SLICEL  |  R18C51L  |
+| ahb_uart1/RX_fifo_wr_ptr[1]      |  SLICEL  |  R12C47M  |
+| ahb_uart1/TX_fifo_rd_ptr[1]      |  SLICEL  |  R13C38L  |
+| ahb_uart1/TX_fifo_rd_ptr[0]      |  SLICEL  |  R13C37L  |
+| ahb_uart1/RX_fifo_rd_ptr[1]      |  SLICEL  |  R12C49M  |
+| ahb_uart1/n_1168                 |  SLICEL  |  R13C24L  |
+| ahb_uart1/TX_fifo_wr_ptr[2]      |  SLICEL  |  R13C37M  |
+| ahb_uart1/n_776                  |  SLICEL  |  R13C33M  |
+| ahb_uart1/n_572                  |  SLICEL  |  R9C38M   |
+| seg_inst/size_reg[2]             |  SLICEL  |  R13C20M  |
+| inst_extracted_iHQX5_rkd_9       |  SLICEL  |  R14C14L  |
+| seg7_DS_c                        |  SLICEL  |  R13C30M  |
+| seg_inst/seg_data_shifer_reg[7]  |  SLICEL  |  R14C29M  |
+| seg_inst/seg_data_shifer_reg[4]  |  SLICEL  |  R14C30L  |
+| seg_inst/n_442                   |  SLICEL  |  R14C30M  |
+| seg_inst/n_367                   |  SLICEL  |  R13C21L  |
+| led_wf_inst1/cnt[1]              |  SLICEL  | R20C129L  |
+| led_wf_inst1/cnt[11]             |  SLICEL  | R20C125L  |
+| led_wf_inst1/cnt[20]             |  SLICEL  | R20C128L  |
+| led_wf_inst1/cnt[23]             |  SLICEL  | R20C127L  |
+| led_wf_inst1/cnt[25]             |  SLICEL  | R20C130L  |
+| led_wf_inst1/_i_2/_i_0_rkd_15    |  SLICEL  | R20C126L  |
+| _n_2198                          |  SLICEL  |  R12C47L  |
+| TARGEXP1HRDATA[9]                |  SLICEL  |  R12C42L  |
+| TARGEXP1HRDATA[12]               |  SLICEL  |  R12C24L  |
+| TARGEXP1HRDATA[13]               |  SLICEL  |  R12C26M  |
+| TARGEXP1HRDATA[16]               |  SLICEL  |  R12C24M  |
+| TARGEXP1HRDATA[18]               |  SLICEL  |  R12C26L  |
+| TARGEXP1HRDATA[20]               |  SLICEL  |  R12C27M  |
+| TARGEXP1HRDATA[23]               |  SLICEL  |  R12C25L  |
+| TARGEXP1HRDATA[30]               |  SLICEL  |  R12C25M  |
+| net_extracted_nHQX14             |  SLICEL  |  R13C31M  |
+| TARGEXP1HRDATA[7]                |  SLICEL  |  R12C20L  |
+| ahb_uart1/RX_DIV_cnt[2]          |  SLICEL  |  R12C31L  |
+| ahb_uart1/RX_DIV_cnt[7]          |  SLICEL  |  R12C29L  |
+| ahb_uart1/RX_DIV_cnt[9]          |  SLICEL  |  R12C30L  |
+| ahb_uart1/TX_DIV_cnt[1]          |  SLICEL  |  R14C28M  |
+| ahb_uart1/TX_DIV_cnt[13]         |  SLICEL  |  R14C27M  |
+| ahb_uart1/n_1034                 |  SLICEL  |  R13C47M  |
+| ahb_uart1/n_995                  |  SLICEL  |  R12C49L  |
+| ahb_uart1/n_956                  |  SLICEL  |  R13C49L  |
+| ahb_uart1/RX_shiftIN_cnt[3]      |  SLICEL  |  R18C53L  |
+| ahb_uart1/RX_shiftIN_cnt[2]      |  SLICEL  |  R18C53M  |
+| ahb_uart1/TX_shift_reg[4]        |  SLICEL  |  R9C39L   |
+| ahb_uart1/n_1192                 |  SLICEL  |  R9C39M   |
+| seg_inst/clk_1M_cnt[6]           |  SLICEL  |  R12C70M  |
+| seg_inst/clk_DRV                 |  SLICEL  |  R13C70L  |
+| ahb_uart1/TX_shiftOUT_cnt[1]     |  SLICEL  |  R9C38L   |
+| ahb_uart1/n_1161                 |  SLICEL  |  R13C36L  |
+| ahb_uart1/trans_req              |  SLICEL  |  R12C22M  |
+| ahb_uart1/TX_shift_reg[8]        |  SLICEL  |  R9C37L   |
+| seg_inst/HC595_CLK_CNT[2]        |  SLICEL  |  R14C31M  |
+| seg_inst/seg_data_shifer_reg[11] |  SLICEL  |  R14C25M  |
+| seg_inst/seg_data_shifer_reg[15] |  SLICEL  |  R14C25L  |
+| led_wf_inst1/n_35                |  SLICEL  |  R2C76M   |
+| seg_inst/clk_1M_cnt[0]           |  SLICEL  |  R13C70M  |
+| seg_inst/HC595_CLK_CNT[0]        |  SLICEL  |  R14C31L  |
+| seg_inst/segx_reg_0[2]           |  SLICEL  |  R14C18L  |
+| seg_inst/segx_reg_0[4]           |  SLICEL  |  R14C17M  |
+| seg_inst/segx_reg_1[3]           |  SLICEL  |  R13C19M  |
+| seg_inst/segx_reg_3[2]           |  SLICEL  |  R14C20M  |
+| seg_inst/segx_reg_3[3]           |  SLICEL  |  R15C19L  |
+| seg_inst/segx_reg_4[2]           |  SLICEL  |  R14C16M  |
+| seg_inst/segx_reg_4[4]           |  SLICEL  |  R14C17L  |
+| seg_inst/segx_reg_5[2]           |  SLICEL  |  R14C23L  |
+| seg_inst/segx_reg_5[3]           |  SLICEL  |  R14C18M  |
+| seg_inst/segx_reg_6[2]           |  SLICEL  |  R14C21M  |
+| seg_inst/segx_reg_6[3]           |  SLICEL  |  R13C19L  |
+| seg_inst/segx_reg_7[2]           |  SLICEL  |  R14C22L  |
+| seg_inst/segx_reg_7[3]           |  SLICEL  |  R14C21L  |
+| seg_inst/addr_reg[7]             |  SLICEL  |  R13C20L  |
+| seg_inst/addr_reg[8]             |  SLICEL  |  R12C19L  |
+| seg_inst/addr_reg[10]            |  SLICEL  |  R12C21L  |
+| seg_inst/addr_reg[12]            |  SLICEL  |  R12C19M  |
+| seg_inst/addr_reg[14]            |  SLICEL  |  R12C21M  |
+| ahb_uart1/addr[4]                |  SLICEL  |  R12C23L  |
+| ahb_uart1/addr[6]                |  SLICEL  |  R13C22L  |
+| ahb_uart1/addr[8]                |  SLICEL  |  R13C23M  |
+| ahb_uart1/addr[10]               |  SLICEL  |  R13C22M  |
+| ahb_uart1/addr[12]               |  SLICEL  |  R13C21M  |
+| ahb_uart1/addr[14]               |  SLICEL  |  R13C23L  |
+| ahb_uart1/TX_fifo_buff[2][2]     |  SLICEL  |  R10C35L  |
+| ahb_uart1/TX_fifo_buff[2][3]     |  SLICEL  |  R15C36M  |
+| ahb_uart1/TX_fifo_buff[2][5]     |  SLICEL  |  R12C36L  |
+| ahb_uart1/TX_fifo_buff[2][7]     |  SLICEL  |  R17C35M  |
+| ahb_uart1/TX_fifo_buff[3][2]     |  SLICEL  |  R10C37L  |
+| ahb_uart1/TX_fifo_buff[3][3]     |  SLICEL  |  R12C34L  |
+| ahb_uart1/TX_fifo_buff[3][5]     |  SLICEL  |  R10C38L  |
+| ahb_uart1/TX_fifo_buff[3][7]     |  SLICEL  |  R10C36L  |
+| ahb_uart1/TX_fifo_buff[4][2]     |  SLICEL  |  R15C37L  |
+| ahb_uart1/TX_fifo_buff[4][3]     |  SLICEL  |  R14C37L  |
+| ahb_uart1/TX_fifo_buff[4][5]     |  SLICEL  |  R14C38M  |
+| ahb_uart1/TX_fifo_buff[4][7]     |  SLICEL  |  R18C36L  |
+| ahb_uart1/TX_fifo_buff[5][2]     |  SLICEL  |  R12C33M  |
+| ahb_uart1/TX_fifo_buff[5][3]     |  SLICEL  |  R15C39M  |
+| ahb_uart1/TX_fifo_buff[5][5]     |  SLICEL  |  R13C39M  |
+| ahb_uart1/TX_fifo_buff[5][7]     |  SLICEL  |  R13C34L  |
+| ahb_uart1/TX_fifo_buff[6][2]     |  SLICEL  |  R15C36L  |
+| ahb_uart1/TX_fifo_buff[6][3]     |  SLICEL  |  R15C38M  |
+| ahb_uart1/TX_fifo_buff[6][5]     |  SLICEL  |  R14C39M  |
+| ahb_uart1/TX_fifo_buff[6][7]     |  SLICEL  |  R17C36M  |
+| ahb_uart1/TX_fifo_buff[7][2]     |  SLICEL  |  R15C34L  |
+| ahb_uart1/TX_fifo_buff[7][3]     |  SLICEL  |  R15C34M  |
+| ahb_uart1/TX_fifo_buff[7][5]     |  SLICEL  |  R13C32M  |
+| ahb_uart1/TX_fifo_buff[7][7]     |  SLICEL  |  R14C34M  |
+| ahb_uart1/TX_fifo_buff[8][4]     |  SLICEL  |  R15C33M  |
+| ahb_uart1/TX_fifo_buff[8][5]     |  SLICEL  |  R15C37M  |
+| ahb_uart1/TX_fifo_buff[8][7]     |  SLICEL  |  R17C35L  |
+| ahb_uart1/TX_fifo_buff[9][4]     |  SLICEL  |  R12C38M  |
+| ahb_uart1/TX_fifo_buff[9][5]     |  SLICEL  |  R12C39L  |
+| ahb_uart1/TX_fifo_buff[9][7]     |  SLICEL  |  R10C35M  |
+| ahb_uart1/TX_fifo_buff[10][2]    |  SLICEL  |  R12C35L  |
+| ahb_uart1/TX_fifo_buff[10][3]    |  SLICEL  |  R14C35L  |
+| ahb_uart1/TX_fifo_buff[10][5]    |  SLICEL  |  R9C35M   |
+| ahb_uart1/TX_fifo_buff[10][7]    |  SLICEL  |  R15C35L  |
+| ahb_uart1/TX_fifo_buff[11][2]    |  SLICEL  |  R10C37M  |
+| ahb_uart1/TX_fifo_buff[11][3]    |  SLICEL  |  R12C37L  |
+| ahb_uart1/TX_fifo_buff[11][5]    |  SLICEL  |  R9C36M   |
+| ahb_uart1/TX_fifo_buff[11][7]    |  SLICEL  |  R10C36M  |
+| ahb_uart1/TX_fifo_buff[12][4]    |  SLICEL  |  R17C36L  |
+| ahb_uart1/TX_fifo_buff[12][5]    |  SLICEL  |  R14C39L  |
+| ahb_uart1/TX_fifo_buff[12][7]    |  SLICEL  |  R18C36M  |
+| ahb_uart1/TX_fifo_buff[13][2]    |  SLICEL  |  R12C34M  |
+| ahb_uart1/TX_fifo_buff[13][3]    |  SLICEL  |  R12C39M  |
+| ahb_uart1/TX_fifo_buff[13][5]    |  SLICEL  |  R13C39L  |
+| ahb_uart1/TX_fifo_buff[13][7]    |  SLICEL  |  R14C34L  |
+| ahb_uart1/TX_fifo_buff[14][2]    |  SLICEL  |  R14C33M  |
+| ahb_uart1/TX_fifo_buff[14][3]    |  SLICEL  |  R15C38L  |
+| ahb_uart1/TX_fifo_buff[14][5]    |  SLICEL  |  R9C36L   |
+| ahb_uart1/TX_fifo_buff[14][7]    |  SLICEL  |  R15C35M  |
+| ahb_uart1/TX_fifo_buff[15][4]    |  SLICEL  |  R12C33L  |
+| ahb_uart1/TX_fifo_buff[15][5]    |  SLICEL  |  R13C34M  |
+| ahb_uart1/TX_fifo_buff[15][7]    |  SLICEL  |  R14C33L  |
+| ahb_uart1/RX_fifo_buff[2][2]     |  SLICEL  |  R14C48L  |
+| ahb_uart1/RX_fifo_buff[2][4]     |  SLICEL  |  R14C50L  |
+| ahb_uart1/RX_fifo_buff[2][6]     |  SLICEL  |  R13C52M  |
+| ahb_uart1/RX_fifo_buff[3][2]     |  SLICEL  |  R10C48M  |
+| ahb_uart1/RX_fifo_buff[3][3]     |  SLICEL  |  R15C48M  |
+| ahb_uart1/RX_fifo_buff[3][5]     |  SLICEL  |  R12C52L  |
+| ahb_uart1/RX_fifo_buff[3][7]     |  SLICEL  |  R14C52L  |
+| ahb_uart1/RX_fifo_buff[4][2]     |  SLICEL  |  R10C48L  |
+| ahb_uart1/RX_fifo_buff[4][3]     |  SLICEL  |  R13C46L  |
+| ahb_uart1/RX_fifo_buff[4][5]     |  SLICEL  |  R9C49M   |
+| ahb_uart1/RX_fifo_buff[4][7]     |  SLICEL  |  R9C50M   |
+| ahb_uart1/RX_fifo_buff[5][4]     |  SLICEL  |  R10C50M  |
+| ahb_uart1/RX_fifo_buff[5][5]     |  SLICEL  |  R10C49M  |
+| ahb_uart1/RX_fifo_buff[5][7]     |  SLICEL  |  R10C50L  |
+| ahb_uart1/RX_fifo_buff[6][2]     |  SLICEL  |  R10C47M  |
+| ahb_uart1/RX_fifo_buff[6][3]     |  SLICEL  |  R15C47M  |
+| ahb_uart1/RX_fifo_buff[6][5]     |  SLICEL  |  R13C52L  |
+| ahb_uart1/RX_fifo_buff[6][7]     |  SLICEL  |  R14C53L  |
+| ahb_uart1/RX_fifo_buff[7][2]     |  SLICEL  |  R9C48M   |
+| ahb_uart1/RX_fifo_buff[7][3]     |  SLICEL  |  R15C49L  |
+| ahb_uart1/RX_fifo_buff[7][5]     |  SLICEL  |  R12C51L  |
+| ahb_uart1/RX_fifo_buff[7][7]     |  SLICEL  |  R9C50L   |
+| ahb_uart1/RX_fifo_buff[8][2]     |  SLICEL  |  R14C47M  |
+| ahb_uart1/RX_fifo_buff[8][3]     |  SLICEL  |  R15C47L  |
+| ahb_uart1/RX_fifo_buff[8][5]     |  SLICEL  |  R12C53L  |
+| ahb_uart1/RX_fifo_buff[8][7]     |  SLICEL  |  R13C53M  |
+| ahb_uart1/RX_fifo_buff[9][4]     |  SLICEL  |  R14C47L  |
+| ahb_uart1/RX_fifo_buff[9][5]     |  SLICEL  |  R13C51L  |
+| ahb_uart1/RX_fifo_buff[9][7]     |  SLICEL  |  R13C51M  |
+| ahb_uart1/RX_fifo_buff[10][2]    |  SLICEL  |  R10C47L  |
+| ahb_uart1/RX_fifo_buff[10][3]    |  SLICEL  |  R13C46M  |
+| ahb_uart1/RX_fifo_buff[10][5]    |  SLICEL  |  R12C53M  |
+| ahb_uart1/RX_fifo_buff[10][7]    |  SLICEL  |  R13C53L  |
+| ahb_uart1/RX_fifo_buff[11][4]    |  SLICEL  |  R14C50M  |
+| ahb_uart1/RX_fifo_buff[11][5]    |  SLICEL  |  R15C51L  |
+| ahb_uart1/RX_fifo_buff[11][7]    |  SLICEL  |  R14C51M  |
+| ahb_uart1/RX_fifo_buff[12][2]    |  SLICEL  |  R14C48M  |
+| ahb_uart1/RX_fifo_buff[12][3]    |  SLICEL  |  R15C48L  |
+| ahb_uart1/RX_fifo_buff[12][5]    |  SLICEL  |  R15C49M  |
+| ahb_uart1/RX_fifo_buff[12][7]    |  SLICEL  |  R15C50M  |
+| ahb_uart1/RX_fifo_buff[13][2]    |  SLICEL  |  R10C49L  |
+| ahb_uart1/RX_fifo_buff[13][3]    |  SLICEL  |  R13C47L  |
+| ahb_uart1/RX_fifo_buff[13][5]    |  SLICEL  |  R10C51M  |
+| ahb_uart1/RX_fifo_buff[13][7]    |  SLICEL  |  R12C52M  |
+| ahb_uart1/RX_fifo_buff[14][2]    |  SLICEL  |  R9C48L   |
+| ahb_uart1/RX_fifo_buff[14][3]    |  SLICEL  |  R17C48M  |
+| ahb_uart1/RX_fifo_buff[14][5]    |  SLICEL  |  R14C51L  |
+| ahb_uart1/RX_fifo_buff[14][7]    |  SLICEL  |  R15C50L  |
+| ahb_uart1/RX_fifo_buff[15][3]    |  SLICEL  |  R17C48L  |
+| ahb_uart1/RX_fifo_buff[15][4]    |  SLICEL  |  R14C49L  |
+| ahb_uart1/RX_fifo_buff[15][6]    |  SLICEL  |  R15C51M  |
+| ahb_uart1/RX_samp_regs[4]        |  SLICEL  |  R17C52M  |
++----------------------------------+----------+-----------+

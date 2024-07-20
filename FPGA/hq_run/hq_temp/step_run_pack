@@ -1,0 +1,63 @@
+Info: 检查时序约束 ....
+Info: 已完成.
+Info: 检查物理约束 ....
+Info: 已完成.
+Info: 网表整理(nl.sweep) 开始 ....
+Info: 共有 0 个节点被 nl.sweep 删除.
+Info: 网表整理(nl.sweep) 结束.
+WARN(NCHK-CLK001): 连线 seg_inst/clk_DRV 混合了时钟和数据连接.
+-- 非时钟引脚 --
+   seg_inst/clk_DRV_reg_ctrlmux.I0
+[说明]上述情况通常源自生成时钟，例如通过计数进行分频的逻辑。
+如果确实是这种情况而且是必须的(例如不能用PLL/DCM分频替代)，
+请别忘为相关连线显式地指定时钟约束。否则，这种时钟和数据混
+合的描述方式是不推荐使用的，请复查并修改。
+#=============oOOOo================oOOOo=============
+# 组装(Packing)
+#====================================================
+Info: 开始组装(packing).
+Info: 将 ahb_uart1/RX_samp_regs_reg[5] 吸收到 IREG.
+Info: 将 seg_inst/SH_CLK_reg 吸收到 OREG.
+Info: 将 seg_inst/LD_CLK_reg 吸收到 OREG.
+Info: 将 seg_inst/HC_DAT_reg_dup1 吸收到 OREG.
+Info: 将 led_wf_inst1/led_sig_reg[1]_dup1 吸收到 OREG.
+Info: 将 led_wf_inst1/led_sig_reg[0]_dup1 吸收到 OREG.
+Info: 将 ahb_uart1/TX_shift_reg_reg[0] 吸收到 OREG.
+Info: 开始组装预处理.
+Info: 完成组装预处理.
+Info: CM33                        1.
+Info: IOLOGIC                     7.
+Info:     IREG_OREG               7.
+Info: PIO                        43.
+Info: PLL_25K                     1.
+Info: SLICEL                     46.
+Info:     CARRY                  25.
+Info:     MUXF7                   5.
+Info:     MUXF8                  16.
+Info: SLICEL(LE)                641.
+Info:     LUT                   128.
+Info:     LUT REG               183.
+Info:     REG                   330.
+Info: 完成组装.
+Info: Start gpack.
+Info: Done gpack.
+Info: 开始建立物理网表.
+Info:   为 43   个 PIO        建立了物理网表 .
+Info:   为 7    个 IOLOGIC    建立了物理网表 .
+Info:   为 1    个 PLL_25K    建立了物理网表 .
+Info:   为 1    个 CM33       建立了物理网表 .
+Info:   为 245  个 SLICEL     建立了物理网表 .
+Info: 完成建立物理网表.
+Info: CM33                        1.
+Info: IOLOGIC                     7.
+Info:     IREG_OREG               7.
+Info: PIO                        43.
+Info: PLL_25K                     1.
+Info: SLICEL                    245.
+Info:     CARRY                  25.
+Info:     LOGIC                 199.
+Info:     MUXF7                   5.
+Info:     MUXF8                  16.
+####
+Info: 组装执行时间 : 6 秒.
+Info: 输出网表报告到文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\hq_run\fpga_cm33_map.rpt中.

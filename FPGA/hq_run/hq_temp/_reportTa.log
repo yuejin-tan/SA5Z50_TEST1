@@ -1,7 +1,7 @@
 Info: 检查时序约束 ....
 Info: 已完成.
 #################################################################
-# 时序分析报告 Thu Jul 18 18:46:12 2024
+# 时序分析报告 Sat Jul 20 07:49:19 2024
 #################################################################
 #  分析类型                               : 建立(setup)
 #  分析/报告未加约束IO与寄存器之间路径    : No
@@ -17,52 +17,60 @@ Info: 已完成.
 ********************
 * 路径 1
 ********************
-时间余量 : 9676 ps
-起点     : led_wf_inst1/led_sig_reg[1]/Q [激发时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿1]
-终点     : led_wf_inst1/led_sig_reg[1]/D [捕获时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿2]
+时间余量 : -1896 ps
+起点     : ahb_uart1/RX_fifo_rd_ptr[0]/AQ [激发时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿1]
+终点     : CM33_inst/TARGEXP1HRDATA_4     [捕获时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿2]
 类型     : 建立(setup) 
 数据产生路径
-=======================================================================================================================
-|               节点               |     单元     | 延迟 | 到达时间 |      类型      | 位置 |       连线       | 扇出 |
-=======================================================================================================================
-| CLOCK'CLK_IN_25M_PIN             |     N/A      |    0 |       -- |                |      | N/A              |      |
-| CLK_IN_25M_PIN                   |  fpga_cm33   |    0 |       -- | clock_latency  |      | CLK_IN_25M_PIN   | 1    |
-| CLK_IN_25M_PIN_pad/I             |    xsIOBI    |    0 |       -- |      net       |      | CLK_IN_25M_PIN   |      |
-| CLK_IN_25M_PIN_pad/O             |    xsIOBI    |  990 |       -- |      cell      |      | CLK_IN_25M_PIN_c | 1    |
-| PLL_inst1/PLLInst_0/CLKI         |   xsPLLSA    |    0 |       -- |      net       |      | CLK_IN_25M_PIN_c |      |
-| --                               |      --      |   -- |       -- |       --       | --   | --               | --   |
-| CLOCK'PLL_inst1/PLLInst_0/CLKOS2 |     N/A      |    0 |   Tlat:0 | tcst_gen_clock |      | N/A              |      |
-| PLL_inst1/PLLInst_0/CLKOS2       |   xsPLLSA    |  990 |      990 | clock_latency  |      | CLK_FPGA_SYS1    | 4    |
-| led_wf_inst1/led_sig_reg[1]/C    | xsDFFSA_K1C1 |    0 |      990 |      net       |      | CLK_FPGA_SYS1    |      |
-| --                               |      --      |   -- |       -- |       --       | --   | --               | --   |
-| led_wf_inst1/led_sig_reg[1]/Q    | xsDFFSA_K1C1 |  347 |     1337 |  rising_edge   |      | LED01_PIN[1]_c   | 2    |
-| led_wf_inst1/led_sig_reg[1]/D    | xsDFFSA_K1C1 |    0 |     1337 |      net       |      | LED01_PIN[1]_c   |      |
-=======================================================================================================================
-时钟路径延迟         = 990        (Tclkp)
-数据路径延迟         = 347        (Tdatp)
-     clock-to-q 延迟 = 347 
-        总的单元延迟 = 0 
-        总的连线延迟 = 0 
-        逻辑级数     = 0 
+==================================================================================================================================
+|              节点               |   单元    |  延迟  | 到达时间 |     类型      |  位置   |            连线             | 扇出 |
+==================================================================================================================================
+| CLOCK'CLK_IN_25M_PIN            |    N/A    |      0 |       -- |               |         | N/A                         |      |
+| CLK_IN_25M_PIN                  | fpga_cm33 |      0 |       -- | clock_latency |         | CLK_IN_25M_PIN              | 1    |
+| CLK_IN_25M_PIN/PAD#bidir_in     |    PIO    |      0 |       -- |      net      | PT88A   | CLK_IN_25M_PIN              | 1    |
+| CLK_IN_25M_PIN/PADDI            |    PIO    |   1091 |       -- |   PADI_DEL    |         | CLK_IN_25M_PIN_c            | 1    |
+| PLL_inst1/PLLInst_0/CLKI        |  PLL_25K  |    507 |       -- |      net      | TPLL2   | CLK_IN_25M_PIN_c            |      |
+| --                              |    --     |     -- |       -- |      --       | --      | --                          | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS |    N/A    |      0 |   Tlat:0 |  CLKI2OS_DEL  |         | N/A                         |      |
+| PLL_inst1/PLLInst_0/CLKOS       |  PLL_25K  |   1598 |     1598 | clock_latency |         | CLK_CM33                    | 212  |
+| ahb_uart1/RX_fifo_rd_ptr[0]/CLK |  SLICEL   | 2362.4 |   3960.4 |      net      | R17C62L | CLK_CM33                    |      |
+| --                              |    --     |     -- |       -- |      --       | --      | --                          | --   |
+| ahb_uart1/RX_fifo_rd_ptr[0]/AQ  |  SLICEL   |   30.5 |   3990.9 |     Tcko      |         | ahb_uart1/RX_fifo_rd_ptr[0] | 38   |
+| ahb_uart1/RX_fifo_rd_ptr[0]/B2  |  SLICEL   | 1097.8 |   5088.7 |      net      | R17C62L | ahb_uart1/RX_fifo_rd_ptr[0] |      |
+| ahb_uart1/RX_fifo_rd_ptr[0]/B   |  SLICEL   |   75.1 |   5163.8 |     Tilo      |         | _n_2198                     | 1    |
+| ahb_uart1/RX_fifo_rd_ptr[0]/C6  |  SLICEL   |  176.4 |   5340.2 |      net      | R17C62L | _n_2198                     |      |
+| ahb_uart1/RX_fifo_rd_ptr[0]/C   |  SLICEL   |   75.1 |   5415.3 |     Tilo      |         | net_extracted_nHQX40        | 3    |
+| ahb_uart1/RX_recving/B5         |  SLICEL   | 1159.4 |   6574.7 |      net      | R15C52M | net_extracted_nHQX40        |      |
+| ahb_uart1/RX_recving/B          |  SLICEL   |   75.1 |   6649.8 |     Tilo      |         | HRDATA_P2[4]                | 2    |
+| TARGEXP1HRDATA[4]/A4            |  SLICEL   | 1122.3 |   7772.1 |      net      | R18C43M | HRDATA_P2[4]                |      |
+| TARGEXP1HRDATA[4]/A             |  SLICEL   |   75.1 |   7847.2 |     Tilo      |         | TARGEXP1HRDATA[4]           | 1    |
+| CM33_inst/TARGEXP1HRDATA_4      |   CM33    | 2146.3 |   9993.4 |      net      | CM3     | TARGEXP1HRDATA[4]           |      |
+==================================================================================================================================
+时钟路径延迟         = 3960.4     (Tclkp)
+数据路径延迟         = 6033       (Tdatp)
+     clock-to-q 延迟 = 30.5 
+        总的单元延迟 = 300.4 
+        总的连线延迟 = 5702.1 
+        逻辑级数     = 4 
 [数据捕获路径]
-=========================================================================================================================
-|               节点               |     单元     | 延迟 |  到达时间  |      类型      | 位置 |       连线       | 扇出 |
-=========================================================================================================================
-| CLOCK'CLK_IN_25M_PIN             |     N/A      |    0 |         -- |                |      | N/A              |      |
-| CLK_IN_25M_PIN                   |  fpga_cm33   |    0 |         -- | clock_latency  |      | CLK_IN_25M_PIN   | 1    |
-| CLK_IN_25M_PIN_pad/I             |    xsIOBI    |    0 |         -- |      net       |      | CLK_IN_25M_PIN   |      |
-| CLK_IN_25M_PIN_pad/O             |    xsIOBI    |  990 |         -- |      cell      |      | CLK_IN_25M_PIN_c | 1    |
-| PLL_inst1/PLLInst_0/CLKI         |   xsPLLSA    |    0 |         -- |      net       |      | CLK_IN_25M_PIN_c |      |
-| --                               |      --      |   -- |         -- |       --       | --   | --               | --   |
-| CLOCK'PLL_inst1/PLLInst_0/CLKOS2 |     N/A      |    0 |      10000 | tcst_gen_clock |      | N/A              |      |
-| PLL_inst1/PLLInst_0/CLKOS2       |   xsPLLSA    |  990 |      10990 | clock_latency  |      | CLK_FPGA_SYS1    | 4    |
-| led_wf_inst1/led_sig_reg[1]/C    | xsDFFSA_K1C1 |    0 | Tcat:10990 |      net       |      | CLK_FPGA_SYS1    |      |
-=========================================================================================================================
+========================================================================================================================
+|              节点               |   单元    |  延迟  |  到达时间   |     类型      | 位置  |       连线       | 扇出 |
+========================================================================================================================
+| CLOCK'CLK_IN_25M_PIN            |    N/A    |      0 |          -- |               |       | N/A              |      |
+| CLK_IN_25M_PIN                  | fpga_cm33 |      0 |          -- | clock_latency |       | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN/PAD#bidir_in     |    PIO    |      0 |          -- |      net      | PT88A | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN/PADDI            |    PIO    |   1091 |          -- |   PADI_DEL    |       | CLK_IN_25M_PIN_c | 1    |
+| PLL_inst1/PLLInst_0/CLKI        |  PLL_25K  |    491 |          -- |      net      | TPLL2 | CLK_IN_25M_PIN_c |      |
+| --                              |    --     |     -- |          -- |      --       | --    | --               | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS |    N/A    |      0 |        5000 |  CLKI2OS_DEL  |       | N/A              |      |
+| PLL_inst1/PLLInst_0/CLKOS       |  PLL_25K  |   1582 |        6582 | clock_latency |       | CLK_CM33         | 212  |
+| CM33_inst/CIB_CLK               |   CM33    | 2360.4 | Tcat:8942.4 |      net      | CM3   | CLK_CM33         |      |
+========================================================================================================================
 [时间余量计算]
 ================================================================================
-时间余量 = Tcat       + Tckpm      - Tlat       - Tclkp      - Tdatp      - Tsu
-         = 10990      + 0          - 0          - 990        - 347        - -23        
-         = 9676 
+时间余量 = Tcat       + Tckpm      - Tlat       - Tclkp      - Tdatp      - Tsu(Tsetup_TARGEXP1HRDATA_4)
+         = 8942.4     + 16         - 0          - 3960.4     - 6033       - 861        
+         = -1896 (未满足要求!)
 ================================================================================
 Tcat  -- 数据捕获时钟到达时间 
 Tckpm -- 时钟悲观补偿 

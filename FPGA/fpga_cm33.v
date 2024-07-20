@@ -32,8 +32,8 @@ module fpga_cm33(
   wire CLK_FPGA_SYS1;
   PLL_FREQ PLL_inst1(
              .CLKI(CLK_IN_25M_PIN), // 25 IN
-             .CLKOP(), // 250
-             .CLKOS(CLK_CM33), // 200
+             .CLKOP(), // 200
+             .CLKOS(CLK_CM33), // 125
              .CLKOS2(CLK_FPGA_SYS1),  // 100
              .CLKOS3(),  // 50
              .LOCK(PLL1_LOCK)
@@ -245,7 +245,7 @@ module fpga_cm33(
                .HTRANS ( HTRANS_P1 ), //传输控制信号
                .HSIZE ( HSIZE_P1 ), //传输大小
                .HWRITE ( HWRITE_P1 ), //写控制
-               .HWDATA ( HRDATA_P1 ), //写数据
+               .HWDATA ( HWDATA_P1 ), //写数据
                .HREADY ( HREADY_P1 ), //传输完成
 
                .HREADYOUT ( HREADYOUT_P1 ), // AHB Outputs，设备准备信号
@@ -267,7 +267,7 @@ module fpga_cm33(
              .HTRANS ( HTRANS_P2 ),
              .HSIZE ( HSIZE_P2 ),
              .HWRITE ( HWRITE_P2 ),
-             .HWDATA ( HRDATA_P2 ),
+             .HWDATA ( HWDATA_P2 ),
              .HREADY ( HREADY_P2 ),
 
              .HREADYOUT ( HREADYOUT_P2 ),
@@ -288,7 +288,7 @@ module fpga_cm33(
              .HTRANS ( HTRANS_P3 ),
              .HSIZE ( HSIZE_P3 ),
              .HWRITE ( HWRITE_P3 ),
-             .HWDATA ( HRDATA_P3 ),
+             .HWDATA ( HWDATA_P3 ),
              .HREADY ( HREADY_P3 ),
 
              .HREADYOUT ( HREADYOUT_P3 ),
@@ -305,7 +305,7 @@ module fpga_cm33(
              .HTRANS ( HTRANS_P0 ),
              .HSIZE ( HSIZE_P0 ),
              .HWRITE ( HWRITE_P0 ),
-             .HWDATA ( HRDATA_P0 ),
+             .HWDATA ( HWDATA_P0 ),
              .HREADY ( HREADY_P0 ),
 
              .HREADYOUT ( HREADYOUT_P0 ),
