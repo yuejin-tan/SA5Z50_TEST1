@@ -24,7 +24,7 @@ lock.lock=TRUE
 
 fla.fla=2
 
-clkop.freq=200.0
+clkop.freq=150.0
 clkop.tolerance=0.0
 clkop.phase_shift=0.0
 clkop.phase_tolerance=0.0
@@ -32,21 +32,21 @@ clkop.trimp_pol=0
 clkop.trimp_del=0
 
 clkos.enable=TRUE
-clkos.freq=125.0
+clkos.freq=100.0
 clkos.tolerance=0.0
 clkos.phase_shift=0.0
 clkos.phase_tolerance=0.0
 clkos.trims_pol=0
 clkos.trims_del=0
 
-clkos2.enable=TRUE
+clkos2.enable=FALSE
 clkos2.freq=100.0
 clkos2.tolerance=0.0
 clkos2.phase_shift=0.0
 clkos2.phase_tolerance=0.0
 
-clkos3.enable=TRUE
-clkos3.freq=50.0
+clkos3.enable=FALSE
+clkos3.freq=100.0
 clkos3.tolerance=0.0
 clkos3.phase_shift=0.0
 clkos3.phase_tolerance=0.0

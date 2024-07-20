@@ -50,10 +50,7 @@ Info: RTL综合执行时间 : 2 秒.
 # 时序驱动优化与映射
 #====================================================
 Info: 开始时序驱动优化.
-Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOS} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 40 -divide_by 8.
-Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOS2} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 40 -divide_by 10.
-Info:   TDO 之前的 Slack : -2788.000000.
-Info:   TDO 之后的 Slack : -2788.000000.
+Info:   未发现时序约束，跳过本优化.
 Info: 完成时序驱动优化.
 Info: 插入了 10 个输入/输出单元.
 Info: 开始工艺映射.
@@ -70,4 +67,6 @@ Info: 完成网表校正.
 ####
 Info: 时序驱动优化及映射执行时间 : 0 秒.
 ####
+Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOP} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 36 -divide_by 6.
+Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOS} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 36 -divide_by 9.
 Info: 输出网表报告到文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\hq_run\fpga_cm33_import.rpt中.

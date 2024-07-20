@@ -27,15 +27,15 @@ module fpga_cm33(
 
   // CLKS
   wire PLL1_LOCK;
-  wire MTX_CLK;
   wire CLK_CM33;
   wire CLK_FPGA_SYS1;
+  wire AHB_USR_CLK = CLK_CM33;
   PLL_FREQ PLL_inst1(
              .CLKI(CLK_IN_25M_PIN), // 25 IN
-             .CLKOP(), // 200
-             .CLKOS(CLK_CM33), // 125
-             .CLKOS2(CLK_FPGA_SYS1),  // 100
-             .CLKOS3(),  // 50
+             .CLKOP(CLK_CM33),
+             .CLKOS(CLK_FPGA_SYS1),
+            //  .CLKOS2(),
+            //  .CLKOS3(),
              .LOCK(PLL1_LOCK)
            );
 
@@ -156,7 +156,7 @@ module fpga_cm33(
   wire HRESP_P3;
 
   AHBlite_Interconnect Interconncet(
-                         .HCLK (CLK_CM33),
+                         .HCLK (AHB_USR_CLK),
                          .HRESETn (CM33SYS_RSTN),
 
                          // CORE SIDE
@@ -237,7 +237,7 @@ module fpga_cm33(
 
   // 8位数码管
   ahb_seg7x8 seg_inst(
-               .HCLK ( CLK_CM33 ), //时钟
+               .HCLK ( AHB_USR_CLK ), //时钟
                .HRESETn ( CM33SYS_RSTN ), //复位
 
                .HSEL ( HSEL_P1 ), // AHB inputs，设备选择
@@ -259,7 +259,7 @@ module fpga_cm33(
 
   // uart
   ahb_uart ahb_uart1(
-             .HCLK ( CLK_CM33 ),
+             .HCLK ( AHB_USR_CLK ),
              .HRESETn ( CM33SYS_RSTN ),
 
              .HSEL ( HSEL_P2 ),
@@ -280,7 +280,7 @@ module fpga_cm33(
 
   // ahb_null
   ahb_null ahb_null1(
-             .HCLK ( CLK_CM33 ),
+             .HCLK ( AHB_USR_CLK ),
              .HRESETn ( CM33SYS_RSTN ),
 
              .HSEL ( HSEL_P3 ),
@@ -295,9 +295,9 @@ module fpga_cm33(
              .HRDATA ( HRDATA_P3 ),
              .HRESP ( HRESP_P3 )
            );
-           
+
   ahb_null ahb_null2(
-             .HCLK ( CLK_CM33 ),
+             .HCLK ( AHB_USR_CLK ),
              .HRESETn ( CM33SYS_RSTN ),
 
              .HSEL ( HSEL_P0 ),
@@ -318,12 +318,12 @@ module fpga_cm33(
 
   xsCM33 CM33_inst(
            // ClockS
-           .MTX_CLK            (MTX_CLK),
+           .PLL_USRCLK         (1'b0),
+           .CLK_TREE           (1'b0),
            .CLK_PAD            (1'b0),
            .PLL_OUT            (1'b0),
-           .PLL_USRCLK         (1'b0),
            .CIB_CLK            (CLK_CM33),
-           .CLK_TREE           (1'b0),
+           .MTX_CLK            (),
            .CLKOUT             (),
            .PCLK               (),
            .PCLKEN             (),

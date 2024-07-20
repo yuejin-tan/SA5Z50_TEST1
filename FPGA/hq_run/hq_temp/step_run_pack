@@ -34,8 +34,8 @@ Info: SLICEL                     46.
 Info:     CARRY                  25.
 Info:     MUXF7                   5.
 Info:     MUXF8                  16.
-Info: SLICEL(LE)                641.
-Info:     LUT                   128.
+Info: SLICEL(LE)                640.
+Info:     LUT                   127.
 Info:     LUT REG               183.
 Info:     REG                   330.
 Info: 完成组装.

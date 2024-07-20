@@ -74,14 +74,14 @@ Tdatp -- 数据路径延迟
 Tsu   -- 库单元建立时间 
 Tckpm -- 时钟悲观补偿 
 # ***********************************************************************
-# 时钟         : PLL_inst1/PLLInst_0/CLKOS
+# 时钟         : PLL_inst1/PLLInst_0/CLKOP
 # 最小时钟周期 : 3113 ps
 # ***********************************************************************
 ********************
 * 路径 1
 ********************
-起点     : ahb_uart1/RX_DIV_cnt_reg[1]/Q  [激发时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿1]
-终点     : ahb_uart1/RX_DIV_cnt_reg[15]/D [捕获时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿2] 
+起点     : ahb_uart1/RX_DIV_cnt_reg[1]/Q  [激发时钟: PLL_inst1/PLLInst_0/CLKOP, 上升沿1]
+终点     : ahb_uart1/RX_DIV_cnt_reg[15]/D [捕获时钟: PLL_inst1/PLLInst_0/CLKOP, 上升沿2] 
 数据产生路径
 ======================================================================================================================
 |                节点                 |     单元     | 延迟 |      类型      | 位置 |          连线           | 扇出 |
@@ -92,9 +92,9 @@ Tckpm -- 时钟悲观补偿
 | CLK_IN_25M_PIN_pad/O                |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c        | 1    |
 | PLL_inst1/PLLInst_0/CLKI            |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c        |      |
 | --                                  |      --      |   -- |       --       | --   | --                      | --   |
-| CLOCK'PLL_inst1/PLLInst_0/CLKOS     |     N/A      |    0 | tcst_gen_clock |      | N/A                     |      |
-| PLL_inst1/PLLInst_0/CLKOS           |   xsPLLSA    |  990 | clock_latency  |      | CLK_CM33                | 458  |
-| ahb_uart1/RX_DIV_cnt_reg[1]/C       | xsDFFSA_K1C1 |    0 |      net       |      | CLK_CM33                |      |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOP     |     N/A      |    0 | tcst_gen_clock |      | N/A                     |      |
+| PLL_inst1/PLLInst_0/CLKOP           |   xsPLLSA    |  990 | clock_latency  |      | AHB_USR_CLK             | 458  |
+| ahb_uart1/RX_DIV_cnt_reg[1]/C       | xsDFFSA_K1C1 |    0 |      net       |      | AHB_USR_CLK             |      |
 | --                                  |      --      |   -- |       --       | --   | --                      | --   |
 | ahb_uart1/RX_DIV_cnt_reg[1]/Q       | xsDFFSA_K1C1 |  347 |  rising_edge   |      | ahb_uart1/RX_DIV_cnt[1] | 3    |
 | ahb_uart1/_i_300/bitAdd_1/muxcy/S   |   xsMUXCY    |    0 |      net       |      | ahb_uart1/RX_DIV_cnt[1] |      |
@@ -147,9 +147,9 @@ Tckpm -- 时钟悲观补偿
 | CLK_IN_25M_PIN_pad/O            |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c | 1    |
 | PLL_inst1/PLLInst_0/CLKI        |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c |      |
 | --                              |      --      |   -- |       --       | --   | --               | --   |
-| CLOCK'PLL_inst1/PLLInst_0/CLKOS |     N/A      |    0 | tcst_gen_clock |      | N/A              |      |
-| PLL_inst1/PLLInst_0/CLKOS       |   xsPLLSA    |  990 | clock_latency  |      | CLK_CM33         | 458  |
-| ahb_uart1/RX_DIV_cnt_reg[15]/C  | xsDFFSA_K1C1 |    0 |      net       |      | CLK_CM33         |      |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOP |     N/A      |    0 | tcst_gen_clock |      | N/A              |      |
+| PLL_inst1/PLLInst_0/CLKOP       |   xsPLLSA    |  990 | clock_latency  |      | AHB_USR_CLK      | 458  |
+| ahb_uart1/RX_DIV_cnt_reg[15]/C  | xsDFFSA_K1C1 |    0 |      net       |      | AHB_USR_CLK      |      |
 ===========================================================================================================
 时钟路径延迟         = 990       
     时钟偏差         = 0 (Tcksw)
@@ -163,14 +163,14 @@ Tdatp -- 数据路径延迟
 Tsu   -- 库单元建立时间 
 Tckpm -- 时钟悲观补偿 
 # ***********************************************************************
-# 时钟         : PLL_inst1/PLLInst_0/CLKOS2
+# 时钟         : PLL_inst1/PLLInst_0/CLKOS
 # 最小时钟周期 : 4793 ps
 # ***********************************************************************
 ********************
 * 路径 1
 ********************
-起点     : led_wf_inst1/cnt_reg[1]/Q  [激发时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿1]
-终点     : led_wf_inst1/cnt_reg[25]/D [捕获时钟: PLL_inst1/PLLInst_0/CLKOS2, 上升沿2] 
+起点     : led_wf_inst1/cnt_reg[1]/Q  [激发时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿1]
+终点     : led_wf_inst1/cnt_reg[25]/D [捕获时钟: PLL_inst1/PLLInst_0/CLKOS, 上升沿2] 
 数据产生路径
 =======================================================================================================================
 |                 节点                 |     单元     | 延迟 |      类型      | 位置 |          连线           | 扇出 |
@@ -181,8 +181,8 @@ Tckpm -- 时钟悲观补偿
 | CLK_IN_25M_PIN_pad/O                 |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c        | 1    |
 | PLL_inst1/PLLInst_0/CLKI             |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c        |      |
 | --                                   |      --      |   -- |       --       | --   | --                      | --   |
-| CLOCK'PLL_inst1/PLLInst_0/CLKOS2     |     N/A      |    0 | tcst_gen_clock |      | N/A                     |      |
-| PLL_inst1/PLLInst_0/CLKOS2           |   xsPLLSA    |  990 | clock_latency  |      | CLK_FPGA_SYS1           | 30   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS      |     N/A      |    0 | tcst_gen_clock |      | N/A                     |      |
+| PLL_inst1/PLLInst_0/CLKOS            |   xsPLLSA    |  990 | clock_latency  |      | CLK_FPGA_SYS1           | 30   |
 | led_wf_inst1/cnt_reg[1]/C            | xsDFFSA_K1C1 |    0 |      net       |      | CLK_FPGA_SYS1           |      |
 | --                                   |      --      |   -- |       --       | --   | --                      | --   |
 | led_wf_inst1/cnt_reg[1]/Q            | xsDFFSA_K1C1 |  347 |  rising_edge   |      | led_wf_inst1/cnt[1]     | 4    |
@@ -247,19 +247,19 @@ Tckpm -- 时钟悲观补偿
         总的连线延迟 = 0 
         逻辑级数     = 26 
 [数据捕获路径]
-============================================================================================================
-|               节点               |     单元     | 延迟 |      类型      | 位置 |       连线       | 扇出 |
-============================================================================================================
-| CLOCK'CLK_IN_25M_PIN             |     N/A      |    0 |                |      | N/A              |      |
-| CLK_IN_25M_PIN                   |  fpga_cm33   |    0 | clock_latency  |      | CLK_IN_25M_PIN   | 1    |
-| CLK_IN_25M_PIN_pad/I             |    xsIOBI    |    0 |      net       |      | CLK_IN_25M_PIN   |      |
-| CLK_IN_25M_PIN_pad/O             |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c | 1    |
-| PLL_inst1/PLLInst_0/CLKI         |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c |      |
-| --                               |      --      |   -- |       --       | --   | --               | --   |
-| CLOCK'PLL_inst1/PLLInst_0/CLKOS2 |     N/A      |    0 | tcst_gen_clock |      | N/A              |      |
-| PLL_inst1/PLLInst_0/CLKOS2       |   xsPLLSA    |  990 | clock_latency  |      | CLK_FPGA_SYS1    | 30   |
-| led_wf_inst1/cnt_reg[25]/C       | xsDFFSA_K1C1 |    0 |      net       |      | CLK_FPGA_SYS1    |      |
-============================================================================================================
+===========================================================================================================
+|              节点               |     单元     | 延迟 |      类型      | 位置 |       连线       | 扇出 |
+===========================================================================================================
+| CLOCK'CLK_IN_25M_PIN            |     N/A      |    0 |                |      | N/A              |      |
+| CLK_IN_25M_PIN                  |  fpga_cm33   |    0 | clock_latency  |      | CLK_IN_25M_PIN   | 1    |
+| CLK_IN_25M_PIN_pad/I            |    xsIOBI    |    0 |      net       |      | CLK_IN_25M_PIN   |      |
+| CLK_IN_25M_PIN_pad/O            |    xsIOBI    |  990 |      cell      |      | CLK_IN_25M_PIN_c | 1    |
+| PLL_inst1/PLLInst_0/CLKI        |   xsPLLSA    |    0 |      net       |      | CLK_IN_25M_PIN_c |      |
+| --                              |      --      |   -- |       --       | --   | --               | --   |
+| CLOCK'PLL_inst1/PLLInst_0/CLKOS |     N/A      |    0 | tcst_gen_clock |      | N/A              |      |
+| PLL_inst1/PLLInst_0/CLKOS       |   xsPLLSA    |  990 | clock_latency  |      | CLK_FPGA_SYS1    | 30   |
+| led_wf_inst1/cnt_reg[25]/C      | xsDFFSA_K1C1 |    0 |      net       |      | CLK_FPGA_SYS1    |      |
+===========================================================================================================
 时钟路径延迟         = 990       
     时钟偏差         = 0 (Tcksw)
 [延迟计算]
@@ -274,10 +274,10 @@ Tckpm -- 时钟悲观补偿
 #########################################################################
 # 时钟频率总结
 #########################################################################
-最慢时钟     : PLL_inst1/PLLInst_0/CLKOS2
+最慢时钟     : PLL_inst1/PLLInst_0/CLKOS
 最小时钟周期 : 4793 ps
 最大时钟频率 : 208.6 MHz
 #########################################################################
-seg_inst/clk_DRV_reg/Q     : 565.3 Mhz
-PLL_inst1/PLLInst_0/CLKOS  : 321.2 Mhz
-PLL_inst1/PLLInst_0/CLKOS2 : 208.6 Mhz
+seg_inst/clk_DRV_reg/Q    : 565.3 Mhz
+PLL_inst1/PLLInst_0/CLKOP : 321.2 Mhz
+PLL_inst1/PLLInst_0/CLKOS : 208.6 Mhz
