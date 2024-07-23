@@ -24,7 +24,7 @@ lock.lock=TRUE
 
 fla.fla=2
 
-clkop.freq=150.0
+clkop.freq=100.0
 clkop.tolerance=0.0
 clkop.phase_shift=0.0
 clkop.phase_tolerance=0.0

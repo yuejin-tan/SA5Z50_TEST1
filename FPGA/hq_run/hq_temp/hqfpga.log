@@ -9,10 +9,10 @@
 =  Copyright (c) 2020-2025 XiST                            @)
 =  All rights reserved.
 =========================================================================
-Info: Fri Jul 19 22:06:08 2024.
+Info: Tue Jul 23 16:37:23 2024.
 Info: Launching program D:/fpga/AC208-SA5Z30-CM3/hq_xist_2.14.4_021824_win64/build/win_x64/bin/hqfpga.exe -cmd _detect_topm.tcl.
 Info: HqFpga is ready to work on host hp (Windows 10 64-bit).
 0
-Info: Program terminating at Fri Jul 19 22:06:08 2024.
-Info: Peak memory consumption is 21.0 M.
+Info: Program terminating at Tue Jul 23 16:37:23 2024.
+Info: Peak memory consumption is 20.8 M.
 Info: Total runtime is 0 seconds.

@@ -58,9 +58,9 @@ module PLL_FREQ (CLKI, CLKOP, CLKOS, LOCK)/* synthesis NGD_DRC_MASK=1 */;
     defparam PLLInst_0.CLKOS2_FPHASE = 0 ;
     defparam PLLInst_0.CLKOS2_CPHASE = 0 ;
     defparam PLLInst_0.CLKOS_FPHASE = 0 ;
-    defparam PLLInst_0.CLKOS_CPHASE = 8 ;
+    defparam PLLInst_0.CLKOS_CPHASE = 7 ;
     defparam PLLInst_0.CLKOP_FPHASE = 0 ;
-    defparam PLLInst_0.CLKOP_CPHASE = 5 ;
+    defparam PLLInst_0.CLKOP_CPHASE = 7 ;
     defparam PLLInst_0.OUTDIVIDER_MUXD2 = "DIVD" ;
     defparam PLLInst_0.PREDIVIDER_MUXD1 = 0 ;
     defparam PLLInst_0.VCO_BYPASS_D0 = "DISABLED" ;
@@ -79,9 +79,9 @@ module PLL_FREQ (CLKI, CLKOP, CLKOS, LOCK)/* synthesis NGD_DRC_MASK=1 */;
     defparam PLLInst_0.CLKOP_ENABLE = "ENABLED" ;
     defparam PLLInst_0.CLKOS3_DIV = 0 ;
     defparam PLLInst_0.CLKOS2_DIV = 0 ;
-    defparam PLLInst_0.CLKOS_DIV = 9 ;
-    defparam PLLInst_0.CLKOP_DIV = 6 ;
-    defparam PLLInst_0.CLKFB_DIV = 6 ;
+    defparam PLLInst_0.CLKOS_DIV = 8 ;
+    defparam PLLInst_0.CLKOP_DIV = 8 ;
+    defparam PLLInst_0.CLKFB_DIV = 4 ;
     defparam PLLInst_0.CLKI_DIV = 1 ;
     defparam PLLInst_0.FEEDBK_PATH = "INT_DIVA" ;
     defparam PLLInst_0.EN_PHI = "FALSE" ;
@@ -100,9 +100,9 @@ module PLL_FREQ (CLKI, CLKOP, CLKOS, LOCK)/* synthesis NGD_DRC_MASK=1 */;
         .DPHSRC(DPHSRC), .PLLACK(), .PLLDATO7(), .PLLDATO6(), .PLLDATO5(), .PLLDATO4(), 
         .PLLDATO3(), .PLLDATO2(), .PLLDATO1(), .PLLDATO0(), .CLKO5(CLKO5_t))
              /* synthesis FREQUENCY_PIN_CLKOS="100.000000" */
-             /* synthesis FREQUENCY_PIN_CLKOP="150.000000" */
+             /* synthesis FREQUENCY_PIN_CLKOP="100.000000" */
              /* synthesis FREQUENCY_PIN_CLKI="25.000000" */
-             /* synthesis ICP_CURRENT="9" */
+             /* synthesis ICP_CURRENT="8" */
              /* synthesis LPF_RESISTOR="48" */
              /* synthesis FREQ_LOCK_ACCURACY="2" */;
 
@@ -112,9 +112,9 @@ module PLL_FREQ (CLKI, CLKOP, CLKOS, LOCK)/* synthesis NGD_DRC_MASK=1 */;
 
     // exemplar begin
     // exemplar attribute PLLInst_0 FREQUENCY_PIN_CLKOS 100.000000
-    // exemplar attribute PLLInst_0 FREQUENCY_PIN_CLKOP 150.000000
+    // exemplar attribute PLLInst_0 FREQUENCY_PIN_CLKOP 100.000000
     // exemplar attribute PLLInst_0 FREQUENCY_PIN_CLKI 25.000000
-    // exemplar attribute PLLInst_0 ICP_CURRENT 9
+    // exemplar attribute PLLInst_0 ICP_CURRENT 8
     // exemplar attribute PLLInst_0 LPF_RESISTOR 48
     // exemplar attribute PLLInst_0 FREQ_LOCK_ACCURACY 2
     // exemplar end

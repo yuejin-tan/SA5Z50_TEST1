@@ -471,6 +471,11 @@
               <FileType>1</FileType>
               <FilePath>.\LIBS\scd.c</FilePath>
             </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\LIBS\lcd.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

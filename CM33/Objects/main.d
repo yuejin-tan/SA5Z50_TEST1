@@ -6,5 +6,6 @@
   CM33_CMSIS\mpu_armv8.h SA5Z50_DEVS\system_ARMCM33.h \
   SA5Z50_DEVS\STAR_conf.h SA5Z50_DEVS\STAR_gpio.h SA5Z50_DEVS\STAR.h \
   SA5Z50_DEVS\STAR_uart.h SA5Z50_DEVS\STAR_rcc.h USR\main.h \
-  LIBS\ahb_ledseg.h LIBS\ahb_uart.h LIBS\delay.h LIBS\scd_inc.h \
-  USR\scd_cfg.h
+  LIBS\ahb_ledseg.h LIBS\ahb_uart.h LIBS\lcd.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h LIBS\ahb_lcd8080.h \
+  LIBS\delay.h LIBS\scd_inc.h USR\scd_cfg.h

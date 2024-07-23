@@ -6,8 +6,8 @@ Info: 已完成.
 Info: 布线模式 : timing.
 Info: 优化强度 : std.
 Info: 读入布线资源并检查网表 ....
-Info: 当前网表中有 299 个元件例示(instance).
-Info: 总共需要对 956 条连线 (3505 连接点) 进行布线.
+Info: 当前网表中有 399 个元件例示(instance).
+Info: 总共需要对 1222 条连线 (4481 连接点) 进行布线.
 Info: 连线 AHB_USR_CLK 指定为 PCLK (由 placer).
 Info: 连线 CLK_FPGA_SYS1 指定为 PCLK (由 placer).
 Info: 连线 seg_inst/clk_DRV 指定为 PCLK (由 placer).
@@ -17,33 +17,34 @@ Info: set customeized options
 |   5   |   5 |   5  |   2   |   3 |   6 |   6 |   6 |   6 |   6  |  50  |   3   |   8   |   7   
 | MALL | MLONG | MX0  | X12RAM | X46RAM | X12VIQ | X46VIQ | X12CLKV | PLO | CLO | X-LOCAL | CLKV+ | GFANn | GNDfo | GNDlut 
 |   1  |   1   |   1  |    2   |    2   |    3   |    2   |     5   |  10 |   5 |    0    |   1   |   2   |    0  |    0   
-Info: 第  0 轮 : 还需要对 800   条连线 (3012  连接点)进行布线.
-Info: 第  1 轮 : 还需要对 106   条连线 (81    连接点)进行布线.
-Info: 第  2 轮 : 还需要对 14    条连线 (9     连接点)进行布线.
-Info: 第  3 轮 : 还需要对 0     条连线 (0     连接点)进行布线.
+Info: 第  0 轮 : 还需要对 1004  条连线 (3875  连接点)进行布线.
+Info: 第  1 轮 : 还需要对 96    条连线 (84    连接点)进行布线.
+Info: 第  2 轮 : 还需要对 16    条连线 (9     连接点)进行布线.
+Info: 第  3 轮 : 还需要对 2     条连线 (1     连接点)进行布线.
+Info: 第  4 轮 : 还需要对 0     条连线 (0     连接点)进行布线.
 Info: 完成布线.
 Info: 开始更新物理网表.
-Info:   为 116  个 SLICEL     建立了物理网表 .
-Info:   为 47   个 TIEOFF     建立了物理网表 .
+Info:   为 155  个 SLICEL     建立了物理网表 .
+Info:   为 68   个 TIEOFF     建立了物理网表 .
 Info: 完成更新物理网表.
 ####
-Info: 布线执行时间 : 7 秒.
+Info: 布线执行时间 : 9 秒.
 ####
 Info: 生成最差时序余量(WNS)报告 ...
 ============================================================
 Clock Name                  Req Period  Setup WNS   Hold WNS
 ------------------------------------------------------------
 CLK_IN_25M_PIN                   40000         --         --
-PLL_inst1/PLLInst_0/CLKOP         6667        518        323
-PLL_inst1/PLLInst_0/CLKOS        10000       4885        367
+PLL_inst1/PLLInst_0/CLKOP        10000       1930        355
+PLL_inst1/PLLInst_0/CLKOS        10000       4635        375
 ============================================================
 【汇总】
-Info(wns-ok): Setup WNS = 518, 满足时序目标.
-Info(wns-ok): Hold  WNS = 323, 满足时序目标.
+Info(wns-ok): Setup WNS = 1930, 满足时序目标.
+Info(wns-ok): Hold  WNS = 355, 满足时序目标.
 ====
 Info: 完成WNS报告.
 Info:   (可在文件 "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/hq_run/fpga_cm33_slack.rpt" 中检查更详细信息).
 ====
-Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOP} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 36 -divide_by 6.
-Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOS} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 36 -divide_by 9.
+Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOP} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 32 -divide_by 8.
+Info: 自动添加约束: create_generated_clock {PLL_inst1/PLLInst_0/CLKOS} -source {PLL_inst1/PLLInst_0/CLKI} -multiply_by 32 -divide_by 8.
 Info: 输出网表报告到文件D:\fpga\AC201-SA5Z50-CM33\TEST1\FPGA\hq_run\fpga_cm33_route.rpt中.

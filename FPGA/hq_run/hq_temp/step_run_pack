@@ -16,6 +16,22 @@ WARN(NCHK-CLK001): 连线 seg_inst/clk_DRV 混合了时钟和数据连接.
 # 组装(Packing)
 #====================================================
 Info: 开始组装(packing).
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[15] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[14] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[13] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[12] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[11] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[10] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[9] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[8] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[7] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[6] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[5] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[4] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[3] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[2] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[1] 吸收到 IREG.
+Info: 将 ahb_lcd8080_inst1/cmd_data_r_reg_reg[0] 吸收到 IREG.
 Info: 将 ahb_uart1/RX_samp_regs_reg[5] 吸收到 IREG.
 Info: 将 seg_inst/SH_CLK_reg 吸收到 OREG.
 Info: 将 seg_inst/LD_CLK_reg 吸收到 OREG.
@@ -23,40 +39,41 @@ Info: 将 seg_inst/HC_DAT_reg_dup1 吸收到 OREG.
 Info: 将 led_wf_inst1/led_sig_reg[1]_dup1 吸收到 OREG.
 Info: 将 led_wf_inst1/led_sig_reg[0]_dup1 吸收到 OREG.
 Info: 将 ahb_uart1/TX_shift_reg_reg[0] 吸收到 OREG.
+Info: 将 ahb_lcd8080_inst1/sta8080_reg[3]_dup1 吸收到 OREG.
 Info: 开始组装预处理.
 Info: 完成组装预处理.
 Info: CM33                        1.
-Info: IOLOGIC                     7.
-Info:     IREG_OREG               7.
-Info: PIO                        43.
+Info: IOLOGIC                    24.
+Info:     IREG_OREG              24.
+Info: PIO                        63.
 Info: PLL_25K                     1.
-Info: SLICEL                     46.
-Info:     CARRY                  25.
-Info:     MUXF7                   5.
+Info: SLICEL                     63.
+Info:     CARRY                  41.
+Info:     MUXF7                   6.
 Info:     MUXF8                  16.
-Info: SLICEL(LE)                640.
-Info:     LUT                   127.
-Info:     LUT REG               183.
-Info:     REG                   330.
+Info: SLICEL(LE)                817.
+Info:     LUT                   183.
+Info:     LUT REG               230.
+Info:     REG                   404.
 Info: 完成组装.
 Info: Start gpack.
 Info: Done gpack.
 Info: 开始建立物理网表.
-Info:   为 43   个 PIO        建立了物理网表 .
-Info:   为 7    个 IOLOGIC    建立了物理网表 .
+Info:   为 63   个 PIO        建立了物理网表 .
+Info:   为 24   个 IOLOGIC    建立了物理网表 .
 Info:   为 1    个 PLL_25K    建立了物理网表 .
 Info:   为 1    个 CM33       建立了物理网表 .
-Info:   为 245  个 SLICEL     建立了物理网表 .
+Info:   为 308  个 SLICEL     建立了物理网表 .
 Info: 完成建立物理网表.
 Info: CM33                        1.
-Info: IOLOGIC                     7.
-Info:     IREG_OREG               7.
-Info: PIO                        43.
+Info: IOLOGIC                    24.
+Info:     IREG_OREG              24.
+Info: PIO                        63.
 Info: PLL_25K                     1.
-Info: SLICEL                    245.
-Info:     CARRY                  25.
-Info:     LOGIC                 199.
-Info:     MUXF7                   5.
+Info: SLICEL                    308.
+Info:     CARRY                  41.
+Info:     LOGIC                 245.
+Info:     MUXF7                   6.
 Info:     MUXF8                  16.
 ####
 Info: 组装执行时间 : 6 秒.

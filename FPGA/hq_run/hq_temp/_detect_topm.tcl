@@ -8,6 +8,7 @@ lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ahb_null.v"
 lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/AHBlite_Decoder.v" 
 lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/AHBlite_Interconnect.v" 
 lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/AHBlite_SlaveMUX.v" 
+lappend argv "D:/fpga/AC201-SA5Z50-CM33/TEST1/FPGA/ahb_lcd8080.v" 
 #################################################################################
 #
 # Copyright (c) uptops, Inc.

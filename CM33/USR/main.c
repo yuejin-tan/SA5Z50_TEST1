@@ -10,6 +10,8 @@
 #include "ahb_ledseg.h"
 #include "ahb_uart.h"
 
+#include "lcd.h"
+
 #include "delay.h"
 #include "scd_inc.h"
 
@@ -85,7 +87,7 @@ uint16_t test4r = 0;
 
 int main(void)
 {
-
+    GPIO_DeInit(STAR_GPIO0);
     SysTick_Config(SystemCoreClock / 1000ul - 1ul);
 
     uartx_init(STAR_UART1, 115200);
@@ -95,6 +97,24 @@ int main(void)
     nvicInit();
 
     scd_init_1();
+
+    LCD_Init();
+
+    delay_ms(500);
+    LCD_Clear(BLACK);
+    delay_ms(500);
+    LCD_Clear(RED);
+    delay_ms(500);
+    LCD_Clear(GREEN);
+    delay_ms(500);
+    LCD_Clear(BLUE);
+    delay_ms(500);
+    LCD_Clear(WHITE);
+    LCD_Draw_Circle(100, 100, 50);
+    delay_ms(500);
+    LCD_Draw_Circle(200, 100, 50);
+    delay_ms(500);
+    LCD_Draw_Circle(100, 200, 50);
 
     while (1)
     {

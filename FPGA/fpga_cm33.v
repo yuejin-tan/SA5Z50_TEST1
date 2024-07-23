@@ -20,6 +20,13 @@ module fpga_cm33(
     output wire ahb_uart_tx,
     input wire ahb_uart_rx,
 
+    // lcd
+    output wire CS_8080,
+    output wire RS_8080, // 0:CMD 1:DATA
+    output wire WR_8080,
+    output wire RD_8080,
+    inout wire [ 15: 0] DATA_8080,
+
     // CM33 DBG
     input wire SW_CLK_PIN,
     inout wire SWD_IO_PIN
@@ -34,8 +41,8 @@ module fpga_cm33(
              .CLKI(CLK_IN_25M_PIN), // 25 IN
              .CLKOP(CLK_CM33),
              .CLKOS(CLK_FPGA_SYS1),
-            //  .CLKOS2(),
-            //  .CLKOS3(),
+             //  .CLKOS2(),
+             //  .CLKOS3(),
              .LOCK(PLL1_LOCK)
            );
 
@@ -235,6 +242,31 @@ module fpga_cm33(
                          .HRESP_P3 (HRESP_P3)
                        );
 
+  ahb_lcd8080 ahb_lcd8080_inst1(
+                .HCLK ( AHB_USR_CLK ),
+                .HRESETn ( CM33SYS_RSTN ),
+
+                .HSEL ( HSEL_P0 ),
+                .HADDR ( HADDR_P0[ 15: 0 ] ),
+                .HTRANS ( HTRANS_P0 ),
+                .HSIZE ( HSIZE_P0 ),
+                .HWRITE ( HWRITE_P0 ),
+                .HWDATA ( HWDATA_P0 ),
+                .HREADY ( HREADY_P0 ),
+
+                .HREADYOUT ( HREADYOUT_P0 ),
+                .HRDATA ( HRDATA_P0 ),
+                .HRESP ( HRESP_P0 ),
+
+                // UART SIG
+                .CS_8080(CS_8080),
+                .RS_8080(RS_8080), // 0:CMD 1:DATA
+                .WR_8080(WR_8080),
+                .RD_8080(RD_8080),
+
+                .DATA_8080(DATA_8080)
+              );
+
   // 8位数码管
   ahb_seg7x8 seg_inst(
                .HCLK ( AHB_USR_CLK ), //时钟
@@ -294,23 +326,6 @@ module fpga_cm33(
              .HREADYOUT ( HREADYOUT_P3 ),
              .HRDATA ( HRDATA_P3 ),
              .HRESP ( HRESP_P3 )
-           );
-
-  ahb_null ahb_null2(
-             .HCLK ( AHB_USR_CLK ),
-             .HRESETn ( CM33SYS_RSTN ),
-
-             .HSEL ( HSEL_P0 ),
-             .HADDR ( HADDR_P0[ 15: 0 ] ),
-             .HTRANS ( HTRANS_P0 ),
-             .HSIZE ( HSIZE_P0 ),
-             .HWRITE ( HWRITE_P0 ),
-             .HWDATA ( HWDATA_P0 ),
-             .HREADY ( HREADY_P0 ),
-
-             .HREADYOUT ( HREADYOUT_P0 ),
-             .HRDATA ( HRDATA_P0 ),
-             .HRESP ( HRESP_P0 )
            );
 
   // CM33内核

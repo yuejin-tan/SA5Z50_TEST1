@@ -7,5 +7,6 @@
 -module AHBlite_Decoder
 -module AHBlite_Interconnect
 -module AHBlite_SlaveMUX
+-module ahb_lcd8080
 -topmoduleNum 1
 -topmodule fpga_cm33
