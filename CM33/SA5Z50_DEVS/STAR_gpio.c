@@ -335,3 +335,36 @@ void GPIO_PinInterruptClearFlag(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin_x)
     GPIOx->INTCLEAR |= (1 << GPIO_Pin_x); //注意!!!只要INTCLEAR被赋值，会将INTCLEAR整个清零
 }
 
+/**
+  *
+  * @brief: 设置指定GPIO口输出关闭。
+  *
+  * @param: GPIOx，使用哪组GPIO;由于STAR只提供1组GPIO，因此该参数只能设为STAR_GPIO0。
+  * @param: GPIO_Pin_x，指定哪个GPIO口;取值范围：GPIO_Pin_0~GPIO_Pin_31。
+  *
+  * @retVal: void
+  */
+void GPIO_OutModeDisable(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin_x)
+{
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+    assert_param(IS_GET_GPIO_PIN(GPIO_Pin_x));
+
+    GPIOx->OUTENCLR = (1 << GPIO_Pin_x);
+}
+
+/**
+  *
+  * @brief: 设置指定GPIO口输出开启。
+  *
+  * @param: GPIOx，使用哪组GPIO;由于STAR只提供1组GPIO，因此该参数只能设为STAR_GPIO0。
+  * @param: GPIO_Pin_x，指定哪个GPIO口;取值范围：GPIO_Pin_0~GPIO_Pin_31。
+  *
+  * @retVal: void
+  */
+void GPIO_OutModeEnable(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin_x)
+{
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+    assert_param(IS_GET_GPIO_PIN(GPIO_Pin_x));
+
+    GPIOx->OUTENSET = (1 << GPIO_Pin_x);
+}

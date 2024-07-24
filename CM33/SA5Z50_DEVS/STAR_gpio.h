@@ -176,6 +176,9 @@ extern "C" {
   void GPIO_PinInterruptTypeConfig(GPIO_TypeDef* CM3DS_MPS2_GPIOx, uint16_t GPIO_Pin_x, BitInterruptType INTTYPE, uint16_t NewState);
   void GPIO_PinInterruptClearFlag(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin_x);
 
+  void GPIO_OutModeDisable(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin_x);
+  void GPIO_OutModeEnable(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin_x);
+
 #ifdef __cplusplus
 }
 #endif

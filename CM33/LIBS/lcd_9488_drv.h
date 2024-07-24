@@ -1,5 +1,4 @@
-#ifndef __LCD_H
-#define __LCD_H
+#pragma once
 
 #include "stdlib.h"
 #include "stdint.h"
@@ -18,11 +17,14 @@
 extern uint32_t  POINT_COLOR;//默认红色
 extern uint32_t  BACK_COLOR; //背景颜色.默认为白色
 
+// 内部命令地址
 #define WRITE_RAM_CMD 0X2CUL
 #define SETX_CMD 0X2AUL
 #define SETY_CMD 0X2BUL
-#define LCD_W 480
-#define LCD_H 320
+
+// LCD 参数
+#define LCD_H 480
+#define LCD_W 320
 
 //写寄存器函数
 //regval:寄存器值
@@ -42,24 +44,6 @@ static inline void LCD_WR_DATA(uint16_t data)
 //返回值:读到的值
 static inline uint16_t LCD_RD_DATA(void)
 {
-    return (uint16_t)AHB_LCD->data_reg;
-}
-
-//写寄存器
-//LCD_Reg:寄存器地址
-//LCD_RegValue:要写入的数据
-static inline void LCD_WR_REG_VAL(uint16_t LCD_Reg, uint16_t LCD_RegValue)
-{
-    AHB_LCD->cmd_reg = LCD_Reg;
-    AHB_LCD->data_reg = LCD_RegValue;
-}
-
-//读寄存器
-//LCD_Reg:寄存器地址
-//返回值:读到的数据
-static inline uint16_t LCD_RD_REG_VAL(uint16_t LCD_Reg)
-{
-    AHB_LCD->cmd_reg = LCD_Reg;
     return (uint16_t)AHB_LCD->data_reg;
 }
 
@@ -141,7 +125,3 @@ void LCD_ShowChar(uint16_t x, uint16_t y, uint8_t num, uint8_t mode);			//显示
 void LCD_ShowNum(uint16_t x, uint16_t y, uint32_t num, uint8_t len);  			//显示一个数字
 void LCD_ShowxNum(uint16_t x, uint16_t y, uint32_t num, uint8_t len, uint8_t mode);			//显示 数字
 void LCD_ShowString(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint8_t* p);	//显示一个字符串,12/16字体
-
-
-#endif
-

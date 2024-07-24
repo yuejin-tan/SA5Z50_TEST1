@@ -1,4 +1,4 @@
-#include "lcd.h"
+#include "lcd_9488_drv.h"
 #include "delay.h"
 #include "stdio.h"
 
@@ -106,9 +106,10 @@ static const unsigned char asc2_1608[95][16] = {
 {0x00,0x00,0x60,0x00,0x80,0x00,0x80,0x00,0x40,0x00,0x40,0x00,0x20,0x00,0x20,0x00},/*"~",94*/
 };
 
-//LCD的画笔颜色和背景色	   
+//LCD的画笔颜色和背景色
 uint32_t POINT_COLOR = 0xFF000000; //画笔颜色
 uint32_t BACK_COLOR = 0xFFFFFFFF; //背景色
+
 
 //设置LCD的自动扫描方向(对RGB屏无效)
 //注意:其他函数可能会受到此函数设置的影响(尤其是9341),
@@ -148,7 +149,8 @@ void LCD_Scan_Dir(uint8_t dir)
         break;
     }
     /* Set Memory Access Control (36h)  */
-    LCD_WR_REG_VAL(0X36, regval);
+    LCD_WR_REG(0X36);
+    LCD_WR_DATA(regval);
 
     LCD_Set_Window(0, 0, LCD_W - 1, LCD_H - 1);
 }
@@ -306,7 +308,9 @@ void LCD_Init(void)
 
     LCD_DisplayOn();
 
-    LCD_Scan_Dir(D2U_L2R); // 横屏
+    // 横屏
+    // TODO:需同步更改lcd长宽参数和触摸反馈选项
+    // LCD_Scan_Dir(D2U_L2R);
 
     //点亮背光
     GPIO_SetBit(STAR_GPIO0, GPIO_Pin_6);

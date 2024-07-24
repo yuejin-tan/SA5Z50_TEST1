@@ -23,7 +23,7 @@ I (CM33_CMSIS\cmsis_armclang.h)(0x669718CB)
 I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
 I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
 I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
-I (SA5Z50_DEVS\STAR_gpio.h)(0x6697039B)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
 I (SA5Z50_DEVS\STAR_dma.h)(0x6487C5A9)
 F (.\SA5Z50_DEVS\STAR_dualtimer.c)(0x6697063D)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/star_dualtimer.o -MD)
 I (SA5Z50_DEVS\STAR_dualtimer.h)(0x647D76D4)
@@ -37,8 +37,8 @@ I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
 I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
 I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
 I (SA5Z50_DEVS\STAR_rcc.h)(0x647C5969)
-F (.\SA5Z50_DEVS\STAR_gpio.c)(0x669F8934)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/star_gpio.o -MD)
-I (SA5Z50_DEVS\STAR_gpio.h)(0x6697039B)
+F (.\SA5Z50_DEVS\STAR_gpio.c)(0x66A0AD81)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/star_gpio.o -MD)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
 I (SA5Z50_DEVS\STAR.h)(0x6699EA34)
 I (CM33_CMSIS\core_cm33.h)(0x669718CB)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
@@ -60,7 +60,7 @@ I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
 I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
 I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
 I (SA5Z50_DEVS\STAR_rcc.h)(0x647C5969)
-I (SA5Z50_DEVS\STAR_gpio.h)(0x6697039B)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
 F (.\SA5Z50_DEVS\STAR_mpu.c)(0x6697220B)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/star_mpu.o -MD)
 I (SA5Z50_DEVS\STAR_mpu.h)(0x6697121A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
@@ -98,7 +98,7 @@ I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
 I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
 I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
 I (SA5Z50_DEVS\STAR_uart.h)(0x66970365)
-I (SA5Z50_DEVS\STAR_gpio.h)(0x6697039B)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
 F (.\SA5Z50_DEVS\STAR_spi.c)(0x66970711)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/star_spi.o -MD)
 I (SA5Z50_DEVS\STAR_rcc.h)(0x647C5969)
@@ -112,7 +112,7 @@ I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
 I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
 I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
 I (SA5Z50_DEVS\STAR_spi.h)(0x6697070E)
-I (SA5Z50_DEVS\STAR_gpio.h)(0x6697039B)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
 F (.\SA5Z50_DEVS\STAR_timer.c)(0x6697063D)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/star_timer.o -MD)
 I (SA5Z50_DEVS\STAR_timer.h)(0x647C5CEF)
 I (SA5Z50_DEVS\STAR.h)(0x6699EA34)
@@ -138,7 +138,7 @@ I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
 I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
 I (SA5Z50_DEVS\STAR_rcc.h)(0x647C5969)
 F (.\SA5Z50_DEVS\STAR_watchdog.c)(0x6697229D)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/star_watchdog.o -MD)
-I (SA5Z50_DEVS\STAR_gpio.h)(0x6697039B)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
 I (SA5Z50_DEVS\STAR.h)(0x6699EA34)
 I (CM33_CMSIS\core_cm33.h)(0x669718CB)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
@@ -171,12 +171,12 @@ I (CM33_CMSIS\cmsis_armclang.h)(0x669718CB)
 I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
 I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
 I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
-F (.\LIBS\scd.c)(0x6434203B)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/scd.o -MD)
+F (.\LIBS\scd.c)(0x6434203B)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -w -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/scd.o -MD)
 I (USR\scd_cfg.h)(0x65ABDFAF)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
 I (LIBS\scd_inc.h)(0x6434203B)
-F (.\LIBS\lcd.c)(0x669FA814)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/lcd.o -MD)
-I (LIBS\lcd.h)(0x669F9B9A)
+F (.\LIBS\lcd_9488_drv.c)(0x66A12A26)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/lcd_9488_drv.o -MD)
+I (LIBS\lcd_9488_drv.h)(0x66A129DA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
 I (SA5Z50_DEVS\STAR.h)(0x6699EA34)
@@ -187,11 +187,40 @@ I (CM33_CMSIS\cmsis_armclang.h)(0x669718CB)
 I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
 I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
 I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
-I (SA5Z50_DEVS\STAR_gpio.h)(0x6697039B)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
 I (LIBS\ahb_lcd8080.h)(0x669F904B)
 I (LIBS\delay.h)(0x669A9ACB)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
-F (.\USR\main.c)(0x669F994E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/main.o -MD)
+F (.\LIBS\touch_GT911_drv.c)(0x66A12881)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/touch_gt911_drv.o -MD)
+I (LIBS\touch_GT911_drv.h)(0x66A117DE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (SA5Z50_DEVS\STAR_rcc.h)(0x647C5969)
+I (SA5Z50_DEVS\STAR.h)(0x6699EA34)
+I (CM33_CMSIS\core_cm33.h)(0x669718CB)
+I (CM33_CMSIS\cmsis_version.h)(0x669718CB)
+I (CM33_CMSIS\cmsis_compiler.h)(0x669718CB)
+I (CM33_CMSIS\cmsis_armclang.h)(0x669718CB)
+I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
+I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
+I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
+I (LIBS\delay.h)(0x669A9ACB)
+I (LIBS\i2c_gpio.h)(0x66A0D0CA)
+F (.\LIBS\i2c_gpio.c)(0x66A136B3)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/i2c_gpio.o -MD)
+I (LIBS\i2c_gpio.h)(0x66A0D0CA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (SA5Z50_DEVS\STAR.h)(0x6699EA34)
+I (CM33_CMSIS\core_cm33.h)(0x669718CB)
+I (CM33_CMSIS\cmsis_version.h)(0x669718CB)
+I (CM33_CMSIS\cmsis_compiler.h)(0x669718CB)
+I (CM33_CMSIS\cmsis_armclang.h)(0x669718CB)
+I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
+I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
+I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
+I (SA5Z50_DEVS\STAR_timer.h)(0x647C5CEF)
+F (.\USR\main.c)(0x66A136F0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/main.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
 I (SA5Z50_DEVS\STAR.h)(0x6699EA34)
@@ -202,22 +231,23 @@ I (CM33_CMSIS\cmsis_armclang.h)(0x669718CB)
 I (CM33_CMSIS\mpu_armv8.h)(0x669718CB)
 I (SA5Z50_DEVS\system_ARMCM33.h)(0x64867BE4)
 I (SA5Z50_DEVS\STAR_conf.h)(0x64770188)
-I (SA5Z50_DEVS\STAR_gpio.h)(0x6697039B)
+I (SA5Z50_DEVS\STAR_gpio.h)(0x66A0AD66)
 I (SA5Z50_DEVS\STAR_uart.h)(0x66970365)
 I (SA5Z50_DEVS\STAR_rcc.h)(0x647C5969)
 I (USR\main.h)(0x669A9464)
 I (LIBS\ahb_ledseg.h)(0x669AA773)
 I (LIBS\ahb_uart.h)(0x669A93A4)
-I (LIBS\lcd.h)(0x669F9B9A)
+I (LIBS\lcd_9488_drv.h)(0x66A129DA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
 I (LIBS\ahb_lcd8080.h)(0x669F904B)
+I (LIBS\touch_GT911_drv.h)(0x66A117DE)
 I (LIBS\delay.h)(0x669A9ACB)
 I (LIBS\scd_inc.h)(0x6434203B)
 I (USR\scd_cfg.h)(0x65ABDFAF)
 F (.\USR\NVIC_it.c)(0x669A327E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/nvic_it.o -MD)
 I (USR\main.h)(0x669A9464)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-F (.\USR\scd_reg.c)(0x669A9472)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/scd_reg.o -MD)
+F (.\USR\scd_reg.c)(0x669A9472)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -Os -ffunction-sections -w -I ./CM33_CMSIS -I ./SA5Z50_DEVS -I ./LIBS -I ./USR-IC:/Users/t/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM33/Include-D__UVISION_VERSION="536" -DARMCM33_DSP_FP_TZ-o ./objects/scd_reg.o -MD)
 I (LIBS\scd_inc.h)(0x6434203B)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
 I (USR\scd_cfg.h)(0x65ABDFAF)

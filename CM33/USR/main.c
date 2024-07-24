@@ -10,7 +10,8 @@
 #include "ahb_ledseg.h"
 #include "ahb_uart.h"
 
-#include "lcd.h"
+#include "lcd_9488_drv.h"
+#include "touch_GT911_drv.h"
 
 #include "delay.h"
 #include "scd_inc.h"
@@ -85,6 +86,8 @@ uint16_t test2r = 0;
 uint16_t test3r = 0;
 uint16_t test4r = 0;
 
+static GT911info_struct touchInfo1;
+
 int main(void)
 {
     GPIO_DeInit(STAR_GPIO0);
@@ -100,27 +103,24 @@ int main(void)
 
     LCD_Init();
 
-    delay_ms(500);
-    LCD_Clear(BLACK);
-    delay_ms(500);
-    LCD_Clear(RED);
-    delay_ms(500);
-    LCD_Clear(GREEN);
-    delay_ms(500);
-    LCD_Clear(BLUE);
-    delay_ms(500);
-    LCD_Clear(WHITE);
-    LCD_Draw_Circle(100, 100, 50);
-    delay_ms(500);
-    LCD_Draw_Circle(200, 100, 50);
-    delay_ms(500);
-    LCD_Draw_Circle(100, 200, 50);
+    GT911_init();
+
+    LCD_Draw_Circle(100, 100, 20);
+    LCD_Draw_Circle(200, 100, 20);
+    LCD_Draw_Circle(100, 200, 20);
+
+
+    STAR_TIMER1->CTRL = 0;
+    STAR_TIMER1->VALUE = 0;
+    STAR_TIMER1->RELOAD = SystemCoreClock / 100;
+    STAR_TIMER1->INTCLEAR = 1;
+    STAR_TIMER1->CTRL = 9;
 
     while (1)
     {
-        printf("STAR uart0 test...\r\n");
-        for (int i = 0;i < 1000 * 1000;i++)
+        while (STAR_TIMER1->INTSTATUS == 0)
         {
+            // idle task area
             AHB_LED->seg0 = (millisCnt >> 0) & 0xful;
             AHB_LED->seg1 = (millisCnt >> 4) & 0xful;
             AHB_LED->seg2 = (millisCnt >> 8) & 0xful;
@@ -139,6 +139,21 @@ int main(void)
             while (AHB_UART->cmd.bit.RX_FIFO_EMPTY == 0)
             {
                 SCD_Rev1Byte(&scd_1, AHB_UART->data);
+            }
+        }
+        STAR_TIMER1->INTCLEAR = 1;
+
+        // 10ms tick area
+        if (GT911_Scan(&touchInfo1) == 0)
+        {
+            if (touchInfo1.nums == 2)
+            {
+                LCD_DrawLine(touchInfo1.touchPointInfos[0].x, touchInfo1.touchPointInfos[0].y,
+                    touchInfo1.touchPointInfos[1].x, touchInfo1.touchPointInfos[1].y);
+            }
+            else
+            {
+                LCD_DrawPoint_color(touchInfo1.touchPointInfos[0].x, touchInfo1.touchPointInfos[0].y, RED);
             }
         }
     }
