@@ -169,26 +169,33 @@ void GT911_init(void)
     printf("y coordinate resolution: %d\r\n", uint16val);
 }
 
+// #define TOUCH_911_DBG
+
 int16_t GT911_Scan(GT911info_struct* hInfo)
 {
-
     int16_t ans = GT9XX_ReadData(GT9XX_STATUS_ADDR, 1, (uint8_t*)&hInfo->touchPointSta);
     hInfo->nums = 0;
 
     if (ans < 0)
     {
+#ifdef TOUCH_911_DBG
         printf("err@l%d\r\n", __LINE__);
+#endif
         return -__LINE__ - 1000;
     }
 
     if (hInfo->touchPointSta & 0X80)
     {
         hInfo->nums = hInfo->touchPointSta & 0xfU;
+#ifdef TOUCH_911_DBG
         printf("ok:%dpts\r\n", hInfo->nums);
+#endif
     }
     else
     {
+#ifdef TOUCH_911_DBG
         printf("no data\r\n");
+#endif
         return -__LINE__ - 1000;
     }
 
@@ -197,18 +204,24 @@ int16_t GT911_Scan(GT911info_struct* hInfo)
         ans = GT9XX_ReadData((uint16_t)(GT9XX_FIRST_ADDR + i * GT9XX_POINT_INFO_OFFSET), 7, (uint8_t*)&(hInfo->touchPointInfos[i].id));
         if (ans < 0)
         {
+#ifdef TOUCH_911_DBG
             printf("err@l%d\r\n", __LINE__);
+#endif
             return -__LINE__ - 1000;
         }
+#ifdef TOUCH_911_DBG
         printf("[%d]:%d#(%d,%d)@%d\r\n", i, hInfo->touchPointInfos[i].id,
             hInfo->touchPointInfos[i].x, hInfo->touchPointInfos[i].y, hInfo->touchPointInfos[i].size);
+#endif
     }
 
     ans = GT9XX_WriteData(GT9XX_STATUS_ADDR, 0);
     if (ans < 0)
     {
+#ifdef TOUCH_911_DBG
         printf("err@l%d\r\n", __LINE__);
         return -__LINE__ - 1000;
+#endif
     }
 
     return 0;

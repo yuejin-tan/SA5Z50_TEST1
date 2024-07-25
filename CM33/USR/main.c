@@ -10,11 +10,12 @@
 #include "ahb_ledseg.h"
 #include "ahb_uart.h"
 
-#include "lcd_9488_drv.h"
-#include "touch_GT911_drv.h"
+// #include "lcd_9488_drv.h"
+// #include "touch_GT911_drv.h"
 
 #include "delay.h"
 #include "scd_inc.h"
+#include "guiInit.h"
 
 // NVIC cfg
 static void nvicInit(void)
@@ -86,33 +87,23 @@ uint16_t test2r = 0;
 uint16_t test3r = 0;
 uint16_t test4r = 0;
 
-static GT911info_struct touchInfo1;
 
 int main(void)
 {
-    GPIO_DeInit(STAR_GPIO0);
     SysTick_Config(SystemCoreClock / 1000ul - 1ul);
-
-    uartx_init(STAR_UART1, 115200);
-
-    uart_ahb_init();
-
     nvicInit();
+
+    GPIO_DeInit(STAR_GPIO0);
+    uartx_init(STAR_UART1, 115200);
+    uart_ahb_init();
 
     scd_init_1();
 
-    LCD_Init();
-
-    GT911_init();
-
-    LCD_Draw_Circle(100, 100, 20);
-    LCD_Draw_Circle(200, 100, 20);
-    LCD_Draw_Circle(100, 200, 20);
-
+    guiInit();
 
     STAR_TIMER1->CTRL = 0;
     STAR_TIMER1->VALUE = 0;
-    STAR_TIMER1->RELOAD = SystemCoreClock / 100;
+    STAR_TIMER1->RELOAD = SystemCoreClock / 10000;
     STAR_TIMER1->INTCLEAR = 1;
     STAR_TIMER1->CTRL = 9;
 
@@ -143,18 +134,7 @@ int main(void)
         }
         STAR_TIMER1->INTCLEAR = 1;
 
-        // 10ms tick area
-        if (GT911_Scan(&touchInfo1) == 0)
-        {
-            if (touchInfo1.nums == 2)
-            {
-                LCD_DrawLine(touchInfo1.touchPointInfos[0].x, touchInfo1.touchPointInfos[0].y,
-                    touchInfo1.touchPointInfos[1].x, touchInfo1.touchPointInfos[1].y);
-            }
-            else
-            {
-                LCD_DrawPoint_color(touchInfo1.touchPointInfos[0].x, touchInfo1.touchPointInfos[0].y, RED);
-            }
-        }
+        // 0.1ms tick area
+        guiLoopMain();
     }
 }

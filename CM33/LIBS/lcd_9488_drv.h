@@ -23,8 +23,8 @@ extern uint32_t  BACK_COLOR; //背景颜色.默认为白色
 #define SETY_CMD 0X2BUL
 
 // LCD 参数
-#define LCD_H 480
-#define LCD_W 320
+#define LCD_H 320
+#define LCD_W 480
 
 //写寄存器函数
 //regval:寄存器值

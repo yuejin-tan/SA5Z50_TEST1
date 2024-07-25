@@ -309,8 +309,8 @@ void LCD_Init(void)
     LCD_DisplayOn();
 
     // 横屏
-    // TODO:需同步更改lcd长宽参数和触摸反馈选项
-    // LCD_Scan_Dir(D2U_L2R);
+    // 需同步更改lcd长宽参数和触摸反馈选项!!!
+    LCD_Scan_Dir(D2U_L2R);
 
     //点亮背光
     GPIO_SetBit(STAR_GPIO0, GPIO_Pin_6);

@@ -51,7 +51,8 @@
         "star_rcc.h": "c",
         "star_gpio.h": "c",
         "ahb_ledseg.h": "c",
-        "ahb_lcd8080.h": "c"
+        "ahb_lcd8080.h": "c",
+        "lcd_9488_drv.h": "c"
     },
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#1073cf2d",
